@@ -4,7 +4,7 @@ const bot = new Aoijs.Bot({
   sharding: false, 
   shardAmount: 2,
   mobile: false,
-  token: "ODMxMjgwNDc4MTkwNDM2NDIz.YHS8Rg.NkwgKWViUj192npkJhcm6lQXRzI",
+  token: "ODMxMjgwNDc4MTkwNDM2NDIz.YHS8Rg.EupcPbgCUpuZDZ2GveRAvMteqnQ",
   prefix: ["$getServerVar[prefix]","<@$clientID>","<@!$clientID>","Akeno"], 
   fetchInvites: true,
   autoUpdate: true,
