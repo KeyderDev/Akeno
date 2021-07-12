@@ -1,0 +1,21 @@
+{
+  "name": "-asdf",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "engines": {
+    "node": "12.x"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "aoi.js": "^4.0.2",
+    "discord-backup": "^2.4.1",
+    "discord.js": "^12.5.3",
+    "ytdl": "^1.4.1",
+    "ytdl-core": "^4.8.3"
+  }
+}
