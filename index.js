@@ -13,7 +13,7 @@ const bot = new Aoijs.Bot({
 //Devoluciones de llamada o Callbacks
 bot.onMessage();
 bot.loadCommands(`./callbacks/`)
-bot.loadCommands(`./commands/`);
+bot.loadCommands(`./src/`);
 bot.loadCommands(`./new-database`);
 bot.loadCommands(`./testing`);
 bot.onJoined();
