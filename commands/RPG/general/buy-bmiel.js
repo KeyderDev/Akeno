@@ -4,7 +4,7 @@ module.exports = ({
     $title[Haz comprado una botella de miel]
     $description[Miel de abeja recien extraida, pero no es cualquier miel...]
     $color[33F3FF]
-    $cooldown[10s; Espera %time% para volver a compra miel]
+    $cooldown[10s; Espera %time% para volver a comprar miel]
     $setUserVar[Money;$sub[$getUserVar[Money];250]]
     $setUserVar[botellademiel;$sum[$getUserVar[botellademiel;$authorID];1];$authorID]
     $onlyIf[250<=$getUserVar[Money];:x: | No tienes suficiente dinero!]

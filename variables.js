@@ -150,5 +150,6 @@ fhimato: "0",
 botellademiel: "0",
 twsubs: "0",
 ElixirOscuro: "0",
+cascominero: "0",
 };
 module.exports = variables;

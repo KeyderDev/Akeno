@@ -39,6 +39,7 @@ Servidor para Hosting
 No es una miel cualquiera...
 
 <:ElixirOscuro:864256726412427264>Elixir Oscuro: <:Fragmento_de_himato:859590708704837642>2,000 - $getServerVar[prefix]buy-elixiroscuro
+<:CascoMinero:864300743908524032>Casco Minero: <:akenocoin:842884874729816114>300 - $getServerVar[prefix]buy-cascominero
 $onlyIf[$getGlobalUserVar[bl]==false;{title:Oh vaya! Eres malicioso...}{description:
 :x:| Tu acceso al bot Akeno a sido denegado, parece que haz hecho algo :/, si crees que esto es un error, contacta el soporte y te ayudaremos}{color:RED}]
 $footer[Pagina 2/2]`

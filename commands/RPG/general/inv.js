@@ -12,6 +12,7 @@ module.exports = ({
 
     Mineria:
     :pick:Picos: $getUserVar[pico]
+    <:CascoMinero:864300743908524032>Casco minero: $getUserVar[cascominero]
     <:oro:841831314491703337>Oro: $getUserVar[oro]
     <:diamante:841831314578735124>Diamantes: $getUserVar[diamante]
     <:esmeralda:841831315216662558>Esmeraldas: $getUserVar[esmeralda]

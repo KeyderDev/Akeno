@@ -49,9 +49,12 @@ RPG:
 
 1.5.1 Stable:
 General: 
+- Arreglados algunos errores ortograficos
 
 RPG:
 - Editado el comando ak.stream - Ahora puedes ganar subs de twitch
 - Agregado el elixir oscuro
 - Añadido el comando ak.buy-elixiroscuro
+- Agregado el casco minero
+- Editado el comando ak.mine - Ahora no puedes minar si no tienes un casco minero
 ###
