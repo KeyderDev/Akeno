@@ -51,6 +51,7 @@ a alguien con su ID
 General: 
 - Arreglados algunos errores ortograficos
 - Arreglado el comando ak.play - Arreglado el bug de el titulo de la cancion, en el mensaje salia un nombre y en el embed otra
+- Agregada la restriccion de Blacklist a comandos faltantes
 
 *RPG:*
 - Editado el comando ak.stream - Ahora puedes ganar subs de twitch

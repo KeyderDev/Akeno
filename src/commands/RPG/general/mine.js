@@ -26,6 +26,8 @@ $setUserVar[plata;$sum[$getUserVar[plata];$random[1;5]]]
 $cooldown[$getServerVar[minetime];:x:| Oye! espera %time% para volver a minar]
 $onlyIf[0<=$getUserVar[cascominero];:x: | Necesitas un casco minero para usar este comando!]
 $onlyIf[$getUserVar[pico;$authorID]>0;:x:| Necesitas un <:pickaxe:841284596028538880>Pico para usar este comando!]
+$onlyIf[$getGlobalUserVar[bl]==false;{title:Oh vaya! Eres malicioso...}{description:
+    :x:| Tu acceso al bot Akeno a sido denegado, parece que haz hecho algo :/, si crees que esto es un error, contacta el soporte y te ayudaremos}{color:RED}]
 `
 
 })
