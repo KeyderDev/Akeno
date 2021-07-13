@@ -32,7 +32,7 @@ bot.onInviteCreate();
 
 /////////////////////////////////////////////////////////////////////////
 bot.status({
-text: "ak.help | 1.5.1 Pre release 2",
+text: "ak.help | v1.5.1 Stable",
 type: "PLAYING",
 status: "streaming",
 time: 10
