@@ -9,7 +9,7 @@ Fuiste a la mina $randomText[Shinwaowi;Kindushuri;Karacata;Poroco] y conseguiste
 <:esmeralda:841831315216662558>$random[1;4] Esmeraldas
 <:cobre:841831314877448232>$random[1;2] Cobre
 <:Cuarzo:841831315112591370>$random[1;8] Cuarzo
-:iron:841831314994626580>$random[1;9] Hierro
+<:iron:841831314994626580>$random[1;9] Hierro
 <:Lingote_de_himato:859586304823263262>$random[3;10] Lingotes de Himato
 <:Fragmento_de_himato:859590708704837642>$random[1;10] Fragmentos de Himato]
 $setUserVar[himato;$sum[$getUserVar[esmeralda];$random[3;10]]]
