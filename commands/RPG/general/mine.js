@@ -3,15 +3,15 @@ name: "mine",
 aliases: "minar",
 code: `$color[D1BBBB]$title[Uy! Esos minerales me gustan u.u]$description[
 Fuiste a la mina $randomText[Shinwaowi;Kindushuri;Karacata;Poroco] y conseguiste:
-$random[1;6] lapizlazuli
-$random[1;7] Oro
-$random[1;8] Diamantes
-$random[1;4] Esmeraldas
-$random[1;2] Cobre
-$random[1;8] Cuarzo
-$random[1;9] Plata
-$random[3;10] Lingotes de Himato
-$random[1;10] Fragmentos de Himato]
+<:lapislazuli:841831315102892032>$random[1;6] lapizlazuli
+<:oro:841831314491703337>$random[1;7] Oro
+<:diamante:841831314578735124>$random[1;8] Diamantes
+<:esmeralda:841831315216662558>$random[1;4] Esmeraldas
+<:cobre:841831314877448232>$random[1;2] Cobre
+<:Cuarzo:841831315112591370>$random[1;8] Cuarzo
+:iron:841831314994626580>$random[1;9] Hierro
+<:Lingote_de_himato:859586304823263262>$random[3;10] Lingotes de Himato
+<:Fragmento_de_himato:859590708704837642>$random[1;10] Fragmentos de Himato]
 $setUserVar[himato;$sum[$getUserVar[esmeralda];$random[3;10]]]
 $setUserVar[fhimato;$sum[$getUserVar[fhimato];$random[1;10]]]
 $setUserVar[esmeralda;$sum[$getUserVar[esmeralda];$random[1;5]]]
