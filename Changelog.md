@@ -24,7 +24,7 @@ General:>
 - Eliminado un sistema de tickets Anarquico
 - Editado el comando ak.help
 
-// Changelog: RPG
+*// Changelog: RPG*
 - Implementado un nuevo mineral: Himato, lingote y fragmento
 - Editado el comando ak.inv
 - Arreglado el comando ak.inv - Ya no da la misma cantidad de todo
@@ -35,7 +35,7 @@ General:>
 - Editado el comando ak.shop-2 - Puestas las nuevas texturas
 - Arreglado el comando ak.set-minecooldown - Ya no puedes poner letras de cooldown
 
-Pre release 2:
+**Pre release 2:**
 General:
 - Editado el comando ak.warn - Ahora puedes advertir con la ID
 - Arreglado el comando ak.unwarn - Arreglados algunos errores, y ahora puedes removerle una advertencia
@@ -44,15 +44,15 @@ a alguien con su ID
 - Añadido el comando ak.jumbo.id
 - Añadido el comando ak.jumbo
 
-RPG:
+*RPG:*
 - Añadido el comando ak.craft-moneyspell
 
-1.5.1 Stable:
+**1.5.1 Stable:**
 General: 
 - Arreglados algunos errores ortograficos
 - Arreglado el comando ak.play - Arreglado el bug de el titulo de la cancion, en el mensaje salia un nombre y en el embed otra
 
-RPG:
+*RPG:*
 - Editado el comando ak.stream - Ahora puedes ganar subs de twitch
 - Agregado el elixir oscuro
 - Añadido el comando ak.buy-elixiroscuro
