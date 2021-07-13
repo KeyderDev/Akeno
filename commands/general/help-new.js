@@ -146,6 +146,8 @@ code: `$editMessage[$message[1];{color:D1BBBB}{title:Comandos de RPG}{descriptio
 - $getServerVar[prefix]profile
 - $getServerVar[prefix]set-pstatus
 - $getServerVar[prefix]set-profilepic
+- $getServerVar[prefix]buy-elixiroscuro
+- $getServerVar[prefix]buy-cascominero
 ^ Puede que este desactualizado}]`,
 type:'awaitedCommand'
 },{//categoria de busqueda
