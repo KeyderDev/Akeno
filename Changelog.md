@@ -50,6 +50,7 @@ RPG:
 1.5.1 Stable:
 General: 
 - Arreglados algunos errores ortograficos
+- Arreglado el comando ak.play - Arreglado el bug de el titulo de la cancion, en el mensaje salia un nombre y en el embed otra
 
 RPG:
 - Editado el comando ak.stream - Ahora puedes ganar subs de twitch

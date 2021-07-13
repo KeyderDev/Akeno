@@ -2,8 +2,8 @@ module.exports = ({
     name: "play",
     aliases: "p",
     code: `$color[D1BBBB]$title[Ahora reproduciendo]
-           $description[Ahora reproduciendo: $playSong[$message[1]]]
-           $playSong[$message;1m;no;yes;:x:| Esa cancion no puede ser reproducida en este momento]
+           $description[Ahora reproduciendo: $songInfo[title]
+           $playSong[$message;5s;no;yes;:x:| Esa cancion no puede ser reproducida en este momento]
            $onlyIf[$message!=;Escribe un nombre valido!]
            $onlyIf[$voiceID!=;:x: Necesitas estar en un canal de voz]
 $onlyIf[$getGlobalUserVar[bl]==false;{title:Oh vaya! Eres malicioso...}{description:
