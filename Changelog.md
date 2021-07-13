@@ -6,7 +6,7 @@ En esta update se arreglaron algunos Bugs y se implemento la Role Update con un 
 Changelog: Pre release 1
 General:>
 
-### - Arreglado el comando ak.skipTo - Editado el handler
+- Arreglado el comando ak.skipTo - Editado el handler
 - Agregado el comando ak.snipe
 - Cambiada la textura del elixir magico
 - Cambiada la textura del polvo de suerte
@@ -57,4 +57,3 @@ RPG:
 - Añadido el comando ak.buy-elixiroscuro
 - Agregado el casco minero
 - Editado el comando ak.mine - Ahora no puedes minar si no tienes un casco minero
-###
