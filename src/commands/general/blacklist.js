@@ -8,7 +8,7 @@ Desarrollador: <@$authorID>
 Usuario: $userTag[$findUser[$message[1]]]
 Razon: $messageSlice[1]]
 $color[5865F2]
-$writefile[./blacklistid.txt;$userID[$message[1]]]
+$writefile[./blacklistid;$userID[$findUser[$message[1]]]]
 $setGlobalUserVar[bl;true;$findUser[$message[1]]]
 $setGlobalUserVar[bld;$authorID;$findUser[$message[1]]]
 $setGlobalUserVar[blr;$messageSlice[1];$findUser[$message[1]]]
