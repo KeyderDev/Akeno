@@ -4,5 +4,7 @@ module.exports = ({
 Usaste tu pocion de dinero y ganaste $random[1000;2000]
 $color[D1BBBB]
   $setUserVar[Money;$sum[$getUserVar[Money;$authorID];1];$authorID]
-$onlyIf[1<=$getUserVar[moneyspell];:x: | Necesitas (Pocion de dinero x1)]`
+$onlyIf[1<=$getUserVar[moneyspell];:x: | Necesitas (Pocion de dinero x1)]
+$onlyIf[$getGlobalUserVar[bl]==false;{title:Oh vaya! Eres malicioso...}{description:
+  :x:| Tu acceso al bot Akeno a sido denegado, parece que haz hecho algo :/, si crees que esto es un error, contacta el soporte y te ayudaremos}{color:RED}]`
 })

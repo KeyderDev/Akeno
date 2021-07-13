@@ -52,6 +52,7 @@ module.exports = ({
    <:Polvo:859887580790259753>Polvo: $getUserVar[polvo]
    --------------- (*Para hacer un hechizo use $getServerVar[prefix]craft-(hechizo)*)
    :dollar:Hechizo de dinero: $getUserVar[moneyspell]
+   <:hechizodehimato:864595745206566912>Hechizo de Himato: $getUserVar[himatospell]
    $footer[Pagina 1/2 - $getServerVar[prefix]inv-2]
 $onlyIf[$getGlobalUserVar[bl]==false;{title:Oh vaya! Eres malicioso...}{description:
 :x:| Tu acceso al bot Akeno a sido denegado, parece que haz hecho algo :/, si crees que esto es un error, contacta el soporte y te ayudaremos}{color:RED}]

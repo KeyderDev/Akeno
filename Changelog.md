@@ -58,3 +58,7 @@ General:
 - Añadido el comando ak.buy-elixiroscuro
 - Agregado el casco minero
 - Editado el comando ak.mine - Ahora no puedes minar si no tienes un casco minero
+- Agregado el hechizo de himato
+- Agregado el comando ak.craft-himatospell
+- Agregado el comando ak.use-himatospell
+- Agregado el comando ak.buy-cascominero
