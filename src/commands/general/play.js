@@ -4,7 +4,7 @@ module.exports = ({
     code: `$color[D1BBBB]$title[Ahora reproduciendo]
            $description[
                Reproduciendo: $songInfo[title]
-               Duracion: $songInfo[duration];yes
+               Duracion: $songInfo[duration]
                Autor: $songInfo[publisher]]
            $playSong[$message;5s;no;yes;:x:| Esa cancion no puede ser reproducida en este momento]
            $onlyIf[$message!=;Escribe un nombre valido!]
