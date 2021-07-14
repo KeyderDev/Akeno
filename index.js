@@ -44,8 +44,9 @@ time: 10
 //////////////////////////////////////////////
 
 bot.timeoutCommand({
-channel: "", 
-code: `$sendDM[$timeoutData[userid];$timeoutData[{title:Premium expirado}{description:Tu programa premium del bot Akeno a expirado, si quieres volver a tener premium debes volver a comprarlo en el servidor de Akeno}$takeRoles[$mentioned[1];843920390522929202]]]$resetUserVar[premium;$mentioned[1]]`
+channel: "$systemChannelID", 
+code: `$sendDM[$timeoutData[userid];$timeoutData[$title[Premium expirado]$description[Tu programa premium del bot $username[$clientID] a expirado, si quieres volver a tener premium debes volver a comprarlo]$takeRoles[$authorID;843920390522929202]$setGlobalUserVar[PREMIUM;false;$authorID]
+$setGlobalUserVar[premiumbadge;;$authorID]]`
 });
 
 bot.joinCommand({
