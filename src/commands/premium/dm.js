@@ -4,9 +4,10 @@ module.exports = ({
 {description:Recibiste un correo de $username[$authorID]
 (<@$authorID>)
 
-**Mensaje**
-$messageSlice[1]}]
-$color[00ff00]
+
+$addField[Mensaje;$messageSlice[1]]
+$addField[Servidor;$serverName]]}
+$color[D1BBBB]
 $author[$username;$authorAvatar]
 $description[Mensaje enviado a <@$findUser[$message[1]]>]
 $deleteCommand
