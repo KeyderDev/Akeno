@@ -64,3 +64,6 @@ General:
 - Agregado el comando ak.craft-himatospell
 - Agregado el comando ak.use-himatospell
 - Agregado el comando ak.buy-cascominero
+
+### Changelog 1.6.0 - Nombre de update
+*Description*
