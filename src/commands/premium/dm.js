@@ -7,7 +7,8 @@ module.exports = ({
 $messageSlice[1]
 
 **Servidor**
-$serverName}]
+$serverName}
+$color[D1BBBB]]
 
 $color[D1BBBB]
 $author[$username;$authorAvatar]
