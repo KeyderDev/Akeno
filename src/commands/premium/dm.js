@@ -4,7 +4,7 @@ module.exports = ({
 {description:Recibiste un correo de $username[$authorID]
 (<@$authorID>)
 $addField[Mensaje;$messageSlice[1]]
-$addField[Servidor;$serverName]]
+$addField[Servidor;$serverName]]}
 $color[D1BBBB]
 $author[$username;$authorAvatar]
 $channelSendMessage[$channelID;Mensaje enviado a <@$findUser[$message[1]]>]
