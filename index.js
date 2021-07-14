@@ -45,7 +45,7 @@ time: 10
 
 bot.timeoutCommand({
 channel: "$systemChannelID", 
-code: `$sendDM[$timeoutData[userid];$timeoutData[$title[Premium expirado]$description[Tu programa premium del bot $username[$clientID] a expirado, si quieres volver a tener premium debes volver a comprarlo]$takeRoles[$authorID;843920390522929202]$setGlobalUserVar[PREMIUM;false;$authorID]
+code: `$sendDM[$authorID;$timeoutData[$title[Premium expirado]$description[Tu programa premium del bot $username[$clientID] a expirado, si quieres volver a tener premium debes volver a comprarlo]$takeRoles[$authorID;843920390522929202]$setGlobalUserVar[PREMIUM;false;$authorID]
 $setGlobalUserVar[premiumbadge;;$authorID]]`
 });
 
