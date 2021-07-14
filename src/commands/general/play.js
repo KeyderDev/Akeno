@@ -2,7 +2,11 @@ module.exports = ({
     name: "play",
     aliases: "p",
     code: `$color[D1BBBB]$title[Ahora reproduciendo]
-           $description[Ahora reproduciendo: $songInfo[title]
+           $description[
+               Reproduciendo: $songInfo[title]
+               Duracion: $songInfo[duration];yes]
+               Autor: $songInfo[publisher]
+           ]
            $playSong[$message;5s;no;yes;:x:| Esa cancion no puede ser reproducida en este momento]
            $onlyIf[$message!=;Escribe un nombre valido!]
            $onlyIf[$voiceID!=;:x: Necesitas estar en un canal de voz]

@@ -8,6 +8,7 @@ module.exports = ({
      $addField[Añadido por;<@$songInfo[userID]>;yes]
      $addField[Cancion;[$songInfo[title]\\]($songInfo[url]);yes]
      $addField[Autor;[$songInfo[publisher]\\]($songInfo[publisher_url]);yes]
+     $addField[Tiempo Restante;$songInfo[duration_left]]
     
      $onlyIf[$songInfo[userID]!=;No hay nada reproduciendose]
 $onlyIf[$getGlobalUserVar[bl]==false;{title:Oh vaya! Eres malicioso...}{description:
