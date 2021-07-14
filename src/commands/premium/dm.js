@@ -3,13 +3,11 @@ module.exports = ({
  code: `$sendDm[$findUser[$message[1]];{title::incoming_envelope: Correo}
 {description:Recibiste un correo de $username[$authorID]
 (<@$authorID>)
-
-
 $addField[Mensaje;$messageSlice[1]]
-$addField[Servidor;$serverName]]}
+$addField[Servidor;$serverName]]]}
 $color[D1BBBB]
 $author[$username;$authorAvatar]
-$description[Mensaje enviado a <@$findUser[$message[1]]>]
+$channelSendMessage[$channelID;Mensaje enviado a <@$findUser[$message[1]]>]
 $deleteCommand
 $suppressErrors[{title::x:| Error}{description:Un error ocurrio mientras se procesaba la peticion, intenta de nuevo, si persiste el error, contacta con un staff del servidor de soporte}]
 $onlyIf[$isUserDmEnabled[$findUser[$message[1]]]!=false;{title::x:| Error}{description: <@$findUser[$messags[1]]> tiene el md \`cerrado\`}{color:ff0000}{delete:10s}]
