@@ -40,3 +40,4 @@
 - ak.craft-himatospell
 - ak.use-himatospell
 - ak.upload-video
+- ak.weekly
