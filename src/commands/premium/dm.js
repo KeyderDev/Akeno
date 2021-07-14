@@ -11,7 +11,6 @@ $serverName}
 {color:D1BBBB}]
 
 $color[ffff]
-$author[$username;$authorAvatar]
 $channelSendMessage[$channelID;Mensaje enviado a <@$findUser[$message[1]]>]
 $deleteCommand
 $suppressErrors[{title::x:| Error}{description:Un error ocurrio mientras se procesaba la peticion, intenta de nuevo, si persiste el error, contacta con un staff del servidor de soporte}]
