@@ -11,7 +11,7 @@ $serverName}
 {color:D1BBBB}]
 
 $color[ffff]
-$channelSendMessage[$channelID;Mensaje enviado a <@$findUser[$message[1]]>]
+$channelSendMessage[$channelID;$title[Mensaje enviado a <@$findUser[$message[1]]>]]
 $deleteCommand
 $suppressErrors[{title::x:| Error}{description:Un error ocurrio mientras se procesaba la peticion, intenta de nuevo, si persiste el error, contacta con un staff del servidor de soporte}]
 $onlyIf[$isUserDmEnabled[$findUser[$message[1]]]!=false;{title::x:| Error}{description: <@$findUser[$messags[1]]> tiene el md \`cerrado\`}{color:ff0000}{delete:10s}]
