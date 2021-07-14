@@ -8,9 +8,9 @@ $messageSlice[1]
 
 **Servidor**
 $serverName}
-$color[D1BBBB]]
+{color:D1BBBB}]
 
-$color[D1BBBB]
+$color[ffff]
 $author[$username;$authorAvatar]
 $channelSendMessage[$channelID;Mensaje enviado a <@$findUser[$message[1]]>]
 $deleteCommand
