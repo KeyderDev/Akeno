@@ -3,8 +3,12 @@ module.exports = ({
  code: `$sendDm[$findUser[$message[1]];{title::incoming_envelope: Correo}
 {description:Recibiste un correo de $username[$authorID]
 (<@$authorID>)
-$addField[Mensaje;$messageSlice[1]]
-$addField[Servidor;$serverName]]}
+**Mensaje**
+$messageSlice[1]
+
+**Servidor**
+$serverName}]
+
 $color[D1BBBB]
 $author[$username;$authorAvatar]
 $channelSendMessage[$channelID;Mensaje enviado a <@$findUser[$message[1]]>]
