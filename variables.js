@@ -152,5 +152,9 @@ twsubs: "0",
 ElixirOscuro: "0",
 cascominero: "0",
 himatospell: "0",
+profilecolor: "D1BBBB",
+
+// New RPG
+ItemName: `{"type":"item","description":"descripción del item","etc":"..."}`,
 };
 module.exports = variables;

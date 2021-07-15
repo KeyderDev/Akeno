@@ -192,7 +192,7 @@ $getServerVar[prefix]anime
 $getServerVar[prefix]remind *No implementado*
 $getServerVar[prefix]buy-premiumbox
 $getServerVar[prefix]open-premiumbox
-
+$getServerVar[prefix]set-profilecolor
 }{color:D1BBBB}]
 `,
 type:'awaitedCommand'
