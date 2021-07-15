@@ -27,6 +27,7 @@ module.exports [{
     code: `$editMessage[$message[1];{title:Mapa}{description:
     
     :moon: Moon Island: :skull: Derrota 10 jefes $getUserVar[defeatedbosses]/10}
-    {color:BLUE}]`
+    {color:BLUE}]`,
+    type:'awaitedCommand'
 
 }]
