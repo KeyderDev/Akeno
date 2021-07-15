@@ -1,5 +1,5 @@
 module.exports = ({
-    name: "lock-cfot",
+    name: "lock-cfor",
     code: `$title[Canal Restringido]$description[
         El canal <#$mentionedChannels[1]> fue bloqueado para <@$findUser[$message[1]]> correctamente
     ]$color[GREEN]
