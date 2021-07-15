@@ -73,3 +73,4 @@ General:
 - Agregado el comando ak.sinv
 - Agregada las fichas
 - Agregado el comando ak.buy-naturetoken
+- Agregado el comando ak.menu

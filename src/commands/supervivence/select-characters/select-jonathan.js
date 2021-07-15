@@ -4,7 +4,7 @@ module.exports = ({
         Haz elegido a **Jonathan** como personaje inicial
     ]
     $color[BLUE]
-    $setUserVar[gamingtoken;1]
+    $setUserVar[gamertoken;1]
     $setUserVar[character;jonathan]
     $onlyIf[$getUserVar[character]==;:x: | Ya tienes un personaje!]
     $onlyIf[$getGlobalUserVar[bl]==false;{title:Oh vaya! Eres malicioso...}{description:
