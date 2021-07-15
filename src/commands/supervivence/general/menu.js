@@ -1,7 +1,7 @@
 module.exports [{
     name: "menu",
     code: `
-    $reactionCollector[$splitText[1];$authorID;3m;☠️,🌜,📜;🗺️;comandos,stats,materiales,mapa]
+    $reactionCollector[$splitText[1];$authorID;3m;☠️,🌜,📜,🗺️;comandos,stats,materiales,mapa]
     $textSplit[$sendMessage[{title: Menu de supervivencia}{description:
     Comandos:
     Estadisticas del jugador:
