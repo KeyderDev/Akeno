@@ -65,5 +65,11 @@ General:
 - Agregado el comando ak.use-himatospell
 - Agregado el comando ak.buy-cascominero
 
-### Changelog 1.6.0 - Nombre de update
-*Description*
+### Changelog 1.6.0 - Nombre de update ###
+*Supervivence Update*
+
+- Agregado el comando ak.fight-boss
+- Agregado el comando ak.select-(personaje)
+- Agregado el comando ak.sinv
+- Agregada las fichas
+- Agregado el comando ak.buy-naturetoken

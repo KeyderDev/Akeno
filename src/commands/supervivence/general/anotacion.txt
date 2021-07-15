@@ -1,0 +1,1 @@
+$onlyIf[$getUserVar[character]==0;:x: | Ya tienes un personaje!]

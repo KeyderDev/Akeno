@@ -2,7 +2,7 @@ module.exports = [{
 name: "help",
 aliases: ['ayuda'],
 code: `
-$reactionCollector[$splitText[1];$authorID;3m;🎶,🛠,🎮,⚙,💼,🔎,🧩,🔞,🎲,🔗,🔵,↩️;music,mod,diver,config,rpg,search,util,nsfw,lvl,react,bothelp,menu]
+$reactionCollector[$splitText[1];$authorID;3m;🎶,🛠,🎮,⚙,💼,🔎,🧩,⚔️,🎲,🔗,🔵,↩️;music,mod,diver,config,rpg,search,util,supervivence,lvl,react,bothelp,menu]
 
 $textSplit[$sendMessage[{title:Comandos del bot Akeno e informacion}{description:Hola! Soy Akeno! Me gusta ayudar a los demas uwu
 Para Musica#COLON# 🎶
@@ -172,13 +172,13 @@ code: `$editMessage[$message[1];{title:Comandos de reaccion}{description:
 - $getServerVar[prefix]angry
 - $getServerVar[prefix]wave
 - $getServerVar[prefix]kill
-- $getServerVar[prefix]fuck **NSFW**}{color:D1BBBB}]
+}{color:D1BBBB}]
 `,
 type:'awaitedCommand'
 },{
-name: "nsfw",
-code: `$editMessage[$message[1];{title:Categoria libre}{description:
-Proximamante...}{color:FF0000}]
+name: "supervivence",
+code: `$editMessage[$message[1];{title:Comandos de supervivencia}{description:
+En desarrollo, version 1.6.0}{color:FF0000}]
 `,
 type:'awaitedCommand'
 },{

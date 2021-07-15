@@ -156,5 +156,12 @@ profilecolor: "D1BBBB",
 
 // New RPG
 ItemName: `{"type":"item","description":"descripción del item","etc":"..."}`,
+
+//Supervivence
+naturetoken: "0",
+character: "",
+supervivencetoken: "0",
+defeatedbosses: "0",
+characterlife: "10",
 };
 module.exports = variables;
