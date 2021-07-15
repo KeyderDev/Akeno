@@ -163,5 +163,6 @@ character: "",
 supervivencetoken: "0",
 defeatedbosses: "0",
 characterlife: "10",
+gamertoken : "0",
 };
 module.exports = variables;
