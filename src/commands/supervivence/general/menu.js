@@ -3,9 +3,10 @@ module.exports = [{
     code: `
     $reactionCollector[$splitText[1];$authorID;3m;☠️,🌜,📜,🗺️;comandos,stats,materiales,mapa]
     $textSplit[$sendMessage[{title: Menu de supervivencia}{description:
-    Comandos:
-    Estadisticas del jugador:
-    Materiales:};yes]; ]`
+    Comandos: ☠️
+    Estadisticas del jugador: 🌜
+    Materiales: 📜
+    Mapa: 🗺️  }{color:BLUE};yes]; ]`
 },{
     name: "comandos",
     code: `$editMessage[$message[1];{title:Comandos de Supervivencia}{description:
@@ -13,14 +14,16 @@ module.exports = [{
     - $getServerVar[prefix]characters
     - $getServerVar[prefix]cure-character
     - $getServerVar[prefix]farm
-    - $getServerVar[prefix]restore-energy}{color:BLUE}]`,
+    - $getServerVar[prefix]restore-energy}{color:BLUE}]
+    $onlyIf[!=$getUserVar[character];:x: | Necesitas un personaje para usar este comando!]`,
     type:'awaitedCommmand'
 },{
     name: "stats",
-    code: `$editMessage[$message[1];{title:Estadisticas del Jugador}
+    code: `$editMessage[$message[1];{title:Estadisticas del Jugador}{description:
     :heart:Vida restante: $getUserVar[characterlife]
-    :zap:Energia: $getUserVar[energy]
-    {color:BLUE}]`,
+    :zap:Energia: $getUserVar[energy]}
+    {color:BLUE}]
+    $onlyIf[!=$getUserVar[character];:x: | Necesitas un personaje para usar este comando!]`,
     type:'awaitedCommand'
 },{
     name: "materiales",
@@ -28,7 +31,8 @@ module.exports = [{
     Concreto: $getUserVar[concreto]
     Ladrillos: $getUserVar[ladrillo]
     :adhesive_bandage:Vendas: $getUserVar[vendas]
-    :rock:Rocas: $getUserVar[roca]}{color:BLUE}]`,
+    :rock:Rocas: $getUserVar[roca]}{color:BLUE}]
+    $onlyIf[!=$getUserVar[character];:x: | Necesitas un personaje para usar este comando!]`,
 },{
     name: "mapa",
     code: `$editMessage[$message[1];{title:Mapa}{description:
