@@ -6,7 +6,8 @@ module.exports = [{
     Comandos: ☠️
     Estadisticas del jugador: 🌜
     Materiales: 📜
-    Mapa: 🗺️  }{color:BLUE};yes]; ]`
+    Mapa: 🗺️  }{color:BLUE};yes]; ]
+    $onlyIf[!=$getUserVar[character];:x: | Necesitas un personaje para usar este comando!]`
 },{
     name: "comandos",
     code: `$editMessage[$message[1];{title:Comandos de Supervivencia}{description:
