@@ -10,7 +10,7 @@ module.exports = ({
         $setUserVar[naturetoken;$sum[$getUserVar[naturetoken;$authorID];$random[1;2]];$authorID]
         $setUserVar[scoins;$sum[$getUserVar[scoins;$authorID];$random[1;2]];$authorID]
         $setUserVar[energy;$sub[$getUserVar[energy;$authorID];1];$authorID]
-        $setUserVar[characterlife;$sub[$getUserVar[characterlife;$authorID];$random[1;2]];$authorID]
+        $setUserVar[characterlife;$sub[$getUserVar[characterlife;$authorID];$random[2;3]];$authorID]
         $setUserVar[defeatedbosses;$sum[$getUserVar[defeatedbosses;$authorID];1];$authorID]
         $cooldown[15m;:x:| Hey! Espera 15 minutos para volver a pelear con un boss]
         $onlyIf[!=$getUserVar[character];:x: | Necesitas un personaje para usar este comando!]
