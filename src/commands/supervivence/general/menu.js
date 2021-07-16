@@ -5,7 +5,7 @@ module.exports [{
     $textSplit[$sendMessage[{title: Menu de supervivencia}{description:
     Comandos:
     Estadisticas del jugador:
-    Materiales:}]]`
+    Materiales:};yes]; ]`
 },{
     name: "comandos",
     code: `$editMessage[$message[1];{title:Comandos de Supervivencia}{description:
