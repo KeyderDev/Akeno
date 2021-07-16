@@ -6,6 +6,7 @@ module.exports = ({
         Ficha gamer: $getUserVar[gamertoken]
         Jefes Derrotados: $getUserVar[defeatedbosses]
         Vida del jugador: $getUserVar[characterlife]
+        Scoins: $getUserVar[scoins]
     ]$color[BLUE]
     $onlyIf[!=$getUserVar[character];:x: | Necesitas un personaje para usar este comando!]
     $onlyIf[$getGlobalUserVar[bl]==false;{title:Oh vaya! Eres malicioso...}{description:

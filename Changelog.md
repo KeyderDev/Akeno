@@ -65,8 +65,9 @@ General:
 - Agregado el comando ak.use-himatospell
 - Agregado el comando ak.buy-cascominero
 
-### Changelog 1.6.0 - Nombre de update ###
+### Changelog 1.6.0 - Survival Update ###
 *Supervivence Update*
+Update:
 
 - Agregado el comando ak.fight-boss
 - Agregado el comando ak.select-(personaje)
@@ -75,3 +76,7 @@ General:
 - Agregado el comando ak.buy-naturetoken
 - Agregado el comando ak.menu
 - Agregado el comando ak.cure
+
+General:
+
+Actualizado a la version 4.2.1 de Aoi.js

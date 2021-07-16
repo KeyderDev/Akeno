@@ -5,8 +5,11 @@ module.exports = ({
 
         Recompensas:
         x$random[1;2] Ficha de naturaleza]
+        x$random[40;45] Scoins
         $color[BLUE]
         $setUserVar[naturetoken;$sum[$getUserVar[naturetoken;$authorID];$random[1;2]];$authorID]
+        $setUserVar[scoins;$sum[$getUserVar[scoins;$authorID];$random[1;2]];$authorID]
+        $setUserVar[energy;$sub[$getUserVar[energy;$authorID];1];$authorID]
         $setUserVar[characterlife;$sub[$getUserVar[characterlife;$authorID];$random[1;2]];$authorID]
         $setUserVar[defeatedbosses;$sum[$getUserVar[defeatedbosses;$authorID];1];$authorID]
         $cooldown[15m;:x:| Hey! Espera 15 minutos para volver a pelear con un boss]

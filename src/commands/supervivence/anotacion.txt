@@ -1,2 +1,4 @@
 $onlyIf[$getUserVar[character]==0;:x: | Ya tienes un personaje!]
 $onlyIf[!=$getUserVar[character];:x: | Necesitas un personaje para usar este comando!]
+
+Farm: Vendas, metal, fichas de naturaleza

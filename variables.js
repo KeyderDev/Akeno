@@ -164,5 +164,12 @@ supervivencetoken: "0",
 defeatedbosses: "0",
 characterlife: "10",
 gamertoken : "0",
+scoins: "0",
+concreto: "0",
+ladrillos: "0",
+vendas: "0",
+energy: "10",
+mapa: "bosque",
+roca: "00,"
 };
 module.exports = variables;
