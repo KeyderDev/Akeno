@@ -1,7 +1,7 @@
 module.exports = [{
     name: "menu",
     code: `
-    $reactionCollector[$splitText[1];$authorID;3m;☠️,🌜,📜,🗺️;comandos,stats,materiales,mapa]
+    $reactionCollector[$splitText[1];$authorID;3m;☠️,🌜,📜,🗺️;comandos,stats,materiales,mapa;yes]
     $textSplit[$sendMessage[{title: Menu de supervivencia}{description:
     Comandos: ☠️
     Estadisticas del jugador: 🌜
@@ -32,7 +32,8 @@ module.exports = [{
     Concreto: $getUserVar[concreto]
     Ladrillos: $getUserVar[ladrillo]
     :adhesive_bandage:Vendas: $getUserVar[vendas]
-    :rock:Rocas: $getUserVar[roca]}{color:BLUE}]
+    :rock:Rocas: $getUserVar[roca]
+    Scoins: $getUserVar[scoins]}{color:BLUE}]
     $onlyIf[!=$getUserVar[character];:x: | Necesitas un personaje para usar este comando!]`,
 },{
     name: "mapa",

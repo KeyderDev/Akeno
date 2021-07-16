@@ -4,8 +4,8 @@ module.exports = ({
         Haz vencido a un jefe! Pero haz perdido $random[1;2] corazones de vida
 
         Recompensas:
-        x$random[1;2] Ficha de naturaleza]
-        x$random[40;45] Scoins
+        x$random[1;2] Ficha de naturaleza
+        x$random[40;45] Scoins]
         $color[BLUE]
         $setUserVar[naturetoken;$sum[$getUserVar[naturetoken;$authorID];$random[1;2]];$authorID]
         $setUserVar[scoins;$sum[$getUserVar[scoins;$authorID];$random[1;2]];$authorID]
