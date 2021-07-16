@@ -13,7 +13,8 @@ module.exports [{
     - $getServerVar[prefix]characters
     - $getServerVar[prefix]cure-character
     - $getServerVar[prefix]farm
-    - $getServerVar[prefix]restore-energy}{color:BLUE}]`,
+    - $getServerVar[prefix]restore-energy
+    -}{color:BLUE}]`,
     type:'awaitedCommmand'
 },{
     name: "stats",
