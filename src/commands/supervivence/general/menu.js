@@ -38,7 +38,7 @@ module.exports = [{
     name: "mapa",
     code: `$editMessage[$message[1];{title:Mapa}{description:
     
-    :moon: Moon Island: :skull: Derrota 10 jefes $getUserVar[defeatedbosses]/10}
+    :crescent_moon: Moon Island: :skull: Derrota 10 jefes $getUserVar[defeatedbosses]/10}
     {color:BLUE}]
     $onlyIf[!=$getUserVar[character];:x: | Necesitas un personaje para usar este comando!]
     $onlyIf[$getGlobalUserVar[bl]==false;{title:Oh vaya! Eres malicioso...}{description:
