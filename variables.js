@@ -170,6 +170,6 @@ ladrillos: "0",
 vendas: "0",
 energy: "10",
 mapa: "bosque",
-roca: "00,"
+roca: "0",
 };
 module.exports = variables;

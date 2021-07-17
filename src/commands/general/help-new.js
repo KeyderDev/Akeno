@@ -2,7 +2,7 @@ module.exports = [{
 name: "help",
 aliases: ['ayuda'],
 code: `
-$reactionCollector[$splitText[1];$authorID;3m;🎶,🛠,🎮,⚙,💼,🔎,🧩,⚔️,🎲,🔗,🔵,↩️;music,mod,diver,config,rpg,search,util,supervivence,lvl,react,bothelp,menu]
+$reactionCollector[$splitText[1];$authorID;3m;🎶,🛠,🎮,⚙,💼,🔎,🧩,⚔️,🎲,🔗,🔵,↩️;music,mod,diver,config,rpg,search,util,supervivence,lvl,react,bothelp,menu;yes]
 
 $textSplit[$sendMessage[{title:Comandos del bot Akeno e informacion}{description:Hola! Soy Akeno! Me gusta ayudar a los demas uwu
 Para Musica#COLON# 🎶

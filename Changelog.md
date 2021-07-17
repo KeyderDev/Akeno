@@ -75,7 +75,8 @@ Update:
 - Agregada las fichas
 - Agregado el comando ak.buy-naturetoken
 - Agregado el comando ak.menu
-- Agregado el comando ak.cure
+- Agregado el comando ak.cure-character
+- Agrefado el comando ak.build-bunker
 
 General:
 
