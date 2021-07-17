@@ -34,7 +34,7 @@ bot.onInviteCreate();
 bot.status({
 text: "ak.help | v1.5.1 Stable",
 type: "PLAYING",
-status: "streaming",
+status: "online",
 time: 10
 });
 
