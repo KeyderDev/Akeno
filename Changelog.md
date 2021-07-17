@@ -77,7 +77,9 @@ Update:
 - Agregado el comando ak.menu
 - Agregado el comando ak.cure-character
 - Agrefado el comando ak.build-bunker
-
+- Agregado el comando ak.farm
+- Agregado el comando ak.explore-bunker
 General:
 
+- Agregada la restriccion de blacklist a comandos faltantes
 Actualizado a la version 4.2.1 de Aoi.js

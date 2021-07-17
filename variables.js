@@ -171,5 +171,9 @@ vendas: "0",
 energy: "10",
 mapa: "bosque",
 roca: "0",
+radio: "0",
+sravioli: "0",
+sagua: "0",
+bunkernuclear: "0",
 };
 module.exports = variables;
