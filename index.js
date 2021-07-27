@@ -27,7 +27,7 @@ time: 10
 });
 
 bot.status({
-  text: "GitHub Repo",
+  text: "GitHub Repository",
   type: "WATCHING",
   status: "online",
   time: 10
