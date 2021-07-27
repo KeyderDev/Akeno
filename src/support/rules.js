@@ -27,5 +27,8 @@ module.exports = {
  No se permiten añadir bots de otras personas, solo se permiten bots del staff
 
  Cualquier usuario que mande contenido 18+ en #nsfw-testingonly sera temp baneado. Canal solo para testeo
-  Este servidor va de acuerdo al [ToS](discord.com/guidelines) de Discord]$color[5865F2]`
+  Este servidor va de acuerdo al [ToS](discord.com/guidelines) de Discord]$color[5865F2]
+  $onlyBotPerms[embedlinks;:x:| Necesito el permiso de **EMBED LINKS** para ejecutar este comando]
+$onlyIf[$getGlobalUserVar[bl]==false;{title:Oh vaya! Eres malicioso...}{description:
+:x:| Tu acceso al bot Akeno a sido denegado, parece que haz hecho algo :/, si crees que esto es un error, contacta el soporte y te ayudaremos}{color:RED}]`
 }
