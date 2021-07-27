@@ -201,6 +201,7 @@ premiumcode6: "",
 premiumcode7: "",
 premiumcode8: "",
 premiumcode9: "",
+premiumcode10: "",
 claim: "",
 
 //Afk
