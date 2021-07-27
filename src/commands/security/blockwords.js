@@ -45,9 +45,53 @@ $onlyIf[$getGlobalUserVar[bl]==false;{title:Oh vaya! Eres malicioso...}{descript
 $onlyIf[$getGlobalUserVar[bl]==false;{title:Oh vaya! Eres malicioso...}{description:
 :x:| Tu acceso al bot Akeno a sido denegado, parece que haz hecho algo :/, si crees que esto es un error, contacta el soporte y te ayudaremos}{color:RED}]`,
 },{
-    
-        name: "$alwaysExecute",
-        code:`
+    name: "blockword6",
+    code: `<a:checkanimado:831161301282979911> Palabra Bloqueada
+    $setServerVar[blockword6;$message[1]]
+    $onlyPerms[manageserver;:x:| Necesitas el permiso de **Manejar Servidor** para usar este comando]
+
+    $onlyBotPerms[embedlinks;:x:| Necesito el permiso de **EMBED LINKS** para ejecutar este comando]
+$onlyIf[$getGlobalUserVar[bl]==false;{title:Oh vaya! Eres malicioso...}{description:
+:x:| Tu acceso al bot Akeno a sido denegado, parece que haz hecho algo :/, si crees que esto es un error, contacta el soporte y te ayudaremos}{color:RED}]`,
+},{
+    name: "blockword7",
+    code: `<a:checkanimado:831161301282979911> Palabra Bloqueada
+    $setServerVar[blockword7;$message[1]]
+    $onlyPerms[manageserver;:x:| Necesitas el permiso de **Manejar Servidor** para usar este comando]
+
+    $onlyBotPerms[embedlinks;:x:| Necesito el permiso de **EMBED LINKS** para ejecutar este comando]
+$onlyIf[$getGlobalUserVar[bl]==false;{title:Oh vaya! Eres malicioso...}{description:
+:x:| Tu acceso al bot Akeno a sido denegado, parece que haz hecho algo :/, si crees que esto es un error, contacta el soporte y te ayudaremos}{color:RED}]`,
+},{
+    name: "blockword8",
+    code: `<a:checkanimado:831161301282979911> Palabra Bloqueada
+    $setServerVar[blockword8;$message[1]]
+    $onlyPerms[manageserver;:x:| Necesitas el permiso de **Manejar Servidor** para usar este comando]
+
+    $onlyBotPerms[embedlinks;:x:| Necesito el permiso de **EMBED LINKS** para ejecutar este comando]
+$onlyIf[$getGlobalUserVar[bl]==false;{title:Oh vaya! Eres malicioso...}{description:
+:x:| Tu acceso al bot Akeno a sido denegado, parece que haz hecho algo :/, si crees que esto es un error, contacta el soporte y te ayudaremos}{color:RED}]`,
+},{   
+    name: "blockword9",
+    code: `<a:checkanimado:831161301282979911> Palabra Bloqueada
+    $setServerVar[blockword9;$message[1]]
+    $onlyPerms[manageserver;:x:| Necesitas el permiso de **Manejar Servidor** para usar este comando]
+
+    $onlyBotPerms[embedlinks;:x:| Necesito el permiso de **EMBED LINKS** para ejecutar este comando]
+$onlyIf[$getGlobalUserVar[bl]==false;{title:Oh vaya! Eres malicioso...}{description:
+:x:| Tu acceso al bot Akeno a sido denegado, parece que haz hecho algo :/, si crees que esto es un error, contacta el soporte y te ayudaremos}{color:RED}]`,
+},{
+    name: "blockword10",
+    code: `<a:checkanimado:831161301282979911> Palabra Bloqueada
+    $setServerVar[blockword10;$message[1]]
+    $onlyPerms[manageserver;:x:| Necesitas el permiso de **Manejar Servidor** para usar este comando]
+
+    $onlyBotPerms[embedlinks;:x:| Necesito el permiso de **EMBED LINKS** para ejecutar este comando]
+$onlyIf[$getGlobalUserVar[bl]==false;{title:Oh vaya! Eres malicioso...}{description:
+:x:| Tu acceso al bot Akeno a sido denegado, parece que haz hecho algo :/, si crees que esto es un error, contacta el soporte y te ayudaremos}{color:RED}]`,  
+},{    
+    name: "$alwaysExecute",
+    code:`
         <a:wrong:869274854157848687> No malas palabras $username!
         $deletecommand 
         $onlyIf[$message!=$get[r]]
