@@ -103,6 +103,7 @@ code: `$editMessage[$message[1];{color:ffff}{title:Comandos de utilidad}{descrip
 - $getServerVar[prefix]lock/unlock
 - $getServerVar[prefix]function *Aoi.js*
 - $getServerVar[prefix]weather (ciudad) *Bugeado*
+- $getServerVar[prefix]report-bug
 }]`,
 type:'awaitedCommand'
 },{//categoria de roleplay
