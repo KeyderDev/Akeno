@@ -1,0 +1,21 @@
+Ruta:
+C:\Users\Angel\Desktop\Akeno
+/////////////////////////////////
+Comando ak.afk bug
+////////////////////////////////
+
+
+Arreglar ak.clean
+Arreglar ak.confess
+
+
+
+const error = require(`./error.json`); //esto cambia dependiendo de cuantas carpetas atras este
+const command = {
+name:"example",
+code: `
+todo bem
+$onlyIf[$findMember[$message;no]!=undefined;${error.err.find.user}]
+`
+};
+module.exports = command;

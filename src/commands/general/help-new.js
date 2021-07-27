@@ -2,7 +2,7 @@ module.exports = [{
 name: "help",
 aliases: ['ayuda'],
 code: `
-$reactionCollector[$splitText[1];$authorID;3m;🎶,🛠,🎮,⚙,💼,🔎,🧩,⚔️,🎲,🔗,🔵,↩️;music,mod,diver,config,rpg,search,util,supervivence,lvl,react,bothelp,menu;yes]
+$reactionCollector[$splitText[1];$authorID;3m;🎶,🛠,🎮,⚙,💼,🔎,🧩,<:check:845428956491939850>,🎲,🔗,🔵,↩️;music,mod,diver,config,rpg,search,util,security,lvl,react,bothelp,menu;yes]
 
 $textSplit[$sendMessage[{title:Comandos del bot Akeno e informacion}{description:Hola! Soy Akeno! Me gusta ayudar a los demas uwu
 Para Musica#COLON# 🎶
@@ -12,7 +12,7 @@ Para Configuracion#COLON# ⚙
 Para RPG#COLON# 💼
 Para Busqueda#COLON# 🔎 *BETA*
 Para Utilidad#COLON# 🧩
-Proximamente...#COLON# 
+Para Seguridad#COLON# <:check:845428956491939850>
 Para Leveling#COLON# 🎲
 Para Reacciones#COLON# 🔗
 Extras#COLON# 🔵
@@ -20,6 +20,7 @@ Para volver al menu aqui#COLON# ↩️
     
 **Links**
 [Documentacion](https://app.gitbook.com/@keyder/s/akeno-s-docs/) | [Soporte](https://discord.gg/tsrfmSgapV) | [Invite](https://discord.com/api/oauth2/authorize?client_id=831280478190436423&permissions=8&scope=bot) | [Paypal](https://paypal.me/akenobot1)}{footer:Este mensaje tiene 3 minutos de uso}{color:D1BBBB};yes]; ]
+$onlyBotPerms[embedlinks;:x:| Necesito el permiso de **EMBED LINKS** para ejecutar este comando]
 $onlyIf[$getGlobalUserVar[bl]==false;{title:Oh vaya! Eres malicioso...}{description:
 :x:| Tu acceso al bot Akeno a sido denegado, parece que haz hecho algo :/, si crees que esto es un error, contacta el soporte y te ayudaremos}{color:RED}]`
 },{//categoría de configuración
@@ -36,19 +37,17 @@ code: `$editMessage[$message[1];{color:D1BBBB}{title:Comandos de configuracion}{
 - $getServerVar[prefix]desactivate-newrole
 - $getServerVar[prefix]set-autorole
 - $getServerVar[prefix]desactivate-autorole
-- $getServerVar[prefix]antilinks-on/off
-- $getServerVar[prefix]setlogs
-- $getServerVar[prefix]set-wmessage
-- $getServerVar[prefix]set-antialt __*Premium*__
-- $getServerVar[prefix]set-reportchannel
-- $getServerVar[prefix]enable-report
-- $getServerVar[prefix]set-muterole}]`,
+- $getServerVar[prefix]set-muterole
+- $getServerVar[prefix]set-confess
+}]`,
 type:'awaitedCommand'
 },{//categoria de interacción
 name: "diver",
 code: `$editMessage[$message[1];{color:D1BBBB}{title:Comandos de Diversion}{description:Aqui tienes comandos para que te diviertas un rato
 - $getServerVar[prefix]achievement
 - $getServerVar[prefix]meme
+- $getServerVar[prefix]confess
+- $getServerVar[prefix]ph (texto) *NSFW*
 
 }]`,
 type:'awaitedCommand'
@@ -83,9 +82,6 @@ code: `$editMessage[$message[1];{title:Comandos de Moderacion}{description:Aqui 
 - $getServerVar[prefix]unmute 
 - $getServerVar[prefix]unwarn
 - $getServerVar[prefix]infractions
-- $getServerVar[prefix]user-info
-- $getServerVar[prefix]channel-info
-- $getServerVar[prefix]tempban
 }{color:D1BBBB}]`,
 type:'awaitedCommand'
 },{//categoria de utilidad
@@ -96,15 +92,19 @@ code: `$editMessage[$message[1];{color:ffff}{title:Comandos de utilidad}{descrip
 - $getServerVar[prefix]profile
 - $getServerVar[prefix]inv
 - $getServerVar[prefix]setprefix
-- $getServerVar[prefix]reset-prefix
-- $getServerVar[prefix]user-info
-- $getServerVar[prefix]serverinfo
+- $getServerVar[prefix]user-info/serverinfo/channel-info/role-info
 - $getServerVar[prefix]avatar
 - $getServerVar[prefix]suggest
 - $getServerVar[prefix]report
 - $getServerVar[prefix]snipe
-- $getServerVar[prefix]jumbo
-- $getServerVar[prefix]jumbo.id}]`,
+- $getServerVar[prefix]jumbo/jumbo.id
+- $getServerVar[prefix]docs
+- $getServerVar[prefix]clean
+- $getServerVar[prefix]lock/unlock
+- $getServerVar[prefix]function *Aoi.js*
+- $getServerVar[prefix]slowmode
+- $getServerVar[prefix]weather (ciudad) *Bugeado*
+}]`,
 type:'awaitedCommand'
 },{//categoria de roleplay
 name: "rpg",
@@ -154,7 +154,8 @@ type:'awaitedCommand'
 name: "search",
 code: `$editMessage[$message[1];{color:D1BBBB}{title:Comandos de busqueda}{description:
 Aqui tienes diferentes comandos para buscar cosas en la web!
-- $getServerVar[prefix]anime (*Tarda un poco*)}]`,
+- $getServerVar[prefix]anime (*Tarda un poco*)
+- $getServerVar[prefix]color}]`,
 type:'awaitedCommand'
 },{//categoria de racciones
 name: "react",
@@ -176,9 +177,29 @@ code: `$editMessage[$message[1];{title:Comandos de reaccion}{description:
 `,
 type:'awaitedCommand'
 },{
-name: "supervivence",
-code: `$editMessage[$message[1];{title:Comandos de supervivencia}{description:
-En desarrollo, version 1.6.0}{color:FF0000}]
+name: "security",
+code: `$editMessage[$message[1];{title:Comandos de Seguridad}{description:
+En desarrollo, v1.7.0
+- $getServerVar[prefix]antiusers-on/off
+- $getServerVar[prefix]antibots-on/off
+- $getServerVar[prefix]antilinks-on/off
+- $getServerVar[prefix]antichannels-on/off
+- $getServerVar[prefix]blockwords1/2/3/4/5 
+- $getServerVar[prefix]set-antialt
+- $getServerVar[prefix]antimalicious-on/off - No permite usuarios de la blacklist de Akeno entrar a tu servidor
+- $getServerVar[prefix]systems
+- $getServerVar[prefix]setlogs
+- $getServerVar[prefix]enable-report/set-reportchannel
+- $getServerVar[prefix]captcha/verify
+- $getServerVar[prefix]desactivate-logs
+Cuenta:
+- $getServerVar[prefix]register
+- $getServerVar[prefix]login
+- $getServerVar[prefix]change-password
+- $getServerVar[prefix]password-forgot
+- $getServerVar[prefix]logout
+- $getServerVar[prefix]manage-premium
+- $getServerVar[prefix]cancel-premium}{color:GREEN}]
 `,
 type:'awaitedCommand'
 },{
@@ -189,11 +210,11 @@ $getServerVar[prefix]lyrics
 $getServerVar[prefix]dm
 $getServerVar[prefix]weekly
 $getServerVar[prefix]anime
-$getServerVar[prefix]remind *No implementado*
+$getServerVar[prefix]remind 
 $getServerVar[prefix]buy-premiumbox
 $getServerVar[prefix]open-premiumbox
 $getServerVar[prefix]set-profilecolor
-}{color:D1BBBB}]
+$getServerVar[prefix]define (solo ingles)}{color:D1BBBB}]
 `,
 type:'awaitedCommand'
 },{
@@ -206,7 +227,7 @@ Para Configuracion#COLON# ⚙
 Para Roleo#COLON# 💼
 Para Busqueda#COLON# 🔎 *BETA*
 Para Utilidad#COLON# 🧩
-Proximamente...#COLON# 
+Para Seguridad#COLON# <:check:845428956491939850>
 Para Leveling#COLON# 🎲
 Para Reacciones#COLON# 🔗
 Extras#COLON# 🔵

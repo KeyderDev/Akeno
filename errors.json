@@ -1,0 +1,75 @@
+{"find":{
+    "user":"`ERROR: El usuario no pudo ser localizado`",
+    "channel":"`ERROR: El canal no pudo ser localizado`",
+    "guild":"`ERROR: El servidor no pudo ser localizado`",
+    "role":"`ERROR: El rol no pudo ser localizado`",
+    "emoji":"`ERROR: El emoji no pudo ser localizado`",
+    "song":"`ERROR: la cancion no pudo ser localizada`",
+    "message":"`ERROR: El mensaje no pudo ser localizado`"
+},
+"invalid":{
+    "id":{
+        "user":"`ERROR: La ID del usuario es invalida`",
+        "role":"`ERROR: La ID del rol es invalida`",
+        "channel":"`ERROR: La ID del canal es invalida`",
+        "emoji":"`ERROR: La ID del emoji es invalida`",
+        "guild":"`ERROR: La ID del servidor es invalida`"
+    },
+    "number":"`ERROR: Numero Invalido`",
+    "text":"`ERROR: Texto Invalido`",
+    "bolean":"`ERROR: Booleano Invalido`",
+    "url":"`ERROR: La URL es invalida`"
+},
+"internal":"`ERROR: Ha ocurrido un error interno, espema unos minutos y vuelve a usar el comando. Si el error persiste, contacta el equipo de desarrollo`",
+"others":{
+    "impossible":"`ERROR: No creo que eso sea posible`"
+},
+"mention":{
+    "role":"`ERROR: Necesitas mencionar un rol`",
+    "user":"`ERROR: Necesitas mencionar un usuario`",
+    "channel":"`ERROR: Necesitas mencionar un canal`"
+},
+"perms":{
+    "manageserver":"`Permisos requeridos: Manejar Servidor`",
+    "kick":"`Permisos requeridos: Kickear Usuarios`",
+    "addreactions":"`Permisos requeridos: Añadir Reacciones`",
+    "ban":"`Permisos requeridos: Banear Usuarios`",
+    "manageroles":"`Permisos requeridos: Manejar Roles`",
+    "managechannels":"`Permisos requeridos: Manejar Canales`",
+    "managewebhooks":"`Permisos requeridos: Manejar Webhooks`",
+    "managemessages":"`Permisos requeridos: Manejar Mensajes`",
+    "viewauditlog":"`Permisos requeridos: Ver Registro De Auditoria`",
+    "managenicknames":"`Permisos requeridos: Manejar Apodos`",
+    "sendmessages":"`Permisos requeridos: Enviar Mensajes`",
+    "readmessages":"`Permisos requeridos: Leer Historial De Mensajes`",
+    "movemembers":"`Permisos requeridos: Mover Usuarios`",
+    "manageemojis":"`Permisos requeridos: Manejar Emojis`",
+    "viewguildinsights":"`Permisos requeridos: Ver Informacion del servidor`",
+    "mentioneveryone":"`Permisos requeridos: Mencionar @everyone, @here, y todos los roles`",
+    "embedlinks":"`Permisos requeridos: Embed Links`",
+    "viewchannel":"`Permisos requeridos: Ver Canales`",
+    "createinvite":"`Permisos requeridos: Crear Invitacion Del Servidor`",
+    "mutemembers":"`Permisos Requeridos: Mutear Usuarios`",
+    "speak":"`Permisos requeridos: Hablar`",
+    "attachfiles":"`Permisos requeridos: Enviar Archivos`",
+    "connect":"`Permisos requeridos: Conectar`",
+    "stream":"`Permisos requeridos: Video`",
+    "priorityspeaker":"`Permisos requeridos: Prioridad De Palabra`",
+    "changenickname":"`Permisos requeridos: Cambiar Apodo`",
+    "externalemojis":"`Permisos requeridos: Usar Emojis Externos`",
+    "sendtts":"`Permisos requeridos: Enviar TTS`",
+    "usevad":"`Permisos requeridos: Usar Actividad De Voz`",
+    "code":"`ERROR: You must rank high on the bot to use this command`"
+},
+"void":"`ERROR: No puedes dejar este parametro vacio`",
+"fail":{
+    "owner":"`ERROR: No puedo aplicar acciones moderativas en el dueño del servidor`",
+    "pos":"`ERROR: Uno de los roles que tienes no te permite hacer eso`"
+},
+"premium":"`ERROR: Esta funcion solo esta disponible para usuarios Premium`",
+"hex":"`ERROR: El codigo Hexadecimal es invlaido`",
+"music":{
+    "q":"``",
+    "vc":"`ERROR: Necesitas estar en un canal de voz`"
+}
+}

@@ -11,5 +11,6 @@ module.exports = ({
  $takeRole[$authorID;$getServerVar[notverified]]
  $onlyIf[$message==$getUserVar[Captcha];:x:| El codigo introducido es invalido]
  $onlyIf[!=$getUserVar[Captcha];:x:| Para verificarte, primero debes poner $getServerVar[prefix]captcha]
+ $onlyBotPerms[embedlinks;:x:| Necesito el permiso de **Embed Links**]
  $onlyIf[$getGlobalUserVar[bl]==false;:x:| Acceso al bot \`denegado\`]`
 })

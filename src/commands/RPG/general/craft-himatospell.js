@@ -11,6 +11,7 @@ module.exports = ({
     $setUserVar[fhimato;$sub[$getUserVar[fhimato;$authorID];20];$authorID]
     $onlyIf[20<=$getUserVar[fhimato];:x: | Necesitas (Fragmento de Himato x20)]
     $onlyIf[1<=$getUserVar[elixirmagico];:x: | Necesitas (Elixir Magico x1)]
+    $onlyBotPerms[embedlinks;:x:| Necesito el permiso de **EMBED LINKS** para ejecutar este comando]
 $onlyIf[$getGlobalUserVar[bl]==false;{title:Oh vaya! Eres malicioso...}{description:
 :x:| Tu acceso al bot Akeno a sido denegado, parece que haz hecho algo :/, si crees que esto es un error, contacta el soporte y te ayudaremos}{color:RED}]
 

@@ -1,13 +1,12 @@
-const Aoijs = require("aoi.js")
- 
+const Aoijs = require("aoi.js");
 const bot = new Aoijs.Bot({
   sharding: false, 
   shardAmount: 2,
   mobile: false,
-  token: "ODMxMjgwNDc4MTkwNDM2NDIz.YHS8Rg.PpvxyRhAsfqKuQYnIC_bN3HdAf8",
+  token: "ODMxMjgwNDc4MTkwNDM2NDIz.YHS8Rg.GVlUGEHhE-D_eWoHULdWZRfHHQM",
   prefix: ["$getServerVar[prefix]","<@$clientID>","<@!$clientID>","Akeno"], 
   fetchInvites: true,
-  autoUpdate: false,
+  autoUpdate: true,
 })
 
 //Devoluciones de llamada o Callbacks
@@ -16,38 +15,82 @@ bot.loadCommands(`./callbacks/`)
 bot.loadCommands(`./src/`);
 bot.loadCommands(`./new-database`);
 bot.loadCommands(`./testing`);
-bot.onJoined();
-bot.onLeave();
-bot.onBanAdd();
-bot.onBanRemove();
-bot.onChannelCreate();
-bot.onChannelDelete();
-bot.onChannelUpdate();
-bot.onMessageUpdate();
-bot.onMessageDelete();
-bot.onRoleCreate();
-bot.onRoleDelete();
-bot.onRoleUpdate();
-bot.onInviteCreate();
+bot.loadCommands(`./login`);
+
 
 /////////////////////////////////////////////////////////////////////////
 bot.status({
-text: "ak.help | v1.5.1 Stable",
+text: "ak.help | v1.7.0 Beta",
 type: "PLAYING",
 status: "online",
 time: 10
 });
+bot.onJoined();
+bot.onLeave();
+bot.onChannelCreate();
+bot.onInviteCreate();
+bot.onRoleCreate();
+bot.onRoleDelete();
+bot.onRoleUpdate();
+bot.onBanAdd();
+bot.onBanRemove();
+bot.onChannelDelete();
+bot.onChannelUpdate();
+bot.onMessageUpdate();
+bot.onMessageDelete();
+bot.onRoleUpdate();
+bot.onInviteCreate();
+bot.onGuildJoin();
+bot.onGuildLeave();
 
+/////////////////////////////////////////////Akeno's Logs
+bot.botJoinCommand({
+  channel: "843994166098919484",
+  code: `$title[Nuevo Servidor]
+  $description[Me han añadido a un nuevo servidor!
+  Usuario: <@$authorID>
+  Servidor: $serverName | $guildID]
+  $color[GREEN]` 
+})
 
+bot.botLeaveCommand({
+  channel: "843994166098919484",
+  code: `$title[Servidor Menos]
+  $description[Me han sacado de un servidor :(
+  Usuario: <@$authorID>
+  Servidor: $serverName | $guildID]
+  $color[RED]` 
+})
 
+//////////////////////////////////////////////Bot Autorole
 
-//////////////////////////////////////////////
+bot.joinCommand({
+  channel: "$systemChannelID",
+  code: `$giveRoles[$authorID;$getServerVar[botrole]]
+  $onlyIf[$isBot[$authorID]==true;]`
+})
 
-bot.timeoutCommand({
-channel: "$systemChannelID", 
-code: `$sendDM[$authorID;$timeoutData[$title[Premium expirado]$description[Tu programa premium del bot $username[$clientID] a expirado, si quieres volver a tener premium debes volver a comprarlo]$takeRoles[$authorID;843920390522929202]$setGlobalUserVar[PREMIUM;false;$authorID]
-$setGlobalUserVar[premiumbadge;;$authorID]]`
-});
+bot.joinCommand({
+  channel: "$systemChannelID",
+  code: `
+  $sendDM[$authorID;{title:Kickeado}
+  {description:Fuiste kickeado de **$serverName** porque se detecto que tu cuenta es una multicuenta}
+  {color:RED}]
+  $kick[$authorID]
+  $onlyIf[$creationDate[$authorID;ms]<$getServerVar[antialtsms];]
+  $onlyIf[$getServerVar[antialts]!=true;]`
+})
+
+/////////////////////////////////////////////
+
+bot.joinCommand({
+  channel: "$getServerVar[wchannel]",
+  code: `$title[$getServerVar[wtitle]]
+  $description[$getSeverVar[wdescription]]
+  $color[$getServerVar[wcolor]]
+  $onlyIf[$getServerVar[wactivated]!=true;]`
+})
+
 
 bot.joinCommand({
 channel: "$channelID",
@@ -64,7 +107,8 @@ $let[i;$userInfo[inviter;$authorID]
 `
 })
 
-bot.onJoined({
+
+bot.joinCommand({
 channel: "$getServerVar[ivchannel]",
 code: `:white_check_mark:|$username se ha unido
 Invitado por: $userInfo[$authorID;inviter]]
@@ -72,7 +116,9 @@ Quien ahora en este servidor tiene $userInfo[$authorID;invites] invites
 $setUserVar[invites;$sum[$getUserVar[invites];1]]
 $onlyIf[$getServerVar[invitetracker;$authorID]==on;]`
 })
-bot.onJoined()
+
+
+
 
 bot.onGuildJoin({
 channel: "$systemChannelID",
@@ -82,17 +128,102 @@ $color[D1BBBB]`
 })
 bot.onGuildJoin()
 
-bot.onJoined({
+bot.joinCommand({
 channel: "830472834286878733", 
 code: `<@$authorID>$color[D1BBBB]$title[Nuevo Usuario!]$description[
 $username Bienvenido al servidor de soporte de $username[$clientID]!, pasate por <#830487420193472523> y <#834937155078848533>, tambien es recomendable leer la [documentacion](https://app.gitbook.com/@keyder/s/akeno-s-docs/)]
 $image[https://cdn.discordapp.com/attachments/854113817633226773/855820615587201034/Baner.png]$thumbnail[$userAvatar[$clientID]]
-$giveRoles[$authorID;$getServerVar[notverified]]`
+`
 })
-bot.onJoined()
+//////////////////////////////////////////////
 
+bot.timeoutCommand({
+  code: `$sendDM[$timeoutData[banned]; $title[Temp ban acabado]$description[
+    Tu temp-ban en **$serverName** a acabado, [Invite del servidor]($getServerInvite)
+    $unban[$timeoutData[banned]]`
+})
+
+bot.timeoutCommand({
+code: `$sendDM[$timeoutData[remindID];{title:Recordatorio}{description:$timeoutData[remindMessage]}
+{color:GREEN}]`
+});
+
+bot.timeoutCommand({
+  code: `$sendDM[$timeoutData[author];{title:Prueba gratuita acabada}{description:
+  Su prueba gratuita de Premium en el bot **$username[$clientID]** a finalizado}
+  {color:GREEN}]
+  $setGlobalUserVar[premiumbadge;;$timeoutData[author]]
+  $takeRoles[$timeoutData[author];843920390522929202]
+  $setGlobalUserVar[PREMIUM;false;$timeoutData[author]]`
+  });
+
+bot.timeoutCommand({
+  code: `
+  $setGlobalUserVar[premiumbadge;;$timeoutData[autor]]
+  $takeRoles[$timeoutData[autor];843920390522929202]
+  $setGlobalUserVar[PREMIUM;false;$timeoutData[autor]]
+  $sendDM[$timeoutData[autor];{title:Subscripcion Premium}{description:Tu subscripcion Premium
+  del bot Akeno a terminado. Para volver a tener Premium, debes volver a comprarlo.
+  Si usted cree que esto es un error, contacte el equipo de desarrollo.
+   Este es un mensaje automatizado.}
+  {color:GREEN}]`
+  });
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+bot.joinCommand({
+  channel: "$systemChannelID",
+  code: `
+  $sendDM[$authorID;{title:Kickeado}{description:
+  Fuiste kickeado de **$serverName** porque el sistema Anti Usuarios Maliciosos estaba activado}{color:RED}]
+  $kick[$authorID]
+  $onlyIf[$getServerVar[antimalicious]==true;]
+  $onlyIf[$getGlobalUserVar[bl;$authorID]==true;]`
+})
+
+
+
+
+bot.onChannelDelete({
+  channel: "$getServerVar[LogsChannel]",
+  code: `$deleteChannels[$channelID]
+  $getServerVar[LogsChannel];{title:Canal Eliminado}{description:
+  Canal: <#$channelID>
+  Creador del canal: <@$authorID>
+  Sistema: Anti Channels}
+  $onlyIf[$getServerVar[antichannels]==true;]`
+})
+
+
+
+bot.joinCommand({
+  channel: "$systemChannelID",
+  code: `$sendDM[$authorID;$title[Kickeado]$description[
+    Fuiste kickeado de **$serverName** ya que el anti users esta habilitado]
+    $color[RED]]
+    $channelSendMessage[$getServerVar[LogsChannel];{title:Usuario Kickeado}{description:
+    Usuario: <@!$authorID>
+    Fecha de Creacion de cuenta: $creationDate[$authorID;time]
+    Sistema: Anti Users}
+    {color:GREEN}]
+  $kick[$authorID]
+  $onlyIf[$getServerVar[antiusers]==true;]`
+})
+
+
+bot.joinCommand({
+  channel: "$systemChannelID",
+  code: `
+    $channelSendMessage[$getServerVar[LogsChannel];{title:Bot Kickeado}{description:
+    Bot: <@!$authorID>
+    Fecha de Creacion de cuenta: $creationDate[$authorID;time]
+    Sistema: Anti Bots}
+    {color:GREEN}]
+  $kick[$authorID]
+  $onlyIf[$isBot[$authorID]==true;]
+  $onlyIf[$getServerVar[antibots]==true;]`
+})
+
 
 
 //Logs
@@ -104,8 +235,11 @@ $description[
 ⛏ **Usuario:** <@$authorID>
 📌 **ID:** \`$authorID\`
 🔗 **Tag:** \`$userTag\`]
-$color[RED]`,
+$color[RED]
+]`,
 })
+
+
 bot.banRemoveCommand({
 channel: "$getServerVar[LogsChannel]",
 code: `
@@ -114,8 +248,11 @@ $description[
 ⛏ **Usuario:** <@$authorID>
 📌 **ID:** \`$authorID\`
 🔗 **Tag:** \`$userTag\`]
-$color[GREEN]`,
+$color[GREEN]
+`,
 })
+
+
 bot.channelCreateCommand({ 
 channel: "$getServerVar[LogsChannel]",
 code: `
@@ -124,8 +261,11 @@ $description[
 **Nombre:** \`$newChannel[name]\`
 **ID:** \`$newChannel[id]\`
 **Categoria:** \`$newChannel[categoryID]\`]
-$color[GREEN]`,
+$color[GREEN]
+`,
 })
+
+
 bot.channelDeleteCommand({ 
 channel: "$getServerVar[LogsChannel]", 
 code: `
@@ -134,8 +274,11 @@ $description[
 **Name:** \`$oldChannel[name]\`
 **ID:** \`$oldChannel[id]
 **Ultimo Mensaje:** \`$oldChannel[lastMessageID]\`]
-$color[RED]`,
+$color[RED]
+`,
 })
+
+
 bot.channelUpdateCommand({ 
 channel: "$getServerVar[LogsChannel]", 
 code: `
@@ -147,13 +290,18 @@ $description[
 $color[GREEN]
 `,
 })
+
+
 bot.joinCommand({ 
+
 channel: "$getServerVar[LogsChannel]", 
 code: `
 $title[Nuevo Usuario]$description[<@$authorID> entro al servidor
 **Cuenta creada**: $creationdate[$authorID;date]]
 `,
 })
+
+
 bot.leaveCommand({
 channel:'$channelID',
 code:`
@@ -163,6 +311,8 @@ $let[i;$userInfo[inviter]]
 $suppressErrors
 `,
 })
+
+
 bot.leaveCommand({ 
 channel: "$getServerVar[LogsChannel]", 
 code: `
@@ -173,6 +323,8 @@ $description[
 $color[RED]
 `,
 })
+
+
 bot.updateCommand({
 channel: "$channelID", 
 code:`
@@ -185,6 +337,8 @@ $setChannelVar[snipe;$OldMessage|$authorID|edited/$getChannelVar[snipe];$channel
 $suppressErrors
 `,
 })
+
+
 bot.deletedCommand({
 channel: "$channelID",
 code: `
@@ -195,6 +349,8 @@ $channelSendMessage[$getServerVar[LogsChannel];{title:Mensaje Eliminado}{descrip
 $setChannelVar[snipe;$message|$authorID|deleted/$getChannelVar[snipe];$channelUsed]
 $suppressErrors
 `})
+
+
 bot.roleCreateCommand({ 
 channel: "$getServerVar[LogsChannel]", 
 code: `
@@ -207,6 +363,7 @@ $description[
 $color[GREEN]
 `,
 })
+
 bot.roleDeleteCommand({ 
 channel: "$getServerVar[LogsChannel]", 
 code: `
@@ -219,6 +376,8 @@ $description[
 $color[RED]
 `,
 })
+
+
 bot.roleUpdateCommand({ 
 channel: "$getServerVar[LogsChannel]", 
 code: `
@@ -234,15 +393,18 @@ $color[GREEN]
 `,
 })
 
+
 bot.inviteCreateCommand({
 channel: '$getServerVar[LogsChannel]',
 code: `
 $title[Invitacion Creada]$description[
-Creador de la invitacion: $inviteUserID
+Creador de la invitacion: <@$inviteUserID>
 URL: $inviteURL
 ID del canal: $inviteChannelID]
-$color[GREEN]`
+$color[GREEN]
+`
 })
+
 
 
 

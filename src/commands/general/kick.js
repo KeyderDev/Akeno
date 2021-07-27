@@ -18,6 +18,7 @@ $onlyIf[$findMember[$message[1];no]!=undefined;:x: | No se logro encontrar al us
 $onlyIf[$message!=;:x: | Menciona, nombra o ingrese la ID del usuario que quiere expulsar!]
 $onlyPerms[kick;:x: | Requieres permisos de \`expulsar miembros\` para ejecutar esta accion]
 $onlyBotPerms[kick;:x: | Requiero permisos de \`expulsar miembros\` para ejecutar esta accion]
+$onlyBotPerms[embedlinks;:x:| Necesito el permiso de **EMBED LINKS** para ejecutar este comando]
 $onlyIf[$getGlobalUserVar[bl]==false;{title:Oh vaya! Eres malicioso...}{description:
 :x:| Tu acceso al bot Akeno a sido denegado, parece que haz hecho algo :/, si crees que esto es un error, contacta el soporte y te ayudaremos}{color:RED}]`
 })

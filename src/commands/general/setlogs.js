@@ -5,6 +5,7 @@ name: "setlogs",
   perms: "Admin",
   nonPrefixed: false,
 code: `
+$setServerVar[Logs;true]
 $setServerVar[LogsChannel;$findChannel[$message[1]]]
 Logs establecidos a <#$findChannel[$message[1]]>
 $argsCheck[>1;{description:<:Error:844685985468121148> Selecciona un canal para los logs}{color:RED}]

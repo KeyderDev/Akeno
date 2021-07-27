@@ -25,6 +25,7 @@ module.exports = ({
     $cooldown[5s;{description:Hey, espera un poco antes de volver a usar este comando, espera **$replaceText[%time%;s;seconds]**.}{color:FF0000}{delete:5s}]
     $suppressErrors[{author:No encontrado:$userAvatar[$clientID]}{description:Se un poco mas especifico}{color:D1BBBB}]
     $onlyIf[$getGlobalUserVar[PREMIUM;$authorID]==true;{description:Lo sentimos, este comando es premium, cambie a premium para acceder a comandos exclusivos!}
-$onlyIf[$getGlobalUserVar[bl]==false;{title:Oh vaya! Eres malicioso...}{description:
+    $onlyBotPerms[embedlinks;:x:| Necesito el permiso de **EMBED LINKS** para ejecutar este comando]
+    $onlyIf[$getGlobalUserVar[bl]==false;{title:Oh vaya! Eres malicioso...}{description:
 :x:| Tu acceso al bot Akeno a sido denegado, parece que haz hecho algo :/, si crees que esto es un error, contacta el soporte y te ayudaremos}{color:RED}]
     `});

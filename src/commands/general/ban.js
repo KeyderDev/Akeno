@@ -11,7 +11,8 @@ module.exports = ({
     \`$noMentionMessage\`} {footer:$userTag[$mentioned[1]]:$userAvatar[$mentioned[1]]} {timestamp:ms} {thumbnail:https://media.tenor.com/images/a166604b0b8f34779dbbd2dd690efb58/tenor.gif} {color:ff1000}]
     $onlyIf[$message[1]!=;{title:▸ :x:┇ERROR} {description:Uso: \`$getServerVar[prefix]ban <@user> <razón>\`} {color:4bcb30} {footer:$username:$authorAvatar} {timestamp:ms} {delete:10s}]
 $onlyIf[$findMember[$message[1]]!=$authorID;:x:| No te puedes banear a ti mismo]
-$onlyBotPerms[embedlinks;:x:| Necesito el permiso de **EMBED LINKS** para ejecutar este comando]    
+$onlyBotPerms[embedlinks;:x:| Necesito el permiso de **EMBED LINKS** para ejecutar este comando]
+$onlyBotPerms[ban;:x:| Necesito el permiso de **Banear Miembros** para usar este comando]    
 $onlyPerms[ban;{title:▸ :x:┇ERROR} {description::alert:| No tienes los permisos suficientes para hacer esto} {color:33f3ff} {footer:$username:$authorAvatar} {delete:10s} {timestamp:ms}]
 $onlyIf[$getGlobalUserVar[bl]==false;{title:Oh vaya! Eres malicioso...}{description:
 :x:| Tu acceso al bot Akeno a sido denegado, parece que haz hecho algo :/, si crees que esto es un error, contacta el soporte y te ayudaremos}{color:RED}]`

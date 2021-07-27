@@ -18,6 +18,7 @@ module.exports = ({
     $onlyIf[$voiceID!=;{color:RANDOM}{description:Necesitas estar en un canal de voz!}]
     $onlyIf[$checkContains[$channelType;text;news]==true;]
     $onlyIf[$getGlobalUserVar[PREMIUM;$authorID]==true;{description:Lo siento, pero este comando es premium}{color:ffff}]
+    $onlyBotPerms[embedlinks;:x:| Necesito el permiso de **EMBED LINKS** para ejecutar este comando]
     $onlyIf[$getGlobalUserVar[bl]==false;{title:Oh vaya! Eres malicioso...}{description:
 :x:| Tu acceso al bot Akeno a sido denegado, parece que haz hecho algo :/, si crees que esto es un error, contacta el soporte y te ayudaremos}{color:RED}]
     $onlyBotPerms[embedlinks; {description:❌| Necesito el permiso de **EMBED LINKS**}{color:RANDOM}]

@@ -24,7 +24,8 @@ module.exports = ({
  $addField[**ID**;$mentioned[1;yes];yes]
  $addField[**Apodo**;$username[$findUser[$message]]#$discriminator[$findUser[$message]];yes]
  $addField[Estado del usuario;$replaceText[$replaceText[$replaceText[$replaceText[$status[$findUser[$message]];offline;<:offline:845015199022448651> | Offline];online;<:online:845015179465195520> | Online];idle;<:idle:845015154592841738> | Ausente];dnd;<:dnd:845015134911856640> | No Molestar;yes]
-$onlyIf[$getGlobalUserVar[bl]==false;{title:Oh vaya! Eres malicioso...}{description:
+ $onlyBotPerms[embedlinks;:x:| Necesito el permiso de **EMBED LINKS** para ejecutar este comando]
+ $onlyIf[$getGlobalUserVar[bl]==false;{title:Oh vaya! Eres malicioso...}{description:
 :x:| Tu acceso al bot Akeno a sido denegado, parece que haz hecho algo :/, si crees que esto es un error, contacta el soporte y te ayudaremos}{color:RED}]
  `
 })

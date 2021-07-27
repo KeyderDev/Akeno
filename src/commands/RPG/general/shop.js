@@ -32,8 +32,10 @@ Zanahoria para hacer hechizos y cocinar
 
 <:Polvo:859887580790259753>Polvo: <:akenocoin:842884874729816114>400 - $getServerVar[prefix]buy-polvo
 Polvo para hacer hechizos]
+$footer[Pagina 1/2]
+$onlyBotPerms[embedlinks;:x:| Necesito el permiso de **EMBED LINKS** para ejecutar este comando]
 $onlyIf[$getGlobalUserVar[bl]==false;{title:Oh vaya! Eres malicioso...}{description:
 :x:| Tu acceso al bot Akeno a sido denegado, parece que haz hecho algo :/, si crees que esto es un error, contacta el soporte y te ayudaremos}{color:RED}]
-$footer[Pagina 1/2]`
+`
 
 })

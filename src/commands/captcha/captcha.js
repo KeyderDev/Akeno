@@ -8,6 +8,7 @@ module.exports = ({
  $image[https://cdn.discordapp.com/attachments/830487420193472524/845696622772092978/captcha.png]
  $addField[Recordatorio;Use $getServerVar[prefix]verify <Su codigo> para verificarse.]
  $setUserVar[Captcha;$randomstring[8]]
-$cooldown[5s;:x:| Espera almenos \`%time%\` para volver a generar un codigo]
+$cooldown[5s;:x:| Espera al menos \`%time%\` para volver a generar un codigo]
+$onlyBotPerms[embedlinks;:x:| Necesito el permiso de **Embed Links**]
  $onlyIf[$getGlobalUserVar[bl]==false;:x:| Acceso al bot \`denegado\`]`
 })

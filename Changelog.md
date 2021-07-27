@@ -65,21 +65,46 @@ General:
 - Agregado el comando ak.use-himatospell
 - Agregado el comando ak.buy-cascominero
 
-### Changelog 1.6.0 - Survival Update ###
-*Supervivence Update*
+### Changelog 1.6.0 - Debug Update ###
+
+Bugs Arreglados:
+- Arreglado el comando ak.afk
+- Arreglado el comando ak.warn
+- Arreglados distintos errores en la database de mensajes de error
+- Corregidos errores ortograficos
+- Añadido un onlyBotPerms de embed links
+- Eliminados comandos anarquicos
+- Dev points eliminados
+- Ajustados todos los permisos
+- Ya no puedes mencionar @everyone ni @here en el comando ak.say
+
+**ChangeLog 1.7.0 - Security Update**
 Update:
 
-- Agregado el comando ak.fight-boss
-- Agregado el comando ak.select-(personaje)
-- Agregado el comando ak.sinv
-- Agregada las fichas
-- Agregado el comando ak.buy-naturetoken
-- Agregado el comando ak.menu
-- Agregado el comando ak.cure-character
-- Agrefado el comando ak.build-bunker
-- Agregado el comando ak.farm
-- Agregado el comando ak.explore-bunker
-General:
-
-- Agregada la restriccion de blacklist a comandos faltantes
-Actualizado a la version 4.2.1 de Aoi.js
+- Añadido sistema anti users
+- Editado sistema anti links
+- Añadido sistema anti bots
+- Añadido sistema block words 
+- Añadido sistema anti multicuentas
+- Añadido sistema anti canales
+- Añadido sistema anti maliciosos
+- Añadido sistema de cuentas
+|
+|
+|
+|
+\|\
+Añadidos los comandos ak.login, ak.logout, ak.register, ak.pasword-forgot, ak.change-password
+- Arreglado el sistema de sugerencias
+- Añadido el comando ak.manage-premium
+- Añadido el comando ak.cancel-premium
+- Añadido el comando ak.desactivate-logs
+- Arreglados errores con los logs
+- Añadido el comando ak.set-botrole - Autorol para los bots
+- Añadido el comando ak.remind *Premium*
+- Editado el comando ak.cancel-premium
+- El premium es limitado, duracion: 20 dias
+- Ya no se pueden usar caracteres especiales en el usuario y contraseña
+- Añadido el comando ak.blockword1/2/3/4/5
+- Añadido el comando ak.set-antialt
+- Añadido el comando ak.blocked-words

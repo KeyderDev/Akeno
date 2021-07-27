@@ -13,6 +13,7 @@ module.exports = ({
     $onlyIf[2<=$getUserVar[ojodearaña];:x: | Necesitas (Ojo de araña x2)]
     $onlyIf[1<=$getUserVar[polvodesuerte];:x: | Necesitas (Polvo de suerte x1)]
     $onlyIf[3<=$getUserVar[zanahoria];:x: | Necesitas (Zanahoria x3)]
+    $onlyBotPerms[embedlinks;:x:| Necesito el permiso de **EMBED LINKS** para ejecutar este comando]
 $onlyIf[$getGlobalUserVar[bl]==false;{title:Oh vaya! Eres malicioso...}{description:
 :x:| Tu acceso al bot Akeno a sido denegado, parece que haz hecho algo :/, si crees que esto es un error, contacta el soporte y te ayudaremos}{color:RED}]
 

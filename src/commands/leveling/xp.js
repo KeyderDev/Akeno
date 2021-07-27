@@ -11,6 +11,7 @@ $let[url;https://cdn.discordapp.com/attachments/842962585036521472/8469365999878
 $let[color;5865F2] 
 $onlyIf[$checkContains[$getServerVar[leveling];enable;enabled]==true;{description::x:| El sistema de leveling no esta habilitado en este servidor! para habilitarlo use \`$getServerVar[prefix]leveling enable\`}{color:ffff}]
 $onlyIf[$checkContains[$channelType;text;news]==true;]
+$onlyBotPerms[embedlinks;:x:| Necesito el permiso de **EMBED LINKS** para ejecutar este comando]
 $onlyIf[$getGlobalUserVar[bl]==false;{title:Oh vaya! Eres malicioso...}{description:
 :x:| Tu acceso al bot Akeno a sido denegado, parece que haz hecho algo :/, si crees que esto es un error, contacta el soporte y te ayudaremos}{color:RED}]`
 })

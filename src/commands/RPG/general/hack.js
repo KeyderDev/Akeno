@@ -15,6 +15,7 @@ module.exports = ({
     $onlyIf[$mentioned[1]!=;:x:| A que persona vas a hackear?]
     $onlyIf[$authorID!=831280478190436423;:x:| Te voy a demandar por intentar hackearme :/]
     $onlyIf[$authorID!=$mentioned[1];:x:| Te vas a hackear a ti mismo? No es recomendable...]
+    $onlyBotPerms[embedlinks;:x:| Necesito el permiso de **EMBED LINKS** para ejecutar este comando]
     $onlyIf[$getGlobalUserVar[bl]==false;{title:Oh vaya! Eres malicioso...}{description:
 :x:| Tu acceso al bot Akeno a sido denegado, parece que haz hecho algo :/, si crees que esto es un error, contacta el soporte y te ayudaremos}{color:RED}]
 $cooldown[5m;:x:| Deja de hackear un poco no? Saldras con los dedos chuecos]`

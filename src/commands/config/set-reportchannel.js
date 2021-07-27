@@ -11,6 +11,8 @@ module.exports = ({
    $onlyPerms[manageserver;:x:| Necesitas el permiso de \`Manejar Servidor\` para usar este comando]
 $onlyIf[$channel[$findChannel[$message[1]];type]==text;{description:<:Error:844685985468121148> El canal <#$findChannel[$message[1]]> debe ser de texto} {color:RED}]
    $onlyIf[$getServerVar[reportsystem]==true;:x:| El sistema de reportes no esta activado]
+   $onlyBotPerms[embedlinks;:x:| Necesito el permiso de **Embed Links**]
+
    $onlyIf[$getGlobalUserVar[bl]==false;{title:Oh vaya! Eres malicioso...}{description:
     :x:| Tu acceso al bot Akeno a sido denegado, parece que haz hecho algo :/, si crees que esto es un error, contacta el soporte y te ayudaremos}{color:RED}]
 

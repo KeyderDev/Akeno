@@ -24,7 +24,8 @@ module.exports = ({
     $onlyIf[$isNumber[$message[2]]==true;:x:| Uso correcto: \`$getServerVar[prefix]pay $message[1] (Cantidad)\`{delete:10s}]
     $onlyIf[$findMember[$message[1]]!=$authorID;:x:| No te puedes dar dinero a ti mismo!{delete:10s}]
     $argsCheck[>1;Uso correcto: \`$getServerVar[prefix]pay (Usuario) (Cantidad)\`{delete:10s}]
-$onlyIf[$getGlobalUserVar[bl]==false;{title:Oh vaya! Eres malicioso...}{description:
+    $onlyBotPerms[embedlinks;:x:| Necesito el permiso de **EMBED LINKS** para ejecutar este comando]
+    $onlyIf[$getGlobalUserVar[bl]==false;{title:Oh vaya! Eres malicioso...}{description:
 :x:| Tu acceso al bot Akeno a sido denegado, parece que haz hecho algo :/, si crees que esto es un error, contacta el soporte y te ayudaremos}{color:RED}]
     ` 
    })
