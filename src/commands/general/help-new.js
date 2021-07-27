@@ -184,7 +184,7 @@ En desarrollo, v1.7.0
 - $getServerVar[prefix]antibots-on/off
 - $getServerVar[prefix]antilinks-on/off
 - $getServerVar[prefix]antichannels-on/off
-- $getServerVar[prefix]blockwords1/2/3/4/5 
+- $getServerVar[prefix]blockwords1/2/3/4/56/7/8/9/10 
 - $getServerVar[prefix]set-antialt
 - $getServerVar[prefix]antimalicious-on/off - No permite usuarios de la blacklist de Akeno entrar a tu servidor
 - $getServerVar[prefix]systems
