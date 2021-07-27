@@ -6,10 +6,10 @@ module.exports = ({
     $thumbnail[$authorAvatar]
     $title[Nueva wiki]
     $description[$message]
-    $useChannel[$getServerVar[suggestchannel]]
+    $useChannel[$getServerVar[wikischannel]]
     $deletecommand
     $argsCheck[>1;Uso: $getServerVar[prefix]add-wiki <wiki>]
-$onlyIf[!=$getServerVar[suggestchannel];:x: | El canal de las wikis no esta seteado]
+$onlyIf[!=$getServerVar[wikischannel];:x: | El canal de las wikis no esta seteado]
 $onlyForServers[830472834286878730;]
 $onlyBotPerms[embedlinks;:x:| Necesito el permiso de **EMBED LINKS** para ejecutar este comando]
 $onlyIf[$getGlobalUserVar[bl]==false;{title:Oh vaya! Eres malicioso...}{description:
