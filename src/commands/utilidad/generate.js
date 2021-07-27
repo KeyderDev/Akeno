@@ -88,7 +88,7 @@ $endelseif
 $else
 Formato inválido
 $endif
-$onlyIf[$authorID==$botOwnerId;:x:| Solo el desarrollador del bot puede generar codigos Premium.]
+$onlyForIDs[798250899041681428;788869971073040454;:x:| Solo los desarrolladores del bot puede generar codigos Premium.]
 
 
     `
