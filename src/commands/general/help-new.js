@@ -102,7 +102,6 @@ code: `$editMessage[$message[1];{color:ffff}{title:Comandos de utilidad}{descrip
 - $getServerVar[prefix]clean
 - $getServerVar[prefix]lock/unlock
 - $getServerVar[prefix]function *Aoi.js*
-- $getServerVar[prefix]slowmode
 - $getServerVar[prefix]weather (ciudad) *Bugeado*
 }]`,
 type:'awaitedCommand'

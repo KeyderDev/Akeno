@@ -1,6 +1,6 @@
 module.exports = ({
-    name:"weather",
-    code:`$author[Clima de $tolocaleuppercase[$message];$servericon]
+    name: "weather",
+    code: `$author[Clima de $tolocaleuppercase[$message];$servericon]
     $image[$get[p]]
     $color[RANDOM]
     $description[Aqui esta el clima del lugar, <@$authorid>!]
