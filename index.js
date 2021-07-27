@@ -25,6 +25,17 @@ type: "PLAYING",
 status: "online",
 time: 10
 });
+
+bot.status({
+  text: "GitHub Repo",
+  type: "WATCHING",
+  status: "online",
+  time: 10
+})
+
+
+
+
 bot.onJoined();
 bot.onLeave();
 bot.onChannelCreate();
