@@ -40,3 +40,4 @@ $endif
 
 $suppressErrors[${err.internal}]
 `}
+module.exports = command;
