@@ -2,7 +2,7 @@ module.exports = ({
  name: "remove-premiumuser",
  code: `
 
-:white_check_mark:| [$message[1]] ya no es un usuario premium.
+:white_check_mark:| [<@!$findUser[$message[1]]> ya no es un usuario premium.
 $setGlobalUserVar[pleft;0]
 $setGlobalUserVar[PREMIUM;false;$findUser[$message[1]]]
 $if[$guildID==830472834286878730]

@@ -3,7 +3,7 @@ module.exports = ({
  code: `
  $setTimeout[20d;
 autor: $authorID]
- **A el usuario [<@$findUser[$message[1]]>] se le añadio premium correctamente**
+ **A el usuario [<@!$findUser[$message[1]]>] se le añadio premium correctamente**
 $if[$guildID==830472834286878730]
 $giveRoles[$findUser[$message[1]];843920390522929202]
 $endif
