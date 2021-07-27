@@ -25,6 +25,66 @@ $setVar[premiumcode2;$randomString[21]]
 $setVar[premiumcode3;$randomString[22]]
 $endelseif
 
+$elseIf[$message==4]
+\`\`\`
+Codigo 1: ./Akeno Premium | $randomString[20]
+Codigo 2: ./Akeno Premium | $randomString[21]
+Codigo 3: ./Akeno Premium | $randomString[22]
+Codigo 4: ./Akeno Premium | $randomString[23]\`\`\`
+$setVar[premiumcode1;$randomString[20]]
+$setVar[premiumcode2;$randomString[21]]
+$setVar[premiumcode3;$randomString[22]]
+$setVar[premiumcode4;$randomString[23]]
+$endelseif
+
+$elseIf[$message==5]
+\`\`\`
+Codigo 1: ./Akeno Premium | $randomString[20]
+Codigo 2: ./Akeno Premium | $randomString[21]
+Codigo 3: ./Akeno Premium | $randomString[22]
+Codigo 4: ./Akeno Premium | $randomString[23]
+Codigo 5: ./Akeno Premium | $randomString[24]\`\`\`
+$setVar[premiumcode1;$randomString[20]]
+$setVar[premiumcode2;$randomString[21]]
+$setVar[premiumcode3;$randomString[22]]
+$setVar[premiumcode4;$randomString[23]]
+$setVar[premiumcode5;$randomString[24]]
+$endelseif
+
+$elseIf[$message==6]
+\`\`\`
+Codigo 1: ./Akeno Premium | $randomString[20]
+Codigo 2: ./Akeno Premium | $randomString[21]
+Codigo 3: ./Akeno Premium | $randomString[22]
+Codigo 4: ./Akeno Premium | $randomString[23]
+Codigo 5: ./Akeno Premium | $randomString[24]
+Codigo 6: ./Akeno Premium | $randomString[25]\`\`\`
+$setVar[premiumcode1;$randomString[20]]
+$setVar[premiumcode2;$randomString[21]]
+$setVar[premiumcode3;$randomString[22]]
+$setVar[premiumcode4;$randomString[23]]
+$setVar[premiumcode5;$randomString[24]]
+$setVar[premiumcode6;$randomString[25]]
+$endelseif
+
+$elseIf[$message==7]
+\`\`\`
+Codigo 1: ./Akeno Premium | $randomString[20]
+Codigo 2: ./Akeno Premium | $randomString[21]
+Codigo 3: ./Akeno Premium | $randomString[22]
+Codigo 4: ./Akeno Premium | $randomString[23]
+Codigo 5: ./Akeno Premium | $randomString[24]
+Codigo 6: ./Akeno Premium | $randomString[25]
+Codigo 7: ./Akeno Premium | $randomString[26]\`\`\`
+$setVar[premiumcode1;$randomString[20]]
+$setVar[premiumcode2;$randomString[21]]
+$setVar[premiumcode3;$randomString[22]]
+$setVar[premiumcode4;$randomString[23]]
+$setVar[premiumcode5;$randomString[24]]
+$setVar[premiumcode6;$randomString[25]]
+$setVar[premiumcode7;$randomString[26]]
+$endelseif
+
 $else
 Formato inválido
 $endif
