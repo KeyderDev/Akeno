@@ -31,7 +31,7 @@ bot.status({
   type: "WATCHING",
   status: "online",
   time: 10
-})
+});
 
 
 
