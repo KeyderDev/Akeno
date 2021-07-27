@@ -195,6 +195,12 @@ bunkernuclear: "0",
 premiumcode1: "",
 premiumcode2: "",
 premiumcode3: "",
+premiumcode4: "",
+premiumcode5: "",
+premiumcode6: "",
+premiumcode7: "",
+premiumcode8: "",
+premiumcode9: "",
 claim: "",
 
 //Afk
