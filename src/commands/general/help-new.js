@@ -214,7 +214,12 @@ $getServerVar[prefix]remind
 $getServerVar[prefix]buy-premiumbox
 $getServerVar[prefix]open-premiumbox
 $getServerVar[prefix]set-profilecolor
-$getServerVar[prefix]define (solo ingles)}{color:D1BBBB}]
+$getServerVar[prefix]define (solo ingles)
+/////////////////////////////////////
+Developers:
+$getServerVar[prefix]eval
+$getServervar[prefix]djseval
+$getServerVar[prefix]exec}{color:D1BBBB}]
 `,
 type:'awaitedCommand'
 },{
