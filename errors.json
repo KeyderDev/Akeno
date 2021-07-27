@@ -20,7 +20,7 @@
     "bolean":"`ERROR: Booleano Invalido`",
     "url":"`ERROR: La URL es invalida`"
 },
-"internal":"`ERROR: Ha ocurrido un error interno, espema unos minutos y vuelve a usar el comando. Si el error persiste, contacta el equipo de desarrollo`",
+"internal":"`ERROR: Ha ocurrido un error interno, espera unos minutos y vuelve a usar el comando. Si el error persiste, contacta el equipo de desarrollo`",
 "others":{
     "impossible":"`ERROR: No creo que eso sea posible`"
 },
