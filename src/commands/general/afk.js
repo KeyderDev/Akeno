@@ -1,4 +1,4 @@
-const err = require(`../../errors.json`);
+const err = require(`../../../errors.json`);
 
 const embed = `
 $title[<:KannaSleep:842439349450309662> | $userTag[$authorID] esta afk]
