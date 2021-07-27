@@ -1,7 +1,7 @@
 ## Notas
 
 GitHub:
-- Si deseas subir un codigo, subelo segun su carpeta correspondiente, ejemplo, ak.afk iria en utilidad,ak.weather tambien iria en utilidad
+- Si deseas subir un codigo, subelo segun su carpeta correspondiente, ejemplo, ak.afk iria en utilidad, ak.weather tambien iria en utilidad
 
 - Si deseas subir un codigo no relacionado con Akeno, ya sea para que algun dev lo vea, o que simplemente quieres compartir tu codigo, puedes ponerlo en la branch **main**, ahi no molesta a nadie :)
 
