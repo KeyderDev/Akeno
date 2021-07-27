@@ -112,6 +112,7 @@ blockword10: "",
 sysbw: "false",
 confessauthor: "",
 confesschannel: "",
+wikischannel: "",
 //blacklist
 bl: "false",
 bld:"",
