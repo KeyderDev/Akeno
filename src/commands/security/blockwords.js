@@ -3,6 +3,7 @@ module.exports = [{
     code: `<a:checkanimado:831161301282979911> Palabra Bloqueada
     $setServerVar[blockword1;$message[1]]
     $setServerVar[sysbw;true]
+    $onlyPerms[manageserver;:x:| Necesitas el permiso de **Manejar Servidor** para usar este comando]
     $onlyBotPerms[embedlinks;:x:| Necesito el permiso de **EMBED LINKS** para ejecutar este comando]
 $onlyIf[$getGlobalUserVar[bl]==false;{title:Oh vaya! Eres malicioso...}{description:
 :x:| Tu acceso al bot Akeno a sido denegado, parece que haz hecho algo :/, si crees que esto es un error, contacta el soporte y te ayudaremos}{color:RED}]`,
@@ -11,6 +12,8 @@ $onlyIf[$getGlobalUserVar[bl]==false;{title:Oh vaya! Eres malicioso...}{descript
     name: "blockword2",
     code: `<a:checkanimado:831161301282979911> Palabra Bloqueada
     $setServerVar[blockword2;$message[1]]
+    $onlyPerms[manageserver;:x:| Necesitas el permiso de **Manejar Servidor** para usar este comando]
+
     $onlyBotPerms[embedlinks;:x:| Necesito el permiso de **EMBED LINKS** para ejecutar este comando]
 $onlyIf[$getGlobalUserVar[bl]==false;{title:Oh vaya! Eres malicioso...}{description:
 :x:| Tu acceso al bot Akeno a sido denegado, parece que haz hecho algo :/, si crees que esto es un error, contacta el soporte y te ayudaremos}{color:RED}]`,
@@ -18,6 +21,8 @@ $onlyIf[$getGlobalUserVar[bl]==false;{title:Oh vaya! Eres malicioso...}{descript
     name: "blockword3",
     code: `<a:checkanimado:831161301282979911> Palabra Bloqueada
     $setServerVar[blockword3;$message[1]]
+    $onlyPerms[manageserver;:x:| Necesitas el permiso de **Manejar Servidor** para usar este comando]
+
     $onlyBotPerms[embedlinks;:x:| Necesito el permiso de **EMBED LINKS** para ejecutar este comando]
 $onlyIf[$getGlobalUserVar[bl]==false;{title:Oh vaya! Eres malicioso...}{description:
 :x:| Tu acceso al bot Akeno a sido denegado, parece que haz hecho algo :/, si crees que esto es un error, contacta el soporte y te ayudaremos}{color:RED}]`,
@@ -25,6 +30,8 @@ $onlyIf[$getGlobalUserVar[bl]==false;{title:Oh vaya! Eres malicioso...}{descript
     name: "blockword4",
     code: `<a:checkanimado:831161301282979911> Palabra Bloqueada
     $setServerVar[blockword4;$message[1]]
+    $onlyPerms[manageserver;:x:| Necesitas el permiso de **Manejar Servidor** para usar este comando]
+
     $onlyBotPerms[embedlinks;:x:| Necesito el permiso de **EMBED LINKS** para ejecutar este comando]
 $onlyIf[$getGlobalUserVar[bl]==false;{title:Oh vaya! Eres malicioso...}{description:
 :x:| Tu acceso al bot Akeno a sido denegado, parece que haz hecho algo :/, si crees que esto es un error, contacta el soporte y te ayudaremos}{color:RED}]`,
@@ -32,6 +39,8 @@ $onlyIf[$getGlobalUserVar[bl]==false;{title:Oh vaya! Eres malicioso...}{descript
     name: "blockword5",
     code: `<a:checkanimado:831161301282979911> Palabra Bloqueada
     $setServerVar[blockword5;$message[1]]
+    $onlyPerms[manageserver;:x:| Necesitas el permiso de **Manejar Servidor** para usar este comando]
+
     $onlyBotPerms[embedlinks;:x:| Necesito el permiso de **EMBED LINKS** para ejecutar este comando]
 $onlyIf[$getGlobalUserVar[bl]==false;{title:Oh vaya! Eres malicioso...}{description:
 :x:| Tu acceso al bot Akeno a sido denegado, parece que haz hecho algo :/, si crees que esto es un error, contacta el soporte y te ayudaremos}{color:RED}]`,
