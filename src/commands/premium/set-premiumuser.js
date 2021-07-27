@@ -4,8 +4,8 @@ module.exports = ({
  $setTimeout[20d;
 autor: $authorID]
  **A el usuario [<@$findUser[$message[1]]>] se le añadio premium correctamente**
- $if[$memberExists[$findUser[$message]]==true]
- $giveRoles[$findUser[$message[1]];843920390522929202]
+$if[$guildID==830472834286878730]
+$giveRoles[$findUser[$message[1]];843920390522929202]
 $endif
 $setGlobalUserVar[premiumbefore;true]
 $setGlobalUserVar[PREMIUM;true;$findUser[$message[1]]]
