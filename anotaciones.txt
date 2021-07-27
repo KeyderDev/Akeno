@@ -12,6 +12,9 @@ Git:
 git commit -m "commit"
 git push origin master
 
+Si hay error:
+git pull --rebase origin master
+
 
 
 const error = require(`./error.json`); //esto cambia dependiendo de cuantas carpetas atras este
