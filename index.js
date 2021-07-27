@@ -53,6 +53,7 @@ bot.onRoleUpdate();
 bot.onInviteCreate();
 bot.onGuildJoin();
 bot.onGuildLeave();
+bot.botJoinCommand();
 
 /////////////////////////////////////////////Akeno's Logs
 bot.botJoinCommand({
