@@ -7,9 +7,7 @@ $disableMentions
 $disableEveryoneMentions
 $disableRoleMentions
 $deletecommand
-$channelSendMessage[861348620988579850;{title:Log}{description:__**Autor:**__ $userTag ($authorID)
-__**Mensaje:**__ $message
-__**Servidor:**__ $serverName ($guildID)}{color:FFFFFF}]
+
 
 $else
 $djsEval[message.channel.send($getObject)]
