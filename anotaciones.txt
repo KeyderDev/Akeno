@@ -8,6 +8,10 @@ Comando ak.afk bug
 Arreglar ak.clean
 Arreglar ak.confess
 
+Git:
+git commit -m "commit"
+git push origin master
+
 
 
 const error = require(`./error.json`); //esto cambia dependiendo de cuantas carpetas atras este
