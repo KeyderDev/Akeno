@@ -37,7 +37,7 @@ Existen lo que son los Codigos Premium, estos codigos Premium son distribuidos p
 # OTROS DERECHOS Y LIMITACIONES 
 **a.**
 Esta parte va de acuerdo al equipo de desarrollo.
-NO INTENTE descompilar y/o corromper el codigo, cualquier intento de hacerlo, finalizara inmediatamente el EULA con usted.
+NO INTENTE descompilar y/o corromper el codigo, cualquier intento de hacerlo, finalizara inmediatamente el EULA con usted, y sera metido a la lista negra de Akeno.
 
 **b.**
 Debe mantener todos los avisos de derecho de autor en todas las copias de la Aplicación.
@@ -46,7 +46,7 @@ Debe mantener todos los avisos de derecho de autor en todas las copias de la Apl
  Este EULA no le otorga ningún tipo de derecho en conexión con ninguna marca comercial o marcas de servicio de Kaede Development, sus afiliadas o sus proveedores.
 
  **d.**
- Esta totalmente prohibido copiar datos de **./ney-database/main/main_scheme_1.sql**,**./login/login.sql** y **./login/register.sql**
+ Esta totalmente prohibido copiar datos de **./new-database/main/main_scheme_1.sql**,**./login/login.sql** y **./login/register.sql**
 
  
 
