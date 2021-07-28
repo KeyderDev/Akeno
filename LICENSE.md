@@ -43,7 +43,7 @@ NO INTENTE descompilar y/o corromper el codigo, cualquier intento de hacerlo, fi
 Debe mantener todos los avisos de derecho de autor en todas las copias de la Aplicación.
 
 **c.**
- Este EULA no le otorga ningún tipo de derecho en conexión con ninguna marca comercial o marcas de servicio de Tyco, sus afiliadas o sus proveedores.
+ Este EULA no le otorga ningún tipo de derecho en conexión con ninguna marca comercial o marcas de servicio de Kaede Development, sus afiliadas o sus proveedores.
 
  
 
