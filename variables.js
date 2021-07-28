@@ -69,6 +69,7 @@ wmessage: "",
 
 PREMIUMclassic: "false",
 PREMIUMpro: "false",
+PREMIUMgeneral: "false",
 roleid: "",
 mutedrole: "",
 deletedIcon: "",
