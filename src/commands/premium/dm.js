@@ -18,7 +18,7 @@ $onlyIf[$isUserDmEnabled[$findUser[$message[1]]]!=false;{title::x:| Error}{descr
 $onlyIf[$messageSlice[1]!=;{title::x:| Error}{color:ff0000}{description:**Tipo de error:**\n\`\`\`kt\nNo escrito el mensaje a enviar\n\`\`\`\n**Uso correcto:**\n\`\`\`kt\n$getServerVar[prefix]dm <id/mencion> <mensaje>\n\`\`\`\n**Ejemplo:**\n\`\`\`kt\n\$getServerVar[prefix]dm 510349473420017666 Hola, amigo!\n\`\`\`}{delete:10s}]
 $onlyIf[$message[1]!=;{title::x:| Error}{description:**Tipo de error:**\n\`\`\`kt\nNo se dio una id/mencion\n\`\`\`\n**Uso correcto:**\n\`\`\`kt\n$getServerVar[prefix]dm <id/mencion> <message>\n\`\`\`}{color:ff0000}{delete:10s}]
 $onlyBotPerms[embedlinks;:no: **Error**\n\`\`\`kt\nTipo de error: Permiso requerido \nNecesito los permisos de EMBED_LINKS, EXTERNAL_EMOJIS !\n\`\`\`{delete:59s}]
-$onlyIf[$getGlobalUserVar[PREMIUM;$authorID]!=false;{description:Lo sentimos, este comando es premium, cambie a premium para acceder a comandos exclusivos!}{color:RED}]$onlyIf[$getGlobalUserVar[bl]==false;{title:Oh vaya! Eres malicioso...}{description:
+$onlyIf[$getGlobalUserVar[PREMIUMgeneral;$authorID]!=false;{description:Lo sentimos, este comando es premium, cambie a premium para acceder a comandos exclusivos!}{color:RED}]$onlyIf[$getGlobalUserVar[bl]==false;{title:Oh vaya! Eres malicioso...}{description:
 :x:| Tu acceso al bot Akeno a sido denegado, parece que haz hecho algo :/, si crees que esto es un error, contacta el soporte y te ayudaremos}{color:RED}]
 `
 });

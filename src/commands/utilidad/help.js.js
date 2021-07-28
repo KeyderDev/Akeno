@@ -206,7 +206,7 @@ type:'awaitedCommand'
 },{
 name:"bothelp", 
 code: `$editMessage[$message[1];{title:Comandos y cosas extra}{description:
-- Comandos Premium
+- Comandos Premium (classic o pro)
 $getServerVar[prefix]lyrics
 $getServerVar[prefix]dm
 $getServerVar[prefix]weekly
