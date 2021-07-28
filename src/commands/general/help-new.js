@@ -101,7 +101,7 @@ code: `$editMessage[$message[1];{color:ffff}{title:Comandos de utilidad}{descrip
 - $getServerVar[prefix]docs
 - $getServerVar[prefix]clean **Bugeado**
 - $getServerVar[prefix]lock/unlock
-- $getServerVar[prefix]function *Aoi.js* *Api Caida*
+- $getServerVar[prefix]function *Aoi.js* 
 - $getServerVar[prefix]weather (ciudad) *Bugeado*
 - $getServerVar[prefix]report-bug
 }]`,
