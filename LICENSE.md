@@ -23,7 +23,7 @@ Si usted es usuario Premium por boostear el servidor, debe leer lo siguiente. Si
 
 **a.**
 Al usted ser usuario Premium, al leer este EULA usted esta conciente que su Premium expira en 20 dias
-De los distintos metodos, ya sea mediante codigos Premium, sorteos, o de cuenta propia por algun desarrollador, usted esta conciente que su Premium expirara a los 20 dias.
+De los distintos metodos, ya sea mediante codigos Premium, sorteos, o de cuenta propia por algun desarrollador, usted esta conciente que su Premium expirara a los 20 dias. A el equipo del staff, se le da un premium llamado PDV, Premium Developer Version, un premium con todos los beneficios, y que no expira.
 ACLARACION:
 A todos los desarrolladores, se les da Premium totalmente gratis, y sin limite, lo que quiere decir que el Premium no se le expira a los desarrolladores.
 
