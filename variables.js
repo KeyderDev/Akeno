@@ -233,6 +233,8 @@ wchannel: "",
 wdescription: "",
 wtitle: "Bienvenido!",
 wactivated: "false",
+//Premium Extra
+pembedcolor: "#5865F2",
 
 
 };
