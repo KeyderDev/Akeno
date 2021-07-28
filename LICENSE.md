@@ -45,5 +45,8 @@ Debe mantener todos los avisos de derecho de autor en todas las copias de la Apl
 **c.**
  Este EULA no le otorga ningún tipo de derecho en conexión con ninguna marca comercial o marcas de servicio de Kaede Development, sus afiliadas o sus proveedores.
 
+ **d.**
+ Esta totalmente prohibido copiar datos de **./ney-database/main/main_scheme_1.sql**,**./login/login.sql** y **./login/register.sql**
+
  
 
