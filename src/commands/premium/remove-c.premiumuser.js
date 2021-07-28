@@ -4,7 +4,8 @@ module.exports = ({
 
 :white_check_mark:| [<@!$findUser[$message[1]]> ya no es un usuario premium.
 $setGlobalUserVar[pleft;0]
-$setGlobalUserVar[PREMIUM;false;$findUser[$message[1]]]
+$setGlobalUserVar[PREMIUMgeneral;false;$findUser[$message[1]]]
+$setGlobalUserVar[PREMIUMclassic;false;$findUser[$message[1]]]
 $if[$guildID==830472834286878730]
 $giveRoles[$findUser[$message[1]];843920390522929202]
 $endif
