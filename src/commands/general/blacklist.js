@@ -32,6 +32,6 @@ $setGlobalUserVar[bl;true;$findUser[$message[1]]]
 $setGlobalUserVar[bld;$authorID;$findUser[$message[1]]]
 $setGlobalUserVar[blr;$messageSlice[1];$findUser[$message[1]]]
 $setVar[blt;$getVar[blt], \$userTag[$findUser[$message[1]]]]
-$onlyForIDs[798250899041681428;788869971073040454;:x:| Solo mi desarrollador puede usar este comando]
+$onlyForIDs[798250899041681428;788869971073040454;:x:| Solo los desarrolladores pueden usar este comando]
 `
 }); 
