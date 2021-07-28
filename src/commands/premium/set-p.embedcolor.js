@@ -3,7 +3,7 @@ module.exports = {
     code: `$title[Color Cambiado]
     $description[El color de los embeds Premium a sido cambiado]
     $setVar[pembedcolor;$message[1]]
-    $onlyIf[$isValidHex[$replaceText [$message[1];#;]]==true;$getObjectProperty[err.hex]]
+    $onlyIf[$isValidHex[$replaceText [$message[1];#;]]==true;\`ERROR: HEX Invalido\`]    
     $onlyIf[$getGlobalUserVar[PREMIUM;$authorID]==true;{description:Lo sentimos, este comando es premium, cambie a premium para acceder a comandos exclusivos!}{color:RED}]
     $onlyBotPerms[embedlinks;:x:| Necesito el permiso de **EMBED LINKS** para ejecutar este comando]
 $onlyIf[$getGlobalUserVar[bl]==false;{title:Oh vaya! Eres malicioso...}{description:
