@@ -21,7 +21,7 @@ $addField[General;
 :dvd: Canales de texto: $allChannelsCount[text]
 :sound: Canales de voz: $allChannelsCount[voice]
 :vertical_traffic_light: Uso de RAM: $ram MB/$replaceText[$abbreviate[$maxRam];K; GB;-1]
-:penguin: Plataforma: $replaceText[$djsEval[require ('os').platform();yes];linux; :penguin: Linux;-1]
+<:windows:847949329822253146> Plataforma: $replaceText[$djsEval[require ('os').platform();yes];linux; :penguin: Linux;-1]
 :crown: Desarrollador: $userTag[$botOwnerID]]
 
 $thumbnail[$userAvatar[$clientid]]
