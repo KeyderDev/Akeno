@@ -14,6 +14,7 @@ Hay distintos comandos que estan bugeados, si pudieras arreglarlos estuvieramos 
 - ak.afk
 -ak.weather
 -ak.confess
+- ak.clean
 
 Si arreglas uno de estos tres comandos, pon arlado del comando **Arreglado** :)
 
