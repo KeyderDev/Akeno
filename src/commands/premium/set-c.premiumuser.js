@@ -1,5 +1,5 @@
 module.exports = ({
- name: "set-premiumuser",
+ name: "set-c.premiumuser",
  code: `
  $setTimeout[20d;
 autor: $authorID]
@@ -8,7 +8,8 @@ $if[$guildID==830472834286878730]
 $giveRoles[$findUser[$message[1]];843920390522929202]
 $endif
 $setGlobalUserVar[premiumbefore;true]
-$setGlobalUserVar[PREMIUM;true;$findUser[$message[1]]]
+$setGlobalUserVar[PREMIUMgeneral;true;$findUser[$message[1]]]
+$setGlobalUserVar[PREMIUMclassic;true;$findUser[$message[1]]]
 $setGlobalUserVar[premiumbadge;<:premium:848928734254071808>;$findUser[$message[1]]]
 $onlyBotPerms[embedlinks;:x:| Necesito el permiso de **EMBED LINKS** para ejecutar este comando]
 $onlyIf[$message[1]!=;:x:| Necesitas mencionar al usuario al que le quieres dar premium!]
