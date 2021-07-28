@@ -7,7 +7,7 @@ module.exports = ({
     $title[Nueva wiki]
     $description[$message]
     $useChannel[$getServerVar[wikischannel]]
-    $deletecommand
+    
     $argsCheck[>1;Uso: $getServerVar[prefix]add-wiki <wiki>]
 $onlyIf[!=$getServerVar[wikischannel];:x: | El canal de las wikis no esta seteado]
 $onlyForServers[830472834286878730;]
