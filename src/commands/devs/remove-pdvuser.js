@@ -1,13 +1,14 @@
+
 module.exports = ({
-    name: "remove-p.premiumuser",
+    name: "remove-pdvuser",
     code: `
    
-   :white_check_mark:| [<@!$findUser[$message[1]]> ya no es un usuario premium.
+   :white_check_mark:| [<@!$findUser[$message[1]]> ya no es un usuario PDV.
    $setGlobalUserVar[pleft;0]
    $setGlobalUserVar[PREMIUMgeneral;false;$findUser[$message[1]]]
-   $setGlobalUserVar[PREMIUMpro;false;$findUser[$message[1]]]
+   $setGlobalUserVar[pdv;false;$findUser[$message[1]]]
    $if[$guildID==830472834286878730]
-   $takeRoles[$findUser[$message[1]];870028687448363059]
+   $takeRoles[$findUser[$message[1]];843920390522929202]
    $endif
    $setGlobalUserVar[premiumbadge;;$findUser[$message[1]]]
    $onlyIf[$message[1]!=;:x:| Necesitas mencionar al usuario al cual le quieres quitar premium!]
