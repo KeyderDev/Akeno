@@ -6,7 +6,7 @@ module.exports = ({
     <:akenocoin:842884874729816114>1000
     <:twitch:838113649808900157>900 en donaciones de twitch]
     $footer[Solicitado por $username]
-    $color[D1BBBB]
+    $color[$getVar[pembedcolor]]
     $cooldown[24h;:x:| Esto es una bonificacion semanal, espera %time% para la proxima!]
     $setUserVar[Money;$sum[$getUserVar[Money];1000]]
     $setUserVar[donaciones;$sum[$getUserVar[donaciones];900]]

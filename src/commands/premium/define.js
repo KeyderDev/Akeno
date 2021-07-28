@@ -3,7 +3,7 @@ module.exports = ({
     aliases: "meaning",
     code: `
     $title[Definicion de "$message"]
-    $color[5865F2]
+    $color[$getVar[pembedcolor]]
     $description[
     **Foneticas:** $jsonRequest[https://api.dictionaryapi.dev/api/v2/entries/en_US/$message;[0].phonetics[0].text;:x:| No se encontró ninguna coincidencia, intenta poner la palabra en ingles
     ]

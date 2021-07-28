@@ -10,7 +10,7 @@ $messageSlice[1]
 $serverName}
 {color:D1BBBB}]
 
-$color[ffff]
+$color[$getVar[pembedcolor]]
 $channelSendMessage[$channelID;$title[Mensaje enviado a $username[$findUser[$message[1]]]]]
 $deleteCommand
 $suppressErrors[{title::x:| Error}{description:Un error ocurrio mientras se procesaba la peticion, intenta de nuevo, si persiste el error, contacta con un staff del servidor de soporte}]
