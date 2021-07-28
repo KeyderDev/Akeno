@@ -1,5 +1,5 @@
 module.exports = {
-    name: "set-p.embed",
+    name: "set-p.embedcolor",
     code: `$title[Color Cambiado]
     $description[El color de los embeds Premium a sido cambiado]
     $setVar[pembedcolor;$message[1]]
