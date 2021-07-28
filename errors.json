@@ -67,7 +67,7 @@
     "pos":"`ERROR: Uno de los roles que tienes no te permite hacer eso`"
 },
 "premium":"`ERROR: Esta funcion solo esta disponible para usuarios Premium`",
-"hex":"`ERROR: El codigo Hexadecimal es invlaido`",
+"hex":"`ERROR: El codigo Hexadecimal es invalido`",
 "music":{
     "q":"``",
     "vc":"`ERROR: Necesitas estar en un canal de voz`"
