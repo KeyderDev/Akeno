@@ -6,5 +6,7 @@ module.exports = {
     Banco: $getUserVar[bank]
     Efectivo: $getUserVar[Money]
     Total: $sum[$getUserVar[Money];$getUserVar[bank]]]
-    $color[5865F2]`
+    $color[5865F2]
+    $thumbnail[$authorAvatar]
+    $footer[Consejo: Usa $getServerVar[prefix]daily para ganar dinero diariamente!]`
 }
