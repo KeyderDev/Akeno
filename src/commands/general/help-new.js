@@ -26,130 +26,131 @@ $onlyIf[$getGlobalUserVar[bl]==false;{title:Oh vaya! Eres malicioso...}{descript
 },{//categoría de configuración
 name: "config",
 code: `$editMessage[$message[1];{color:D1BBBB}{title:Comandos de configuracion}{description:
-- $getServerVar[prefix]setsug
-- $getServerVar[prefix]leveling enable/disable
-- $getServerVar[prefix]set-mute
-- $getServerVar[prefix]reset-inv
-- $getServerVar[prefix]set-verifiedrole
-- $getServerVar[prefix]set-notverifiedrole
-- $getServerVar[prefix]set-newrole
-- $getServerVar[prefix]desactivate-captcha
-- $getServerVar[prefix]desactivate-newrole
-- $getServerVar[prefix]set-autorole
-- $getServerVar[prefix]desactivate-autorole
-- $getServerVar[prefix]set-muterole
-- $getServerVar[prefix]set-confess
+$getServerVar[prefix]setsug
+$getServerVar[prefix]leveling enable/disable
+$getServerVar[prefix]set-mute
+$getServerVar[prefix]reset-inv
+$getServerVar[prefix]set-verifiedrole
+$getServerVar[prefix]set-notverifiedrole
+$getServerVar[prefix]set-newrole
+$getServerVar[prefix]desactivate-captcha
+$getServerVar[prefix]desactivate-newrole
+$getServerVar[prefix]set-autorole
+$getServerVar[prefix]desactivate-autorole
+$getServerVar[prefix]set-muterole
+$getServerVar[prefix]set-confess
 }]`,
 type:'awaitedCommand'
 },{//categoria de interacción
 name: "diver",
 code: `$editMessage[$message[1];{color:D1BBBB}{title:Comandos de Diversion}{description:Aqui tienes comandos para que te diviertas un rato
-- $getServerVar[prefix]achievement
-- $getServerVar[prefix]meme
-- $getServerVar[prefix]confess
-- $getServerVar[prefix]ph (texto) *NSFW*
+$getServerVar[prefix]achievement
+$getServerVar[prefix]meme
+$getServerVar[prefix]confess
+$getServerVar[prefix]ph (texto) *NSFW*
 
 }]`,
 type:'awaitedCommand'
 },{//caregoria de ranking
 name: "lvl",
 code: `$editMessage[$message[1];{title:Comandos de leveling}{description:
-- $getServerVar[prefix]leveling enable/disable
-- $getServerVar[prefix]xpcooldown
-- $getServerVar[prefix]l-leaderboard
-- $getServerVar[prefix]xp - Para ver el nivel}{color:D1BBBB}`,
+$getServerVar[prefix]leveling enable/disable
+$getServerVar[prefix]xpcooldown
+$getServerVar[prefix]l-leaderboard
+$getServerVar[prefix]xp - Para ver el nivel}{color:D1BBBB}`,
 type:'awaitedCommand'
 },{//categoria de musica
 name: "music",
 code: `$editMessage[$message[1];{color:D1BBBB}{title:Comandos de musica}{description:- $getServerVar[prefix]play
-- $getServerVar[prefix]pause
-- $getServerVar[prefix]skip
-- $getServerVar[prefix]stop
-- $getServerVar[prefix]lyrics
-- $getServerVar[prefix]queue
-- $getServerVar[prefix]skipTo
-- $getServerVar[prefix]resume}]`,
+$getServerVar[prefix]pause
+$getServerVar[prefix]skip
+$getServerVar[prefix]stop
+$getServerVar[prefix]lyrics
+$getServerVar[prefix]queue
+$getServerVar[prefix]skipTo
+$getServerVar[prefix]resume}]`,
 type:'awaitedCommand'
 },{//categoría de moderacion
 name: "mod",
 code: `$editMessage[$message[1];{title:Comandos de Moderacion}{description:Aqui tienes los comandos de Moderacion
-- $getServerVar[prefix]warn
-- $getServerVar[prefix]checkwarns
-- $getServerVar[prefix]addrole
-- $getServerVar[prefix]serverinfo
-- $getServerVar[prefix]unwarn
-- $getServerVar[prefix]mute 
-- $getServerVar[prefix]unmute 
-- $getServerVar[prefix]unwarn
-- $getServerVar[prefix]infractions
+$getServerVar[prefix]warn
+$getServerVar[prefix]checkwarns
+$getServerVar[prefix]addrole
+$getServerVar[prefix]serverinfo
+$getServerVar[prefix]unwarn
+$getServerVar[prefix]mute 
+$getServerVar[prefix]unmute 
+$getServerVar[prefix]unwarn
+$getServerVar[prefix]infractions
 }{color:D1BBBB}]`,
 type:'awaitedCommand'
 },{//categoria de utilidad
 name: "util",
 code: `$editMessage[$message[1];{color:ffff}{title:Comandos de utilidad}{description:
-- $getServerVar[prefix]botinfo
-- $getServerVar[prefix]ping
-- $getServerVar[prefix]profile
-- $getServerVar[prefix]inv
-- $getServerVar[prefix]setprefix
-- $getServerVar[prefix]user-info/serverinfo/channel-info/role-info
-- $getServerVar[prefix]avatar
-- $getServerVar[prefix]suggest
-- $getServerVar[prefix]report
-- $getServerVar[prefix]snipe
-- $getServerVar[prefix]jumbo/jumbo.id
-- $getServerVar[prefix]docs
-- $getServerVar[prefix]clean **Bugeado**
-- $getServerVar[prefix]lock/unlock
-- $getServerVar[prefix]function *Aoi.js* 
-- $getServerVar[prefix]weather (ciudad) *Bugeado*
-- $getServerVar[prefix]report-bug
+$getServerVar[prefix]botinfo
+$getServerVar[prefix]ping
+$getServerVar[prefix]profile
+$getServerVar[prefix]inv
+$getServerVar[prefix]setprefix
+$getServerVar[prefix]user-info/serverinfo/channel-info/role-info
+$getServerVar[prefix]avatar
+$getServerVar[prefix]suggest
+$getServerVar[prefix]report
+$getServerVar[prefix]snipe
+$getServerVar[prefix]jumbo/jumbo.id
+$getServerVar[prefix]docs
+$getServerVar[prefix]clean **Bugeado**
+$getServerVar[prefix]lock/unlock
+$getServerVar[prefix]function *Aoi.js* 
+$getServerVar[prefix]weather (ciudad) *Bugeado*
+$getServerVar[prefix]report-bug
 }]`,
 type:'awaitedCommand'
 },{//categoria de roleplay
 name: "rpg",
 code: `$editMessage[$message[1];{color:D1BBBB}{title:Comandos de RPG}{description:
-- $getServerVar[prefix]work
-- $getServerVar[prefix]stream
-- $getServerVar[prefix]daily
-- $getServerVar[prefix]dep
-- $getServerVar[prefix]pay
-- $getServerVar[prefix]inv
-- $getServerVar[prefix]fish
-- $getServerVar[prefix]buycookie
-- $getServerVar[prefix]buypico
-- $getServerVar[prefix]buycaña
-- $getServerVar[prefix]shop
-- $getServerVar[prefix]mine
-- $getServerVar[prefix]dep
-- $getServerVar[prefix]usecookie
-- $getServerVar[prefix]buylppan
-- $getServerVar[prefix]buylegg
-- $getServerVar[prefix]incubate-wolf
-- $getServerVar[prefix]wolf-search
-- $getServerVar[prefix]wolf-info
-- $getServerVar[prefix]buy-lechuga
-- $getServerVar[prefix]animal-list
-- $getServerVar[prefix]buy-incubadora-potenciada
-- $getServerVar[prefix]code
-- $getServerVar[prefix]crafteos
-- $getServerVar[prefix]descargas
-- $getServerVar[prefix]craft-pc
-- $getServerVar[prefix]pc
-- $getServerVar[prefix]buy-premiumbox
-- $getServerVar[prefix]open-premiumbox
-- $getServerVar[prefix]buy-diamondbox
-- $getServerVar[prefix]open-diamondbox
-- $getServerVar[prefix]buy-bmiel
-- $getServerVar[prefix]use-moneyspell
-- $getServerVar[prefix]bank
+$getServerVar[prefix]work
+$getServerVar[prefix]stream
+$getServerVar[prefix]daily
+$getServerVar[prefix]dep
+$getServerVar[prefix]pay
+$getServerVar[prefix]inv
+$getServerVar[prefix]fish
+$getServerVar[prefix]buycookie
+$getServerVar[prefix]buypico
+$getServerVar[prefix]buycaña
+$getServerVar[prefix]shop
+$getServerVar[prefix]mine
+$getServerVar[prefix]dep
+$getServerVar[prefix]usecookie
+$getServerVar[prefix]buylppan
+$getServerVar[prefix]buylegg
+$getServerVar[prefix]incubate-wolf
+$getServerVar[prefix]wolf-search
+$getServerVar[prefix]wolf-info
+$getServerVar[prefix]buy-lechuga
+$getServerVar[prefix]animal-list
+$getServerVar[prefix]buy-incubadora-potenciada
+$getServerVar[prefix]code
+$getServerVar[prefix]crafteos
+$getServerVar[prefix]descargas
+$getServerVar[prefix]craft-pc
+$getServerVar[prefix]pc
+$getServerVar[prefix]buy-premiumbox
+$getServerVar[prefix]open-premiumbox
+$getServerVar[prefix]buy-diamondbox
+$getServerVar[prefix]open-diamondbox
+$getServerVar[prefix]buy-bmiel
+$getServerVar[prefix]use-moneyspell
+$getServerVar[prefix]bank
+$getServerVar[prefix]buy-elixiroscuro
+$getServerVar[prefix]buy-cascominero
 -----Comandos de perfil-----
-- $getServerVar[prefix]profile
-- $getServerVar[prefix]set-pstatus
-- $getServerVar[prefix]set-profilepic
-- $getServerVar[prefix]buy-elixiroscuro
-- $getServerVar[prefix]buy-cascominero
-^ Puede que este desactualizado}]`,
+$getServerVar[prefix]profile
+$getServerVar[prefix]set-pstatus
+$getServerVar[prefix]set-profilepic
+
+^El comando puede que este desactualizado}]`,
 type:'awaitedCommand'
 },{//categoria de busqueda
 name: "search",
@@ -161,46 +162,45 @@ type:'awaitedCommand'
 },{//categoria de racciones
 name: "react",
 code: `$editMessage[$message[1];{title:Comandos de reaccion}{description:
-- $getServerVar[prefix]pat
-- $getServerVar[prefix]hug
-- $getServerVar[prefix]bully
-- $getServerVar[prefix]lick
-- $getServerVar[prefix]smug
-- $getServerVar[prefix]punch
-- $getServerVar[prefix]slap
-- $getServerVar[prefix]bite
-- $getServerVar[prefix]smile
-- $getServerVar[prefix]cry
-- $getServerVar[prefix]angry
-- $getServerVar[prefix]wave
-- $getServerVar[prefix]kill
+$getServerVar[prefix]pat
+$getServerVar[prefix]hug
+$getServerVar[prefix]bully
+$getServerVar[prefix]lick
+$getServerVar[prefix]smug
+$getServerVar[prefix]punch
+$getServerVar[prefix]slap
+$getServerVar[prefix]bite
+$getServerVar[prefix]smile
+$getServerVar[prefix]cry
+$getServerVar[prefix]angry
+$getServerVar[prefix]wave
+$getServerVar[prefix]kill
 }{color:D1BBBB}]
 `,
 type:'awaitedCommand'
 },{
 name: "security",
 code: `$editMessage[$message[1];{title:Comandos de Seguridad}{description:
-En desarrollo, v1.7.0
-- $getServerVar[prefix]antiusers-on/off
-- $getServerVar[prefix]antibots-on/off
-- $getServerVar[prefix]antilinks-on/off
-- $getServerVar[prefix]antichannels-on/off
-- $getServerVar[prefix]blockwords1/2/3/4/56/7/8/9/10 
-- $getServerVar[prefix]set-antialt
-- $getServerVar[prefix]antimalicious-on/off - No permite usuarios de la blacklist de Akeno entrar a tu servidor
-- $getServerVar[prefix]systems
-- $getServerVar[prefix]setlogs
-- $getServerVar[prefix]enable-report/set-reportchannel
-- $getServerVar[prefix]captcha/verify
-- $getServerVar[prefix]desactivate-logs
+$getServerVar[prefix]antiusers-on/off
+$getServerVar[prefix]antibots-on/off
+$getServerVar[prefix]antilinks-on/off
+$getServerVar[prefix]antichannels-on/off
+$getServerVar[prefix]blockwords1/2/3/4/56/7/8/9/10 
+$getServerVar[prefix]set-antialt
+$getServerVar[prefix]antimalicious-on/off - No permite usuarios de la blacklist de Akeno entrar a tu servidor
+$getServerVar[prefix]systems
+$getServerVar[prefix]setlogs
+$getServerVar[prefix]enable-report/set-reportchannel
+$getServerVar[prefix]captcha/verify
+$getServerVar[prefix]desactivate-logs
 Cuenta:
-- $getServerVar[prefix]register
-- $getServerVar[prefix]login
-- $getServerVar[prefix]change-password
-- $getServerVar[prefix]password-forgot
-- $getServerVar[prefix]logout
-- $getServerVar[prefix]manage-premium
-- $getServerVar[prefix]cancel-premium}{color:GREEN}]
+ $getServerVar[prefix]register
+ $getServerVar[prefix]login
+ $getServerVar[prefix]change-password
+ $getServerVar[prefix]password-forgot
+ $getServerVar[prefix]logout
+ $getServerVar[prefix]manage-premium
+ $getServerVar[prefix]cancel-premium}{color:GREEN}]
 `,
 type:'awaitedCommand'
 },{
@@ -216,6 +216,7 @@ $getServerVar[prefix]buy-premiumbox
 $getServerVar[prefix]open-premiumbox
 $getServerVar[prefix]set-profilecolor
 $getServerVar[prefix]define (solo ingles)
+$getServerVar[prefix]color
 /////////////////////////////////////
 Developers:
 $getServerVar[prefix]eval
