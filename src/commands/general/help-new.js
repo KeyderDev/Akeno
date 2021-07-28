@@ -99,9 +99,9 @@ code: `$editMessage[$message[1];{color:ffff}{title:Comandos de utilidad}{descrip
 - $getServerVar[prefix]snipe
 - $getServerVar[prefix]jumbo/jumbo.id
 - $getServerVar[prefix]docs
-- $getServerVar[prefix]clean
+- $getServerVar[prefix]clean **Bugeado**
 - $getServerVar[prefix]lock/unlock
-- $getServerVar[prefix]function *Aoi.js*
+- $getServerVar[prefix]function *Aoi.js* *Api Caida*
 - $getServerVar[prefix]weather (ciudad) *Bugeado*
 - $getServerVar[prefix]report-bug
 }]`,
@@ -142,6 +142,7 @@ code: `$editMessage[$message[1];{color:D1BBBB}{title:Comandos de RPG}{descriptio
 - $getServerVar[prefix]open-diamondbox
 - $getServerVar[prefix]buy-bmiel
 - $getServerVar[prefix]use-moneyspell
+- $getServerVar[prefix]bank
 -----Comandos de perfil-----
 - $getServerVar[prefix]profile
 - $getServerVar[prefix]set-pstatus
