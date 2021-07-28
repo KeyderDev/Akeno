@@ -217,6 +217,7 @@ $getServerVar[prefix]open-premiumbox
 $getServerVar[prefix]set-profilecolor
 $getServerVar[prefix]define (solo ingles)
 $getServerVar[prefix]color
+$getServerVar[prefi]set-p.embedcolor
 /////////////////////////////////////
 Developers:
 $getServerVar[prefix]eval
