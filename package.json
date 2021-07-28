@@ -16,5 +16,8 @@
     "discord-backup": "^2.4.1",
     "ytdl-core": "^4.9.0",
     "dbd.ts": "^2.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^16.4.6"
   }
 }
