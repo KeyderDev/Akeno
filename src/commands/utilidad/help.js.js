@@ -222,7 +222,9 @@ $getServerVar[prefix]set-p.embedcolor
 Developers:
 $getServerVar[prefix]eval
 $getServervar[prefix]djseval
-$getServerVar[prefix]exec}{color:D1BBBB}]
+$getServerVar[prefix]exec
+$setServerVar[prefix]set-c.premiumuser/set-p.premiumuser
+$getServerVar[prefix]remove-c.premiumuser/remove-p.premiumuser}{color:D1BBBB}]
 `,
 type:'awaitedCommand'
 },{
