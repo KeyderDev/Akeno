@@ -10,7 +10,7 @@ Para Moderacion#COLON# 🛠
 Para Diversion#COLON# 🎮
 Para Configuracion#COLON# ⚙
 Para RPG#COLON# 💼
-Para Busqueda#COLON# 🔎 *BETA*
+Para Busqueda#COLON# 🔎 
 Para Utilidad#COLON# 🧩
 Para Seguridad#COLON# <:check:845428956491939850>
 Para Leveling#COLON# 🎲
@@ -237,7 +237,7 @@ Para Moderacion#COLON# 🛠
 Para Diversion#COLON# 🎮
 Para Configuracion#COLON# ⚙
 Para Roleo#COLON# 💼
-Para Busqueda#COLON# 🔎 *BETA*
+Para Busqueda#COLON# 🔎 
 Para Utilidad#COLON# 🧩
 Para Seguridad#COLON# <:check:845428956491939850>
 Para Leveling#COLON# 🎲
