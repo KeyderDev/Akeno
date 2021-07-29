@@ -1,6 +1,17 @@
-## Akeno
-- Bot de discord multifunciones, Akeno cuenta con mas de 200 comandos, en los que encontraras Moderacion, busqueda, leveling, utilidad, diversion, seguridad, RPG,
-reacciones, configuracion, musica y mucho mas! Akeno tiene un equipo de desarrollo, que cuenta con Keyder (yo), Pavez, y neytiri, Akeno esta desarrollada con el paquete NPM de aoi.js, y tambien dbd.ts. Akeno tambien usa discord.js en su codigo, Akeno cuenta con 3 bases de datos sql, las primeras dos son de login y register, la tercera es la base de datos que contiene la ID de los usuarios que estan el la blacklist
+# Pagina Principal
 
-## Idea de Akeno
-- La idea de Akeno es que tengas un solo bot en tu servidor, y que lo tenga todo. Esto para el ahorro de espacio de tu servidor, y tambien la comodidad de tu servidor
+Akeno es un bot de discord multifuncional con mas de 100 comandos  
+
+
+La idea de Akeno es que solamente tengas un bot en tu servidor y que lo tenga todo, y aqui la tienes!
+
+Akeno cuenta con moderacion, roleo, economia, musica, nsfw, memes, interaccion, configuracion etc
+
+Es importante saber varias cosas sobre el bot  
+Por ejemplo, es importante saber que a Akeno se le hace mantenimiento constantemente \(casi todos los dias\), esto para corregir bugs y atender sugerencias  
+Tambien es importante saber que Akeno cuenta con un comando setprefix, el cual sirve para cambiar el prefix del bot, el prefix predeterminado de Akeno es ak.
+
+Para ver todos los comandos del bot, ponga ak.help en un servidor en donde este el bot, al poner ak.help, le llegara un mensaje a su bandeja de mensajes directos, si no le llega el mensaje, debe ser porque el bot esta desconectado o usted tiene su md cerrado
+
+Una vez halla puesto el comando ak.help, le llegara un mensaje a su bandeja de mensajes directos, en ese mensaje, vera diferentes categorias de comandos
+
