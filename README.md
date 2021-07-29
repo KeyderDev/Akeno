@@ -7,3 +7,5 @@ La idea principal, es que solo tengas un bot en tu servidor, y que lo tenga todo
 
 # Links de interes
 [Discord](https://discord.gg/3pmxRhvH)
+[BotInvite](https://discord.com/api/oauth2/authorize?client_id=831280478190436423&permissions=8&scope=bot)
+[Documentacion](https://app.gitbook.com/@keyder/s/akeno-s-docs/)
