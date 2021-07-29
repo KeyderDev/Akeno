@@ -19,7 +19,7 @@ bot.loadCommands(`./login`);
 
 /////////////////////////////////////////////////////////////////////////
 bot.status({
-text: "ak.help | v1.7.0 Beta",
+text: "ak.help | v1.7.1 Beta",
 type: "PLAYING",
 status: "online",
 time: 10
