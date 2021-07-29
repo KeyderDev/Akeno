@@ -238,6 +238,8 @@ wtitle: "Bienvenido!",
 wactivated: "false",
 //Premium Extra
 pembedcolor: "#5865F2",
+//idk
+adminaffect: "yes",
 
 
 };
