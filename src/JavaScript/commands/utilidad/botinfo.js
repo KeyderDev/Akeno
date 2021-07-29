@@ -7,7 +7,7 @@ $addField[Links;
 :link: [Invitacion]($getBotInvite[admin])
 $addField[Versiones;
 :cd: Version de NodeJS: $nodeVersion
-:book: Libreria: Aoi.JS
+:book: Librerias: Aoi.JS, DBD.TS
 :floppy_disk: Version de Aoi.js: $packageVersion]
 $addField[General;
 :computer: Uso de CPU: %$cpu
