@@ -15,7 +15,7 @@
 
 ## Updates/Mantenimiento
 
-* [Changelog](updates-mantenimiento/changelog-1.5.0.md)
+* [Changelog](updates-mantenimiento/changelog.md)
 
 ## Zona de ayuda
 
