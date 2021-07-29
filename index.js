@@ -1,7 +1,7 @@
 const Aoijs = require("aoi.js");
 const bot = new Aoijs.Bot({
-  sharding: false, 
-  shardAmount: 2,
+  sharding: true, 
+  shardAmount: 1,
   mobile: false,
   token: "ODMxMjgwNDc4MTkwNDM2NDIz.YHS8Rg.GVlUGEHhE-D_eWoHULdWZRfHHQM",
   prefix: ["$getServerVar[prefix]","<@$clientID>","<@!$clientID>","Akeno"], 
