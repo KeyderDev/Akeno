@@ -9,6 +9,7 @@ module.exports = {
     <a:checkanimado:831161301282979911> Hecho!
     $setServerVar[adminaffect]
     $endif
+    $endif
     
     
     `
