@@ -96,7 +96,10 @@ $onlyIf[$getGlobalUserVar[bl]==false;{title:Oh vaya! Eres malicioso...}{descript
         $deletecommand 
         $onlyIf[$message!=$get[r]]
         $let[r;$filterMessageWords[$message;no;$getServerVar[blockword1];$getServerVar[blockword2];$getServerVar[blockword3];$getServerVar[blockword4];$getServerVar[blockword5];$getServerVar[blockword6];$getServerVar[blockword7];$getServerVar[blockword8];$getServerVar[blockword9];$getServerVar[blockword10]]]
-        $onlyIf[$hasAnyPerm[admin]==false;]`,
+        $if[$getServerVar[adminaffect]!=true]
+$onlyIf[$hasAnyPerm[admin]==false;]
+$else
+$endif`,
         type:"command"
         
 }]
