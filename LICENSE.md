@@ -48,5 +48,7 @@ Debe mantener todos los avisos de derecho de autor en todas las copias de la Apl
  **d.**
  Esta totalmente prohibido copiar datos de **./new-database/main/main_scheme_1.sql**,**./login/login.sql** y **./login/register.sql**
 
+
+
  
 
