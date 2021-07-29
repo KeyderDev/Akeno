@@ -200,7 +200,8 @@ Cuenta:
  $getServerVar[prefix]password-forgot
  $getServerVar[prefix]logout
  $getServerVar[prefix]manage-premium
- $getServerVar[prefix]cancel-premium}{color:GREEN}]
+ $getServerVar[prefix]cancel-premium
+ $setServerVar[prefix]delete-account}{color:GREEN}]
 `,
 type:'awaitedCommand'
 },{
