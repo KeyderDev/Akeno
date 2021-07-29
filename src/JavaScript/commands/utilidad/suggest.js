@@ -6,7 +6,6 @@ module.exports = ({
     $thumbnail[$userAvatar[$clientID]]
     $title[Nueva Sugerencia]
     $description[$message]
-    $footer[<a:checkanimado:831161301282979911> Me gusta! | <:tick:846222968106909707> Mas o menos | <a:wrong:869274854157848687> No me gusta ]
     $addReactions[<a:checkanimado:831161301282979911>;<:tick:846222968106909707>;<a:wrong:869274854157848687>]
     $useChannel[$getServerVar[suggestchannel]]
     $deletecommand
