@@ -224,7 +224,7 @@ Developers:
 $getServerVar[prefix]eval
 $getServervar[prefix]djseval
 $getServerVar[prefix]exec
-$setServerVar[prefix]set-c.premiumuser/set-p.premiumuser
+$getServerVar[prefix]set-c.premiumuser/set-p.premiumuser
 $getServerVar[prefix]remove-c.premiumuser/remove-p.premiumuser
 $getServerVar[prefix]set-pdvuser/remove-pdvuser}{color:D1BBBB}]
 `,
