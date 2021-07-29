@@ -9,7 +9,7 @@
 },
 "invalid":{
     "id":{
-        "user":"`ERROR: La ID del usuario es invalida`",
+        "user":"`ERROR: La ID del usuario es invalida, o el usuario no pudo ser encontrado`",
         "role":"`ERROR: La ID del rol es invalida`",
         "channel":"`ERROR: La ID del canal es invalida`",
         "emoji":"`ERROR: La ID del emoji es invalida`",
