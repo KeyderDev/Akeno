@@ -1,2 +1,0 @@
-# Licencia - Derechos de autor
-

@@ -1,2 +1,0 @@
-# Terminos de servicio \| ToS
-
