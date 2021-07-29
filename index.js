@@ -13,7 +13,7 @@ const bot = new Aoijs.Bot({
 bot.onMessage();
 bot.loadCommands(`./callbacks/`)
 bot.loadCommands(`./src/`);
-opbot.loadCommands(`./testing`);
+bot.loadCommands(`./testing`);
 bot.loadCommands(`./login`);
 
 
