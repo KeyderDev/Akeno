@@ -7,7 +7,7 @@ module.exports = {
     $else
     $if[$message==no]
     <a:checkanimado:831161301282979911> Hecho!
-    $setServerVar[adminaffect]
+    $setServerVar[adminaffect;no]
     $endif
     $endif
     
