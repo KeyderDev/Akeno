@@ -15,29 +15,9 @@ bot.loadCommands(`./callbacks/`)
 bot.loadCommands(`./src/`);
 bot.loadCommands(`./testing`);
 bot.loadCommands(`./login`);
-
-
-/////////////////////////////////////////////////////////////////////////
-bot.status({
-text: "ak.help | v1.7.1 Beta",
-type: "PLAYING",
-status: "online",
-time: 10
-});
-
-bot.status({
-  text: "GitHub Repository",
-  type: "WATCHING",
-  status: "online",
-  time: 10
-});
-
-
-
-
 bot.onJoined();
 bot.onLeave();
-bot.onChannelCreate();
+bot.onChannelCreate();   /* Callbacks que escucha el bot */
 bot.onInviteCreate();
 bot.onRoleCreate();
 bot.onRoleDelete();
@@ -54,7 +34,31 @@ bot.onGuildJoin();
 bot.onGuildLeave();
 bot.botJoinCommand();
 
-/////////////////////////////////////////////Akeno's Logs
+
+
+
+bot.status({                                                            
+text: "ak.help | v1.7.1 Beta",              /* Estado del bot */           
+type: "PLAYING",
+status: "online",
+time: 20
+});
+
+bot.status({
+  text: "GitHub Repository",
+  type: "WATCHING",
+  status: "online",
+  time: 10
+});
+
+
+
+
+
+
+///Callbacks
+
+
 bot.botJoinCommand({
   channel: "843994166098919484",
   code: `$title[Nuevo Servidor]
