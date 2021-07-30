@@ -108,3 +108,5 @@ Añadidos los comandos ak.login, ak.logout, ak.register, ak.pasword-forgot, ak.c
 - Añadido el comando ak.blockword1/2/3/4/5
 - Añadido el comando ak.set-antialt
 - Añadido el comando ak.blocked-words
+
+
