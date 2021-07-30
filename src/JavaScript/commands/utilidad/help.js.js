@@ -220,13 +220,16 @@ $getServerVar[prefix]define (solo ingles)
 $getServerVar[prefix]color
 $getServerVar[prefix]set-p.embedcolor
 /////////////////////////////////////
+- Comandos Premium (premium pro)
+$getServerVar[prefix]support
+/////////////////////////////////////
 Developers:
 $getServerVar[prefix]eval
 $getServervar[prefix]djseval
 $getServerVar[prefix]exec
 $getServerVar[prefix]set-c.premiumuser/set-p.premiumuser
 $getServerVar[prefix]remove-c.premiumuser/remove-p.premiumuser
-$getServerVar[prefix]set-pdvuser/remove-pdvuser}{color:D1BBBB}]
+$getServerVar[prefix]set-s.premiumuser/remove-s.premiumuser}{color:D1BBBB}]
 `,
 type:'awaitedCommand'
 },{
