@@ -4,41 +4,30 @@ aliases: ['ayuda'],
 code: `
 $reactionCollector[$splitText[1];$authorID;3m;🎶,🛠,🎮,⚙,💼,🔎,🧩,<:check:845428956491939850>,🎲,🔗,🔵,↩️;music,mod,diver,config,rpg,search,util,security,lvl,react,bothelp,menu;yes]
 
-$textSplit[$sendMessage[{title:Comandos del bot Akeno e informacion}{description:Hola! Soy Akeno! Me gusta ayudar a los demas uwu
-Para Musica#COLON# 🎶
-Para Moderacion#COLON# 🛠
-Para Diversion#COLON# 🎮
-Para Configuracion#COLON# ⚙
-Para RPG#COLON# 💼
-Para Busqueda#COLON# 🔎 
-Para Utilidad#COLON# 🧩
-Para Seguridad#COLON# <:check:845428956491939850>
-Para Leveling#COLON# 🎲
-Para Reacciones#COLON# 🔗
+$textSplit[$sendMessage[{title:Comandos del bot Akeno e informacion}{description:Hola! Soy Akeno! Mucho gusto! A continuacion te muestro mis categorias
+Musica#COLON# 🎶
+Moderacion#COLON# 🛠
+Diversion#COLON# 🎮
+Configuracion#COLON# ⚙
+RPG#COLON# 💼
+Busqueda#COLON# 🔎 
+Utilidad#COLON# 🧩
+Seguridad#COLON# <:check:845428956491939850>
+Leveling#COLON# 🎲
+Reacciones#COLON# 🔗
 Extras#COLON# 🔵
 Para volver al menu aqui#COLON# ↩️
     
 **Links**
-[Documentacion](https://app.gitbook.com/@keyder/s/akeno-s-docs/) | [Soporte](https://discord.gg/tsrfmSgapV) | [Invite](https://discord.com/api/oauth2/authorize?client_id=831280478190436423&permissions=8&scope=bot) | [Paypal](https://paypal.me/akenobot1)}{footer:Este mensaje tiene 3 minutos de uso}{color:D1BBBB};yes]; ]
+[Documentacion](https://app.gitbook.com/@keyder/s/akeno-s-docs/) | [Soporte](https://discord.gg/tsrfmSgapV) | [Invite](https://discord.com/api/oauth2/authorize?client_id=831280478190436423&permissions=8&scope=bot) | [Paypal](https://paypal.me/akenobot1)}{footer:Reaccione a un emoji para acceder a una categoria | Msg: 3 min de uso | Prx: $getServerVar[prefix]}{color:5865F2};yes]; ]
 $onlyBotPerms[embedlinks;:x:| Necesito el permiso de **EMBED LINKS** para ejecutar este comando]
 $onlyIf[$getGlobalUserVar[bl]==false;{title:Oh vaya! Eres malicioso...}{description:
 :x:| Tu acceso al bot Akeno a sido denegado, parece que haz hecho algo :/, si crees que esto es un error, contacta el soporte y te ayudaremos}{color:RED}]`
 },{//categoría de configuración
 name: "config",
 code: `$editMessage[$message[1];{color:D1BBBB}{title:Comandos de configuracion}{description:
-$getServerVar[prefix]setsug
-$getServerVar[prefix]leveling enable/disable
-$getServerVar[prefix]set-mute
-$getServerVar[prefix]reset-inv
-$getServerVar[prefix]set-verifiedrole
-$getServerVar[prefix]set-notverifiedrole
-$getServerVar[prefix]set-newrole
-$getServerVar[prefix]desactivate-captcha
-$getServerVar[prefix]desactivate-newrole
-$getServerVar[prefix]set-autorole
-$getServerVar[prefix]desactivate-autorole
-$getServerVar[prefix]set-muterole
-$getServerVar[prefix]set-confess
+\`setsug\` \`leveling enable/disable\` \`reset-inv\` \`set-verifiedrole/notverifiedrole/newrole\` \`desactivate-captcha\`
+\`desactivate-newrole\` \`set-autorole/desactivate-autorole\` \`set-muterole\` \`set-confess\`
 }]`,
 type:'awaitedCommand'
 },{//categoria de interacción
@@ -201,7 +190,7 @@ Cuenta:
  $getServerVar[prefix]logout
  $getServerVar[prefix]manage-premium
  $getServerVar[prefix]cancel-premium
- $setServerVar[prefix]delete-account}{color:GREEN}]
+ $getServerVar[prefix]delete-account}{color:GREEN}]
 `,
 type:'awaitedCommand'
 },{
