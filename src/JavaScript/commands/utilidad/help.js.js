@@ -16,10 +16,10 @@ Seguridad#COLON# <:check:845428956491939850>
 Leveling#COLON# 🎲
 Reacciones#COLON# 🔗
 Extras#COLON# 🔵
-Para volver al menu aqui#COLON# ↩️
+Para volver al menu#COLON# ↩️
     
 **Links**
-[Documentacion](https://app.gitbook.com/@keyder/s/akeno-s-docs/) | [Soporte](https://discord.gg/tsrfmSgapV) | [Invite](https://discord.com/api/oauth2/authorize?client_id=831280478190436423&permissions=8&scope=bot) | [Paypal](https://paypal.me/akenobot1)}{footer:Reaccione a un emoji para acceder a una categoria | Msg: 3 min de uso | Prx: $getServerVar[prefix]}{color:5865F2};yes]; ]
+[Documentacion](https://app.gitbook.com/@keyder/s/akeno-s-docs/) | [Soporte](https://discord.gg/tsrfmSgapV) | [Invite](https://discord.com/api/oauth2/authorize?client_id=831280478190436423&permissions=8&scope=bot) | [Paypal](https://paypal.me/akenobot1)}{footer:Reaccione a un emoji para acceder a una categoria | Msg: 3 min de uso | Prx: $getServerVar[prefix]}{color:5865F2}]]
 $onlyBotPerms[embedlinks;:x:| Necesito el permiso de **EMBED LINKS** para ejecutar este comando]
 $onlyIf[$getGlobalUserVar[bl]==false;{title:Oh vaya! Eres malicioso...}{description:
 :x:| Tu acceso al bot Akeno a sido denegado, parece que haz hecho algo :/, si crees que esto es un error, contacta el soporte y te ayudaremos}{color:RED}]`
