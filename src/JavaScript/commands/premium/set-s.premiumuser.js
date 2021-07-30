@@ -1,5 +1,5 @@
 module.exports = ({
-    name: "set-p.premiumuser",
+    name: "set-s.premiumuser",
     code: `
     
     **A el usuario [<@!$findUser[$message[1]]>] se le añadio premium pro correctamente**
