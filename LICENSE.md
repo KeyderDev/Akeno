@@ -48,6 +48,9 @@ Debe mantener todos los avisos de derecho de autor en todas las copias de la Apl
  **d.**
  Esta totalmente prohibido copiar datos de **./new-database/main/main_scheme_1.sql**,**./login/login.sql** y **./login/register.sql**
 
+ **e.**
+ Esta prohibido copiar este EULA y sus variantes, tambien esta prohibido copiar la documentacion del bot, ya que estas dos cosas tendran consequencias GRAVES
+
 
 
  
