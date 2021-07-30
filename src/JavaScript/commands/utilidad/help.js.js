@@ -4,7 +4,7 @@ aliases: ['ayuda'],
 code: `
 $reactionCollector[$splitText[1];$authorID;3m;🎶,🛠,🎮,⚙,💼,🔎,🧩,<:check:845428956491939850>,🎲,🔗,🔵,↩️;music,mod,diver,config,rpg,search,util,security,lvl,react,bothelp,menu;yes]
 
-$textSplit[$sendMessage[{title:Comandos del bot Akeno e informacion}{description:Hola! Soy Akeno! Mucho gusto! A continuacion te muestro mis categorias
+$textSplit[$channelSendMessage[$channelID;{title:Comandos del bot Akeno e informacion}{description:Hola! Soy Akeno! Mucho gusto! A continuacion te muestro mis categorias
 Musica#COLON# 🎶
 Moderacion#COLON# 🛠
 Diversion#COLON# 🎮
