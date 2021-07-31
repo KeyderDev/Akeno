@@ -1,11 +1,12 @@
 module.exports = {
     name: "aceptar-bot",
     code: `
-    <a:wrong:869274854157848687>| Hecho!
+    <a:checkanimado:831161301282979911>| Hecho!
     $channelSendMessage[871108822570270730;
     <@$message[2]>
     {title:Bot Aceptado}{description:$usertag[$message[2]] tu bot $usertag[$message[1]] fue aceptado
-    Bot Tester: <@$authorID>}{color:GREEN}]
+    Bot Tester: <@$authorID>
+    Anotacion: $messageSlice[2]}{color:GREEN}]
     $onlyIf[!=$message[2];:x:| Debes introducir la ID del desarrollador del bot a aceptar | Ejemplo: $getServerVar[prefix]aceptar-bot (id-bot) (id-owner)]
     $onlyIf[!=$message[1];:x:| Debes introducir la ID del bot a aceptar | Ejemplo: $getServerVar[prefix]aceptar-bot (id-bot) (id-owner)]
     $onlyForRoles[871112196673929216;:x:| Solo los bot tester pueden usar este comando]
