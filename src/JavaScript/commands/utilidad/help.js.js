@@ -26,84 +26,175 @@ $onlyIf[$getGlobalUserVar[bl]==false;{title:Oh vaya! Eres malicioso...}{descript
 },{//categoría de configuración
 name: "config",
 code: `$editMessage[$message[1];{color:D1BBBB}{title:Comandos de configuracion}{description:
-    \`setsug\`, \`leveling enable/disable\`, \`reset-inv\`, \`set-verifiedrole/notverifiedrole/newrole\`, \`desactivate-captcha\`,
-    \`desactivate-newrole\`, \`set-autorole/desactivate-autorole\`, \`set-muterole\`, \`set-confess\`
+\`\`\`
+setsug
+reset-inv
+set-verifiedrole
+set-notverifiedrole
+set-newrole
+desactivate-captcha
+desactivate-newrole
+set-muterole
+set-confess\`\`\`
 }]`,
 type:'awaitedCommand'
 },{//categoria de interacción
 name: "diver",
-code: `$editMessage[$message[1];{color:D1BBBB}{title:Comandos de Diversion}{description:Aqui tienes comandos para que te diviertas un rato
-\`achievement\`, \`meme\`, \`confess\`, \`ph(texto)\` - *nsfw*}]`,
+code: `$editMessage[$message[1];{color:D1BBBB}{title:Comandos de Diversion}{description:
+\`\`\`
+achievement (Palabra separada con -)
+meme
+confess
+ph (texto) - NSFW\`\`\`}]`,
 type:'awaitedCommand'
 },{
 name: "lvl",
 code: `$editMessage[$message[1];{title:Comandos de leveling}{description:
-\`leveling enable/disable\`, \`xpcooldown\`, \`l-leaderboard\`, \`xp\`}{color:D1BBBB}`,
+\`\`\`
+leveling enable/disable
+xpcooldown
+l-leaderboard
+xp\`\`\`
+}{color:D1BBBB}`,
 type:'awaitedCommand'
 },{//categoria de musica
 name: "music",
-code: `$editMessage[$message[1];{color:D1BBBB}{title:Comandos de musica}{description: 
-\`pause\`, \`skip\`, \`stop\`, \`lyrics\`, \`queue\`, \`skipto\`, \`resume\`, \`play\`}{color:D1BBBB}]`,
+code: `$editMessage[$message[1];{color:D1BBBB}{title:Comandos de musica}{description:
+\`\`\`
+play
+skip
+stop
+queue
+resume
+skipto\`\`\`
+- :star: **Premium**
+\`\`\`
+lyrics\`\`\`
+}{color:D1BBBB}]`,
 type:'awaitedCommand'
 },{//categoría de moderacion
 name: "mod",
-code: `$editMessage[$message[1];{title:Comandos de Moderacion}{description:Aqui tienes los comandos de Moderacion
-\`warn\`, \`checkwarns\`, \`addrole\`, \`serverinfo\`, \`unwarn\`, \`mute/unmute\`, \`unwarn\`, \`infractions\`,
-\`lock-unlock\`
-}{color:D1BBBB}]`,
+code: `$editMessage[$message[1];{title:Comandos de Moderacion}{description:
+\`\`\`
+warn
+checkwarns
+unwarn
+ban
+kick
+mute/unmute - Bugeado
+infractions
+lock/unlock\`\`\`}{color:D1BBBB}]`,
 type:'awaitedCommand'
 },{//categoria de utilidad
 name: "util",
 code: `$editMessage[$message[1];{color:ffff}{title:Comandos de utilidad}{description:
-\`botinfo\`, \`ping\`, \`profile\`, \`prefix\`, \`whois/serverinfo/channel-info/role-info\`, \`avatar\`, \`suggest\`,
-\`report\`, \`snipe\`, \`jumbo/jumbo.id\`, \`docs\`, \`clean - Bugeado\`, \`function - Aoi.js\`, \`weather (ciudad) - bugeado\`,
-\`report-bug\`}]`,
+\`\`\`
+botinfo       suggest
+ping          report
+profile       snipe
+prefix        jumbo/jumbo.id
+whois         docs
+serverinfo    clean - Bugeado
+role-info     function - Aoijs
+channel-info  weather - Bugeado
+avatar        report-bug\`\`\`}]`,
 type:'awaitedCommand'
 },{//categoria de roleplay
 name: "rpg",
 code: `$editMessage[$message[1];{color:D1BBBB}{title:Comandos de RPG}{description:
-\`work\`, \`stream\`, \`daily\`, \`dep\`, \`pay\`, \`inv\`, \`fish\`, \`buycookie\`, \`buy-pico\`, \`buy-caña\`,
-\`shop\`, \`mine\`, \`use-cookie\`, \`buy-lppan\`, \`buy-legg\`, \`incubate-wolf\`, \`wolf-search\`, \`wolf-info\`,
-\`buy-lechuga\`, \`animal-list\`, \`buy-incubadora-potenciada\`, \`code\`, \`crafteos\`, \`descargas\`, \`craft-pc\`,
-\`pc\`, \`buy-premiumbox/diamondbox\`, \`open-premiumbox/diamondbox\`, \`buy-bmiel\`, \`use-moneyspell\`, \`bank\`,
-\`buy-elixiroscuro\`, \`buy-cascominero\`
-Comandos de perfil#COLON#
-\`profile/prof\`, \`set-pstatus\`, \`set-profilepic\`}]`,
+\`\`\`
+work         shop            buy-incubadora-potenciada   bank
+stream       mine            code                        buy-elixiroscuro
+daily        use-cookie      crafteos                    buy-cascominero
+dep          buy-lppan       descargas      
+pay          buy-legg        craft-pc
+inv          incubate-wolf   pc
+fish         wolf-search     buy-diamondbox
+buycookie    wolf-info       open-diamondbox
+buy-pico     buy-lechuga     buy-bmiel
+buy-caña     animal-list     use-moneyspell\`\`\`
+**Comandos de Perfil**
+\`\`\`
+profile/prof
+set-pstatus
+set-profilepic\`\`\`
+}]`,
 type:'awaitedCommand'
 },{//categoria de busqueda
 name: "search",
 code: `$editMessage[$message[1];{color:D1BBBB}{title:Comandos de busqueda}{description:
 Aqui tienes diferentes comandos para buscar cosas en la web!
-\`anime\`}]`,
+\`\`\`
+anime\`\`\`
+}]`,
 type:'awaitedCommand'
 },{//categoria de racciones
 name: "react",
 code: `$editMessage[$message[1];{title:Comandos de reaccion}{description:
-\`pat\`, \`hug\`, \`bully\`, \`lick\`, \`smug\`, \`punch\`, \`slap\`, \`bite\`, \`smile\`, \`cry\`, \`angry\`, \`wave\`,
-\`kill\`}{color:D1BBBB}]
+\`\`\`
+pat     cry
+hug     angry
+bully   wave
+lick    kill
+smug
+punch
+slap
+bite
+smile\`\`\`
+}{color:D1BBBB}]
 `,
 type:'awaitedCommand'
 },{
 name: "security",
 code: `$editMessage[$message[1];{title:Comandos de Seguridad}{description:
-\`antiusers-on/off\`, \`antibots-on/off\`, \`antilinks-on/off\`, \`antichannels-on-off\`,  \`blockword/1/2/3/etc\`,
-\`set-antialt\`, \`systems\`, \`setlogs\`, \`enable-report\`, \`captcha/verify\`, \`desactivate-logs\`,
-Cuenta#COLON# 
-\`register\`, \`login\`, \`change-password\`, \`password-forgot\`, \`logout\`, \`manage-premium\`, \`cancel-premium\`,
-\`delete-account\`}{color:GREEN}]
+\`\`\` 
+antiusers-on/off               captcha/verify
+antibots-on/off                desactivate-logs
+antilinks-on/off
+antichannels-on/off
+blockword1/2/3/etc [Hasta 10]
+set-antialt
+systems
+setlogs
+enable-report\`\`\`
+**Cuenta**
+\`\`\`
+register
+login
+logout
+change-password
+manage-premium
+cancel-premium
+delete-account\`\`\`
+}{color:GREEN}]
 `,
 type:'awaitedCommand'
 },{
 name:"bothelp", 
 code: `$editMessage[$message[1];{title:Comandos y cosas extra}{description:
-- Comandos Premium (classic o pro)
-\`lyrics\`, \`dm\`, \`weekly\`, \`anime\`, \`remind\`, \`buy-premiumbox/diamondbox\`, \`open-diamondbox/premiumbox\`,
-\`set-profilecolor\`, \`define (solo ingles)\`, \`color\`, \`set-p.embedcolor\`
-- Comandos Premium (premium pro)
-\`support\`
-Developers:
-\`eval\`, \`djseval\`, \`exec\`, \`set-c.premiumuser/set-p.premiumuser\`, \`remove-c.premiumuser/remove-p.premiumuser\`,
-\`set-s.premiumuser\`, \`remove-s.premiumuser\`
+**- Comandos Premium (classic o pro)**
+              
+\`\`\`
+lyrics            set-p.embedcolor
+dm                 Premium pro:
+weekly             support
+anime
+remind
+buy-premiumbox
+set-profilecolor
+define
+color\`\`\`
+**Developers**
+\`\`\`
+eval
+djseval
+exec
+set-c.premiumuser
+remove-c.premiumuser
+set-p.premiumuser
+remove-p.premiumuser
+set-s.premiumuser
+remove-s.premiumuser\`\`\`
 }{color:D1BBBB}]
 `,
 type:'awaitedCommand'
