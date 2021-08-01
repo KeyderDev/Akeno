@@ -242,7 +242,9 @@ pembedcolor: "#5865F2",
 adminaffect: "yes",
 afkr: "",
 mail: "false",
-
+//
+newsimage: "",
+newsmessage: ""
 
 };
 module.exports = variables;
