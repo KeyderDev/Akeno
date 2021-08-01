@@ -10,7 +10,7 @@ $setUserVar[Money;$sum[$getUserVar[Money;$authorID];$random[120;180]];$authorID]
 $setUserVar[elixirmagico;$sum[$getUserVar[elixirmagico;$authorID];1];$authorID]
 $cooldown[1d;:x:| Espera %time% para volver a abrir una Premium box]
 $onlyIf[1<=$getUserVar[premiumbox];:x: | Necesitas una Premium box para usar este comando]
-$onlyIf[$getGlobalUserVar[PREMIUM;$authorID]==true;{description:Lo sentimos, este comando es premium, cambie a premium para acceder a comandos exclusivos!}{color:RED}]
+$onlyIf[$getGlobalUserVar[PREMIUMgeneral;$authorID]==true;{description:Lo sentimos, este comando es premium, cambie a premium para acceder a comandos exclusivos!}{color:RED}]
 $onlyBotPerms[embedlinks;:x:| Necesito el permiso de **EMBED LINKS** para ejecutar este comando]
 $onlyIf[$getGlobalUserVar[bl]==false;{title:Oh vaya! Eres malicioso...}{description:
 :x:| Tu acceso al bot Akeno a sido denegado, parece que haz hecho algo :/, si crees que esto es un error, contacta el soporte y te ayudaremos}{color:RED}]`
