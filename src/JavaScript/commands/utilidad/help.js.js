@@ -97,7 +97,8 @@ whois         docs
 serverinfo    clean - Bugeado
 role-info     function - Aoijs
 channel-info  weather - Bugeado
-avatar        report-bug\`\`\`}]`,
+avatar        report-bug
+console\`\`\`}]`,
 type:'awaitedCommand'
 },{//categoria de roleplay
 name: "rpg",
@@ -216,7 +217,7 @@ Extras#COLON# 🔵
 Para volver al menu#COLON# ↩️
     
 **Links**
-[Documentacion](https://app.gitbook.com/@keyder/s/akeno-s-docs/) | [Soporte](https://discord.gg/tsrfmSgapV) | [Invite](https://discord.com/api/oauth2/authorize?client_id=831280478190436423&permissions=8&scope=bot) | [Paypal](https://paypal.me/akenobot1)}{footer:Reaccione a un emoji para acceder a una categoria | Msg#COLON# 3 min de uso | Prx#COLON# $getServerVar[prefix]}{color:5865F2}]
+[Documentacion](https://app.gitbook.com/@keyder/s/akeno-s-docs/) | [Soporte](https://discord.gg/tsrfmSgapV) | [Invite](https://discord.com/api/oauth2/authorize?client_id=831280478190436423&permissions=8&scope=bot) | [Paypal](https://paypal.me/akenobot1)}{color:5865F2}]
 $onlyIf[$getGlobalUserVar[bl]==false;{title:Oh vaya! Eres malicioso...}{description:
 :x:| Tu acceso al bot Akeno a sido denegado, parece que haz hecho algo :/, si crees que esto es un error, contacta el soporte y te ayudaremos}{color:RED}]`,
 type:'awaitedCommand'
