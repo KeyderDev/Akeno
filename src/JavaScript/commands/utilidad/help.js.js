@@ -201,7 +201,7 @@ remove-s.premiumuser\`\`\`
 type:'awaitedCommand'
 },{
 name: "menu",
-code: `$editMessage[$message[1];{title:Comandos del bot Akeno e informacion}{description::Hola! Soy Akeno! Mucho gusto! A continuacion te muestro mis categorias
+code: `$editMessage[$message[1];{title:Comandos del bot Akeno e informacion}{description:Hola! Soy Akeno! Mucho gusto! A continuacion te muestro mis categorias
 Musica#COLON# 🎶
 Moderacion#COLON# 🛠
 Diversion#COLON# 🎮
@@ -216,7 +216,7 @@ Extras#COLON# 🔵
 Para volver al menu#COLON# ↩️
     
 **Links**
-[Documentacion](https://app.gitbook.com/@keyder/s/akeno-s-docs/) | [Soporte](https://discord.gg/tsrfmSgapV) | [Invite](https://discord.com/api/oauth2/authorize?client_id=831280478190436423&permissions=8&scope=bot) | [Paypal](https://paypal.me/akenobot1)}{footer:Este mensaje tiene 3 minutos de uso}{color:5865F2}]
+[Documentacion](https://app.gitbook.com/@keyder/s/akeno-s-docs/) | [Soporte](https://discord.gg/tsrfmSgapV) | [Invite](https://discord.com/api/oauth2/authorize?client_id=831280478190436423&permissions=8&scope=bot) | [Paypal](https://paypal.me/akenobot1)}{footer:Reaccione a un emoji para acceder a una categoria | Msg#COLON# 3 min de uso | Prx#COLON# $getServerVar[prefix]}{color:5865F2}]
 $onlyIf[$getGlobalUserVar[bl]==false;{title:Oh vaya! Eres malicioso...}{description:
 :x:| Tu acceso al bot Akeno a sido denegado, parece que haz hecho algo :/, si crees que esto es un error, contacta el soporte y te ayudaremos}{color:RED}]`,
 type:'awaitedCommand'
