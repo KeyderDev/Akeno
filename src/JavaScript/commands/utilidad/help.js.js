@@ -103,9 +103,9 @@ type:'awaitedCommand'
 name: "rpg",
 code: `$editMessage[$message[1];{color:D1BBBB}{title:Comandos de RPG}{description:
 \`\`\`
-work         shop            buy-incubadora-potenciada   bank
-stream       mine            code                        buy-elixiroscuro
-daily        use-cookie      crafteos                    buy-cascominero
+work         shop            buy-incubadora.p  bank
+stream       mine            code              buy-elixiroscuro
+daily        use-cookie      crafteos          buy-cascominero
 dep          buy-lppan       descargas      
 pay          buy-legg        craft-pc
 inv          incubate-wolf   pc
