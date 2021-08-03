@@ -1,10 +1,8 @@
 module.exports = {
  name: "tempban",
  code: `
- $sendDM[$findMember[$message[1]]; $title[Temp ban acabado]$description[
- Tu temp-ban en **$serverName** a acabado, [Invite del servidor]($getServerInvite)
- $unban[$mentioned[1]]
- $setTimeout[5s;
+ 
+ $setTimeout[$message[2];
  banned: $findMember[$message[1]]]
  $ban[$findUser[$message[1]]]
  $channelSendMessage[$channelID;$title[Temp-Ban]$description[<@$findUser[$message[1]]> fue tempbaneado 
