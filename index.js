@@ -180,7 +180,10 @@ bot.timeoutCommand({
   $setGlobalUserVar[PREMIUMgeneral;false;$authorID]
   $setGlobalUserVar[premiumbadge;;$timeoutData[autor]]
   $takeRoles[$timeoutData[autor];843920390522929202]
-  $setGlobalUserVar[PREMIUM;false;$timeoutData[autor]]
+  $setGlobalUserVar[PREMIUMpro;false;$timeoutData[autor]]
+  $setGlobalUserVar[PREMIUMclassic;false;$timeoutData[autor]]
+
+  $setGlobalUserVar[PREMIUMgeneral;false;$timeoutData[autor]]
   $sendDM[$timeoutData[autor];{title:Subscripcion Premium}{description:Tu subscripcion de Premium Classic
   del bot Akeno a terminado. Para volver a tener Premium, debes volver a comprarlo.
   Si usted cree que esto es un error, contacte el equipo de desarrollo.
