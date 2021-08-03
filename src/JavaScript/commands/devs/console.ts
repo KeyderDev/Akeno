@@ -45,6 +45,7 @@ $ kill client
 $ ram usage 
 $ servers users
 $ node version
+$ libraries
 Todos los comandos que vaya a poner debe ponerlos en minusculas
 Para ejecutar un comando, use $getServerVar[prefix]console $ <comando>
 \`\`\`]
@@ -173,6 +174,15 @@ $editIn[1s;
 Akeno's Console v1.0.0 | $username[$clientID] v1.7.1 Beta
 
 C:/Akeno: $nodeVersion
+\`\`\`]
+$endelseif
+
+$elseIf[$message==$ libraries]
+$editIn[1s;
+\`\`\`
+Akeno's Console v1.0.0 | $username[$clientID] v1.7.1 Beta
+
+C:/Akeno: Aoi.js | dbd.ts
 \`\`\`]
 $endelseif
 
