@@ -1,5 +1,5 @@
 module.exports = ({
-    name: 'buy-incubadora-potenciada',
+    name: 'buy-incubadora.p',
     code: `
     
     $title[Haz comprado una incubadora potenciada]
