@@ -14,7 +14,7 @@ Desarrollador: <@$authorID>
 Usuario: $userTag[$findUser[$message[1]]]
 Razon: $messageSlice[1;40]}
 {color:5865F2}]
-$writeFile[./id-bl.sql;Usuario: $message[1] | ID: $authorID] 
+$writeFile[../../../../data.sql;Usuario: $message[1] | ID: $authorID] 
 $setGlobalUserVar[PREMIUM;false;$findUser[$message[1]]]
 $setGlobalUserVar[DCM;;$findUser[$message[1]]]
 $setGlobalUserVar[bughunter;;$findUser[$message[1]]]
