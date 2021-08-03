@@ -188,7 +188,7 @@ C:/Akeno: Aoi.js | dbd.ts
 $endelseif
 
 $elseIf[$message==$ package version]
-$editMessage[1s;
+$editIN[1s;
 \`\`\`
 Akeno's Console v1.0.0 | $username[$clientID] v1.7.1 Beta
 
