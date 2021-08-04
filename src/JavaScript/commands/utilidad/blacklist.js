@@ -14,7 +14,7 @@ Desarrollador: <@$authorID>
 Usuario: $userTag[$findUser[$message[1]]]
 Razon: $messageSlice[1;40]}
 {color:5865F2}]
-$writeFile[./data.txt;Blacklist: Usuario: $usertag[$message[1]] | ID: $userID[$findUser[$message[1]]]] 
+$writeFile[./data.txt;Blacklist: Usuario: $usertag[$findUser[$message[1]]] | ID: $userID[$findUser[$message[1]]]] 
 $setGlobalUserVar[PREMIUMgeneral;false;$findUser[$message[1]]]
 $setGlobalUserVar[PREMIUMpro;false;$findUser[$message[1]]]
 $setGlobalUserVar[PREMIUMclassic;false;$findUser[$message[1]]]
