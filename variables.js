@@ -244,7 +244,11 @@ afkr: "",
 mail: "false",
 //
 newsimage: "",
-newsmessage: ""
+newsmessage: "",
+//Console
+console_port: "1000",
+console_open: "false",
+console_lang: "en",
 
 };
 module.exports = variables;
