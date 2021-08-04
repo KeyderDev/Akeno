@@ -12,7 +12,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "aoi.js": "^4.4.0",
+    "aoi.js": "^4.4.4",
     "dbd.ts": "^2.0.0",
     "discord-backup": "^2.4.1",
     "ytdl-core": "^4.9.0"
