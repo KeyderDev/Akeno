@@ -65,7 +65,7 @@ bot.botJoinCommand({
   $description[Me han añadido a un nuevo servidor!
   Usuario: <@$authorID>
   Servidor: $serverName | $guildID]
-  Invite: [link]($getServerInvite)
+  Invite: [link]($getServerInvite[admin])
   $color[GREEN]` 
 })
 
@@ -75,7 +75,7 @@ bot.botLeaveCommand({
   $description[Me han sacado de un servidor :(
   Usuario: <@$authorID>
   Servidor: $serverName | $guildID]
-  Invite [link]($getServerInvite)
+  Invite [link]($getServerInvite[admin])
   $color[RED]` 
 })
 
