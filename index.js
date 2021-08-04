@@ -6,7 +6,7 @@ const bot = new Aoijs.Bot({
   token: "ODMxMjgwNDc4MTkwNDM2NDIz.YHS8Rg.waR-4kN8lha2LCXKSzWjbu-uSko",
   prefix: ["$getServerVar[prefix]","<@$clientID>","<@!$clientID>","Akeno"], 
   fetchInvites: true,
-  autoUpdate: false,
+  autoUpdate: true,
 })
 
 //Devoluciones de llamada o Callbacks
