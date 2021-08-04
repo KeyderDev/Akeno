@@ -4,7 +4,8 @@ module.exports = {
     \`\`\`
     Akeno's Console v1.0.0 | $username[$clientID] v1.7.1 Beta
     Port: $getGlobalUserVar[console_port]
-    Idiom: $getGlobalUserVar[console_idiom]
+    Idiom: $getGlobalUserVar[console_lang]
+    
     C:/Akeno: $message\`\`\`
     $if[$message==$ serverowner]
     $editIn[1s;
