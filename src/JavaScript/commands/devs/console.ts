@@ -49,6 +49,7 @@ $ servers users
 $ node version
 $ libraries
 $ package version
+$ change port
 Todos los comandos que vaya a poner debe ponerlos en minusculas
 Para ejecutar un comando, use $getServerVar[prefix]console $ <comando>
 \`\`\`]
@@ -190,12 +191,22 @@ C:/Akeno: Aoi.js | dbd.ts
 $endelseif
 
 $elseIf[$message==$ package version]
-$editIN[1s;
+$editIn[1s;
 \`\`\`
 Akeno's Console v1.0.0 | $username[$clientID] v1.7.1 Beta
 
 C:/Akeno: Aoi.js v$packageVersion
 \`\`\`]
+$endelseif
+
+$elseIf[$message==$ change port]
+$editIn[1s;
+\`\`\`
+Akeno's Console v1.0.0 | $username[$clientID] v1.7.1 Beta
+
+C:/Akeno: Done
+\`\`\`]
+$setGlobalUserVar[console_port;$random[1;2;no]$random[2;3;no]$random[3;4;no]$random[4;5;no]]
 $endelseif
 
 
