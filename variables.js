@@ -245,17 +245,19 @@ mail: "false",
 //
 newsimage: "",
 newsmessage: "",
-//Console
+//AkenoOS
 console_port: "1000",
 console_open: "false",
 console_lang: "en",
-//Desktop
+
 folder_1: "",
 folder_2: "",
 folder_3: "",
 folder_name_1: "",
 folder_name_2: "",
 folder_name_3: "",
+update_available: "true",
+uptodate_version: "false",
 
 };
 module.exports = variables;
