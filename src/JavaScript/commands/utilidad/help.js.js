@@ -98,7 +98,7 @@ serverinfo    clean - Bugeado
 role-info     function - Aoijs
 channel-info  weather - Bugeado
 avatar        report-bug
-console\`\`\`}]`,
+os\`\`\`}]`,
 type:'awaitedCommand'
 },{//categoria de roleplay
 name: "rpg",
