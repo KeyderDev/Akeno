@@ -11,10 +11,11 @@ const bot = new Aoijs.Bot({
 
 //Devoluciones de llamada o Callbacks
 bot.onMessage();
-bot.loadCommands(`./callbacks/`)
+
 bot.loadCommands(`./src/`);
-bot.loadCommands(`./testing`);
 bot.loadCommands(`./login`);
+bot.loadCommands(`./AkenoOS`)
+
 bot.onJoined();
 bot.onLeave();
 bot.onChannelCreate();   /* Callbacks que escucha el bot */
