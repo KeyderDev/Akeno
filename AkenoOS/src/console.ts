@@ -55,6 +55,7 @@ $ package version
 $ change port
 $ reset port
 $ logs
+$ test
 Todos los comandos que vaya a poner debe ponerlos en minusculas
 Para ejecutar un comando, use $getServerVar[prefix]console $ <comando>
 \`\`\`]
@@ -235,10 +236,12 @@ $endelseif
 
 $elseIf[$message==$ test]
 $editIn[1s;
-\`\`\`ini
+\`\`\`diff
 Akeno's Console v1.0.0 | $username[$clientID] v1.7.1 Beta
 
 C:/Akeno: This is a testing command
++ test
+- test
 \`\`\`]
 $endelseif
 
