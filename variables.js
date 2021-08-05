@@ -259,6 +259,7 @@ folder_name_3: "",
 update_available: "true",
 uptodate_version: "false",
 update_version: "1.0.0",
+directory: "C:/Akeno:",
 
 };
 module.exports = variables;
