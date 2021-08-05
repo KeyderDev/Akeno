@@ -53,6 +53,7 @@ $ node version
 $ libraries
 $ package version
 $ change port
+$ reset port
 $ logs
 Todos los comandos que vaya a poner debe ponerlos en minusculas
 Para ejecutar un comando, use $getServerVar[prefix]console $ <comando>
