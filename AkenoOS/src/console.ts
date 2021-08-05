@@ -18,6 +18,8 @@ $onlyIf[$getGlobalUserVar[bl]==false;{title:Oh vaya! Eres malicioso...}{descript
 
     $getGlobalUserVar[directory] $userTag[$ownerID]
     \`\`\`]
+    $onlyIf[D:/Akeno:!=$getGlobalUserVar[directory];:x:| Este comando solo se puede utilizar en la carpeta "akeno" del disco C:/]
+    $onlyIf[E:/Akeno:!=$getGlobalUserVar[directory];:x:| Este comando solo se puede utilizar en la carpeta "akeno" del disco C:/]
     
 
 $elseIf[$message==$ akeno premium]
@@ -27,6 +29,8 @@ Akeno's Console v1.0.0 | $username[$clientID] v1.7.1 Beta
 
 $getGlobalUserVar[directory] $getGlobalUserVar[PREMIUMgeneral]
 \`\`\`]
+$onlyIf[D:/Akeno:!=$getGlobalUserVar[directory];:x:| Este comando solo se puede utilizar en la carpeta "akeno" del disco C:/]
+$onlyIf[E:/Akeno:!=$getGlobalUserVar[directory];:x:| Este comando solo se puede utilizar en la carpeta "akeno" del disco C:/]
 $endelseif
 
 $elseIf[$message==$ commands]
@@ -57,7 +61,7 @@ $ change port
 $ reset port
 $ logs
 $ test
-$ cd C:/ D:/
+$ cd C:/ D:/ E:/
 Todos los comandos que vaya a poner debe ponerlos en minusculas
 Para ejecutar un comando, use $getServerVar[prefix]console $ <comando>
 \`\`\`]
@@ -70,6 +74,9 @@ Akeno's Console v1.0.0 | $username[$clientID] v1.7.1 Beta
 
 $getGlobalUserVar[directory] $authorID
 \`\`\`]
+$onlyIf[D:/Akeno:!=$getGlobalUserVar[directory];:x:| Este comando solo se puede utilizar en la carpeta "akeno" del disco C:/]
+$onlyIf[E:/Akeno:!=$getGlobalUserVar[directory];:x:| Este comando solo se puede utilizar en la carpeta "akeno" del disco C:/]
+
 $endelseif
 
 $elseIf[$message==$ client token]
@@ -79,6 +86,9 @@ Akeno's Console v1.0.0 | $username[$clientID] v1.7.1 Beta
 
 $getGlobalUserVar[directory] Access Denied
 \`\`\`]
+$onlyIf[D:/Akeno:!=$getGlobalUserVar[directory];:x:| Este comando solo se puede utilizar en la carpeta "akeno" del disco C:/]
+$onlyIf[E:/Akeno:!=$getGlobalUserVar[directory];:x:| Este comando solo se puede utilizar en la carpeta "akeno" del disco C:/]
+
 $endelseif
 
 $elseIf[$message==$ serverownerid]
@@ -88,6 +98,9 @@ Akeno's Console v1.0.0 | $username[$clientID] v1.7.1 Beta
 
 $getGlobalUserVar[directory] $ownerID
 \`\`\`]
+$onlyIf[D:/Akeno:!=$getGlobalUserVar[directory];:x:| Este comando solo se puede utilizar en la carpeta "akeno" del disco C:/]
+$onlyIf[E:/Akeno:!=$getGlobalUserVar[directory];:x:| Este comando solo se puede utilizar en la carpeta "akeno" del disco C:/]
+
 $endelseif
 
 $elseIf[$message==$ guildid]
@@ -97,6 +110,9 @@ Akeno's Console v1.0.0 | $username[$clientID] v1.7.1 Beta
 
 $getGlobalUserVar[directory] $guildID
 \`\`\`]
+$onlyIf[D:/Akeno:!=$getGlobalUserVar[directory];:x:| Este comando solo se puede utilizar en la carpeta "akeno" del disco C:/]
+$onlyIf[E:/Akeno:!=$getGlobalUserVar[directory];:x:| Este comando solo se puede utilizar en la carpeta "akeno" del disco C:/]
+
 $endelseif
 
 $elseIf[$message==$ cpu usage]
@@ -106,6 +122,9 @@ Akeno's Console v1.0.0 | $username[$clientID] v1.7.1 Beta
 
 $getGlobalUserVar[directory] %$cpu/100% 
 \`\`\`]
+$onlyIf[D:/Akeno:!=$getGlobalUserVar[directory];:x:| Este comando solo se puede utilizar en la carpeta "akeno" del disco C:/]
+$onlyIf[E:/Akeno:!=$getGlobalUserVar[directory];:x:| Este comando solo se puede utilizar en la carpeta "akeno" del disco C:/]
+
 $endelseif
 
 $elseIf[$message==$ cpu model]
@@ -115,6 +134,9 @@ Akeno's Console v1.0.0 | $username[$clientID] v1.7.1 Beta
 
 $getGlobalUserVar[directory] $djsEval[require ('os').cpus()[0].model;yes]
 \`\`\`]
+$onlyIf[D:/Akeno:!=$getGlobalUserVar[directory];:x:| Este comando solo se puede utilizar en la carpeta "akeno" del disco C:/]
+$onlyIf[E:/Akeno:!=$getGlobalUserVar[directory];:x:| Este comando solo se puede utilizar en la carpeta "akeno" del disco C:/]
+
 $endelseif
 
 $elseIf[$message==$ servers akeno]
@@ -124,6 +146,9 @@ Akeno's Console v1.0.0 | $username[$clientID] v1.7.1 Beta
 
 $getGlobalUserVar[directory] $serverCount
 \`\`\`]
+$onlyIf[D:/Akeno:!=$getGlobalUserVar[directory];:x:| Este comando solo se puede utilizar en la carpeta "akeno" del disco C:/]
+$onlyIf[E:/Akeno:!=$getGlobalUserVar[directory];:x:| Este comando solo se puede utilizar en la carpeta "akeno" del disco C:/]
+
 $endelseif
 
 $elseIf[$message==$ uptime]
@@ -133,6 +158,9 @@ Akeno's Console v1.0.0 | $username[$clientID] v1.7.1 Beta
 
 $getGlobalUserVar[directory] $client[readytimestamp]
 \`\`\`]
+$onlyIf[D:/Akeno:!=$getGlobalUserVar[directory];:x:| Este comando solo se puede utilizar en la carpeta "akeno" del disco C:/]
+$onlyIf[E:/Akeno:!=$getGlobalUserVar[directory];:x:| Este comando solo se puede utilizar en la carpeta "akeno" del disco C:/]
+
 $endelseif
 
 $elseif[$message==$ client id]
@@ -142,6 +170,9 @@ Akeno's Console v1.0.0 | $username[$clientID] v1.7.1 Beta
 
 $getGlobalUserVar[directory] $clientID
 \`\`\`]
+$onlyIf[D:/Akeno:!=$getGlobalUserVar[directory];:x:| Este comando solo se puede utilizar en la carpeta "akeno" del disco C:/]
+$onlyIf[E:/Akeno:!=$getGlobalUserVar[directory];:x:| Este comando solo se puede utilizar en la carpeta "akeno" del disco C:/]
+
 $endelseif
 
 $elseIf[$message==$ total ping]
@@ -151,6 +182,9 @@ Akeno's Console v1.0.0 | $username[$clientID] v1.7.1 Beta
 
 $getGlobalUserVar[directory] $sum[$ping;$botping;$dbping] ms
 \`\`\`]
+$onlyIf[D:/Akeno:!=$getGlobalUserVar[directory];:x:| Este comando solo se puede utilizar en la carpeta "akeno" del disco C:/]
+$onlyIf[E:/Akeno:!=$getGlobalUserVar[directory];:x:| Este comando solo se puede utilizar en la carpeta "akeno" del disco C:/]
+
 $endelseif
 
 $elseIf[$message==$ kill client]
@@ -160,6 +194,9 @@ Akeno's Console v1.0.0 | $username[$clientID] v1.7.1 Beta
  
 $getGlobalUserVar[directory] Access Denied
 \`\`\`]
+$onlyIf[D:/Akeno:!=$getGlobalUserVar[directory];:x:| Este comando solo se puede utilizar en la carpeta "akeno" del disco C:/]
+$onlyIf[E:/Akeno:!=$getGlobalUserVar[directory];:x:| Este comando solo se puede utilizar en la carpeta "akeno" del disco C:/]
+
 $endelseIf
 
 $elseIf[$message==$ ram usage]
@@ -169,6 +206,9 @@ Akeno's Console v1.0.0 | $username[$clientID] v1.7.1 Beta
 
 $getGlobalUserVar[directory] $ram MB/$replaceText[$abbreviate[$maxRam];K; GB;-1]
 \`\`\`]
+$onlyIf[D:/Akeno:!=$getGlobalUserVar[directory];:x:| Este comando solo se puede utilizar en la carpeta "akeno" del disco C:/]
+$onlyIf[E:/Akeno:!=$getGlobalUserVar[directory];:x:| Este comando solo se puede utilizar en la carpeta "akeno" del disco C:/]
+
 $endelseif
 
 $elseIf[$message==$ servers users]
@@ -178,6 +218,9 @@ Akeno's Console v1.0.0 | $username[$clientID] v1.7.1 Beta
 
 $getGlobalUserVar[directory] $allMembersCount
 \`\`\`]
+$onlyIf[D:/Akeno:!=$getGlobalUserVar[directory];:x:| Este comando solo se puede utilizar en la carpeta "akeno" del disco C:/]
+$onlyIf[E:/Akeno:!=$getGlobalUserVar[directory];:x:| Este comando solo se puede utilizar en la carpeta "akeno" del disco C:/]
+
 $endelseif
 
 $elseIf[$message==$ node version]
@@ -187,6 +230,9 @@ Akeno's Console v1.0.0 | $username[$clientID] v1.7.1 Beta
 
 $getGlobalUserVar[directory] $nodeVersion
 \`\`\`]
+$onlyIf[D:/Akeno:!=$getGlobalUserVar[directory];:x:| Este comando solo se puede utilizar en la carpeta "akeno" del disco C:/]
+$onlyIf[E:/Akeno:!=$getGlobalUserVar[directory];:x:| Este comando solo se puede utilizar en la carpeta "akeno" del disco C:/]
+
 $endelseif
 
 $elseIf[$message==$ libraries]
@@ -196,6 +242,9 @@ Akeno's Console v1.0.0 | $username[$clientID] v1.7.1 Beta
 
 $getGlobalUserVar[directory] Aoi.js | dbd.ts
 \`\`\`]
+$onlyIf[D:/Akeno:!=$getGlobalUserVar[directory];:x:| Este comando solo se puede utilizar en la carpeta "akeno" del disco C:/]
+$onlyIf[E:/Akeno:!=$getGlobalUserVar[directory];:x:| Este comando solo se puede utilizar en la carpeta "akeno" del disco C:/]
+
 $endelseif
 
 $elseIf[$message==$ package version]
@@ -205,6 +254,9 @@ Akeno's Console v1.0.0 | $username[$clientID] v1.7.1 Beta
 
 $getGlobalUserVar[directory] Aoi.js v$packageVersion
 \`\`\`]
+$onlyIf[D:/Akeno:!=$getGlobalUserVar[directory];:x:| Este comando solo se puede utilizar en la carpeta "akeno" del disco C:/]
+$onlyIf[E:/Akeno:!=$getGlobalUserVar[directory];:x:| Este comando solo se puede utilizar en la carpeta "akeno" del disco C:/]
+
 $endelseif
 
 $elseIf[$message==$ change port]
@@ -215,6 +267,9 @@ Akeno's Console v1.0.0 | $username[$clientID] v1.7.1 Beta
 $getGlobalUserVar[directory] Done
 \`\`\`]
 $setGlobalUserVar[console_port;$random[1;2;no]$random[2;3;no]$random[3;4;no]$random[4;5;no]]
+$onlyIf[D:/Akeno:!=$getGlobalUserVar[directory];:x:| Este comando solo se puede utilizar en la carpeta "akeno" del disco C:/]
+$onlyIf[E:/Akeno:!=$getGlobalUserVar[directory];:x:| Este comando solo se puede utilizar en la carpeta "akeno" del disco C:/]
+
 $endelseif
 
 $elseIf[$message==$ logs]
@@ -224,6 +279,9 @@ Akeno's Console v1.0.0 | $username[$clientID] v1.7.1 Beta
 
 $getGlobalUserVar[directory] $readFile[./data.txt]
 \`\`\`]
+$onlyIf[D:/Akeno:!=$getGlobalUserVar[directory];:x:| Este comando solo se puede utilizar en la carpeta "akeno" del disco C:/]
+$onlyIf[E:/Akeno:!=$getGlobalUserVar[directory];:x:| Este comando solo se puede utilizar en la carpeta "akeno" del disco C:/]
+
 $endelseif
 
 $elseIf[$message==$ reset port]
@@ -234,6 +292,9 @@ Akeno's Console v1.0.0 | $username[$clientID] v1.7.1 Beta
 $getGlobalUserVar[directory] Done
 \`\`\`]
 $setGlobalUserVar[console_port;1000;$authorID]
+$onlyIf[D:/Akeno:!=$getGlobalUserVar[directory];:x:| Este comando solo se puede utilizar en la carpeta "akeno" del disco C:/]
+$onlyIf[E:/Akeno:!=$getGlobalUserVar[directory];:x:| Este comando solo se puede utilizar en la carpeta "akeno" del disco C:/]
+
 $endelseif
 
 $elseIf[$message==$ test]
@@ -245,6 +306,9 @@ $getGlobalUserVar[directory] This is a testing command
 + test
 - test
 \`\`\`]
+$onlyIf[D:/Akeno:!=$getGlobalUserVar[directory];:x:| Este comando solo se puede utilizar en la carpeta "akeno" del disco C:/]
+$onlyIf[E:/Akeno:!=$getGlobalUserVar[directory];:x:| Este comando solo se puede utilizar en la carpeta "akeno" del disco C:/]
+
 $endelseif
 
 $elseIf[$message==$ cd D:/]
@@ -276,8 +340,34 @@ Akeno's Console v1.0.0 | $username[$clientID] v1.7.1 Beta
 
 $getGlobalUserVar[directory] $getVar[akenoOS_version]
 \`\`\`]
+$onlyIf[D:/Akeno:!=$getGlobalUserVar[directory];:x:| Este comando solo se puede utilizar en la carpeta "akeno" del disco C:/]
+$onlyIf[E:/Akeno:!=$getGlobalUserVar[directory];:x:| Este comando solo se puede utilizar en la carpeta "akeno" del disco C:/]
+
 $endelseif
 
+$elseIf[$message==$ cd E:/]
+$editIn[1s;
+\`\`\`
+Akeno's Console v1.0.0 | $username[$clientID] v1.7.1 Beta
+
+$getGlobalUserVar[directory] Done
+\`\`\`]
+$setGlobalUSerVar[directory;E:/Akeno:;$authorID]
+$setGlobalUserVar[directory_disk;E:/;$authorID]
+$endelseif
+
+$elseIf[$message==$ cd cache]
+$editIn[1s;
+\`\`\`
+Akeno's Console v1.0.0 | $username[$clientID] v1.7.1 Beta
+
+$getGlobalUserVar[directory] Done
+\`\`\`]
+$setGlobalUserVar[directory;E:/Akeno/Cache:]
+$onlyIf[C:/Akeno:!=$getGlobalUserVar[directory];:x:| Este comando solo se puede utilizar en la carpeta "akeno" del disco E:/]
+$onlyIf[D:/Akeno:!=$getGlobalUserVar[directory];:x:| Este comando solo se puede utilizar en la carpeta "akeno" del disco E:/]
+
+$endelseif
 
 
 $else
