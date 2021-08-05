@@ -249,6 +249,13 @@ newsmessage: "",
 console_port: "1000",
 console_open: "false",
 console_lang: "en",
+//Desktop
+folder_1: "",
+folder_2: "",
+folder_3: "",
+folder_name_1: "",
+folder_name_2: "",
+folder_name_3: "",
 
 };
 module.exports = variables;
