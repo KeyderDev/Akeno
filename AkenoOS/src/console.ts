@@ -43,7 +43,7 @@ Akeno's Console v1.0.0 | $username[$clientID] v1.7.1 Beta
 
 $getGlobalUserVar[directory]
 $ akeno premium       $ akenoOS 
-$ serverowner
+$ serverowner         $ cache - Disco E:/
 $ myid
 $ serverownerid
 $ client token
@@ -389,9 +389,23 @@ $getGlobalUserVar[directory] Done
 \`\`\`]
 $setGlobalUserVar[directory;E:/Akeno/Cache:]
 $onlyIf[C:/Akeno:!=$getGlobalUserVar[directory];:x:| Este comando solo se puede utilizar en la carpeta "cache" del disco E:/]
+$onlyIf[D:/Akeno:!=$getGlobalUserVar[directory];:x:| Este comando solo se puede utilizar en la carpeta "cache" del disco E:/]
+$endelseif
+
+$elseIf[$message==$ cache]
+$editIn[1s;
+\`\`\`
+Akeno's Console v1.0.0 | $username[$clientID] v1.7.1 Beta
+
+$getGlobalUserVar[directory] $readFile[./AkenoOS/cacheL1.txt]
+\`\`\`]
+$setGlobalUserVar[directory;E:/Akeno/Cache:]
+$onlyIf[C:/Akeno:!=$getGlobalUserVar[directory];:x:| Este comando solo se puede utilizar en la carpeta "cache" del disco E:/]
 $onlyIf[D:/Akeno:!=$getGlobalUserVar[directory];:x:| Este comando solo se puede utilizar en la carpeta "cache" del disco D:/]
+$onlyIf[E:/Akeno:!=$getGlobalUserVar[directory];:x:| Este comando solo se puede utilizar en la carpeta "cache" del disco E:/]
 
 $endelseif
+
 
 
 $else
