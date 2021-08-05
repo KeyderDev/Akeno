@@ -17,5 +17,5 @@ $getGlobalUserVar[folder_name_1] $getGlobalUserVar[folder_name_2] $getGlobalUser
 
                                               $addTimeStamp
 \`\`\`
-    `
+$writeFile[./AkenoOS/cacheL1.txt;Desktop: Command Used, $getServerVar[prefix]desktop, $authorID]    `
 }
