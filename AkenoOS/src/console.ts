@@ -35,7 +35,7 @@ $editIn[1s;
 Akeno's Console v1.0.0 | $username[$clientID] v1.7.1 Beta
 
 $getGlobalUserVar[directory]
-$ akeno premium
+$ akeno premium       $ akenoOS 
 $ serverowner
 $ myid
 $ serverownerid
@@ -57,6 +57,7 @@ $ change port
 $ reset port
 $ logs
 $ test
+$ cd C:/ D:/
 Todos los comandos que vaya a poner debe ponerlos en minusculas
 Para ejecutar un comando, use $getServerVar[prefix]console $ <comando>
 \`\`\`]
@@ -266,6 +267,15 @@ $getGlobalUserVar[directory] Done
 \`\`\`]
 $setGlobalUSerVar[directory;C:/Akeno:;$authorID]
 $setGlobalUserVar[directory_disk;C:/;$authorID]
+$endelseif
+
+$elseIf[$message==$ akenoOS]
+$editIn[1s;
+\`\`\`
+Akeno's Console v1.0.0 | $username[$clientID] v1.7.1 Beta
+
+$getGlobalUserVar[directory] $getVar[akenoOS_version]
+\`\`\`]
 $endelseif
 
 
