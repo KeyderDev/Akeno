@@ -6,9 +6,10 @@ module.exports = {
 
     C:/Akeno: Checking available updates... Please Wait
     \`\`\`
+
     $writeFile[./AkenoOS/cacheL1.txt;Update System: Command Used, $authorID]
 
-    $if[$getVar[update_available]==true]
+    $if[$getGlobalUserVar[update_available]==true]
     $editIn[1s;
     \`\`\`
     Akeno's Update System | 1.0.0
@@ -17,6 +18,15 @@ module.exports = {
     \`\`\`]
     $setGlobalUserVar[uptodate_version;true]
     $setGlobalUserVar[update_available;false]
+
+    $elseIf[$getGlobalUserVar[update_available]==false]
+    $editIn[1s;
+    \`\`\`
+    Akeno's Update System | 1.0.0
+
+    C:/Akeno: You have the latest verion.
+    ]
+    $endelseif
 
     $else
     $endif
