@@ -8,7 +8,7 @@ module.exports = {
     \`\`\`
     $writeFile[./AkenoOS/cacheL1.txt;Update System: Command Used, $authorID]
 
-    $if[$getVar[update_available]!=true]
+    $if[$getVar[update_available]==true]
     $editIn[1s;
     \`\`\`
     Akeno's Update System | 1.0.0

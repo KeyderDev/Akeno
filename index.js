@@ -46,8 +46,8 @@ time: 20
 });
 
 bot.status({
-  text: "GitHub Repository",
-  type: "WATCHING",
+  text: "AkenoOS 1.0.0",
+  type: "LISTENING",
   status: "online",
   time: 10
 });
