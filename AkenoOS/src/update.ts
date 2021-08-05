@@ -24,8 +24,8 @@ module.exports = {
     \`\`\`
     Akeno's Update System | 1.0.0
 
-    C:/Akeno: You have the latest verion.
-    ]
+    C:/Akeno: You have the latest version.
+    \`\`\`]
     $endelseif
 
     $else
