@@ -261,6 +261,7 @@ uptodate_version: "false",
 update_version: "1.0.0",
 directory: "C:/Akeno:",
 directory_disk: "C:/Akeno",
+akenoOS_version: "AkenoOS v1.0.0 InDev"
 
 };
 module.exports = variables;
