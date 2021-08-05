@@ -5,8 +5,9 @@ module.exports = {
     Akeno's Console v1.0.0 | $username[$clientID] v1.7.1 Beta
     Port: $getGlobalUserVar[console_port]
     Idiom: $getGlobalUserVar[console_lang]
+    Disk: $getGlobalUserVar[directory_disk]
     
-    C:/Akeno: [$message]\`\`\`
+    $getGlobalUserVar[directory] [$message]\`\`\`
     $onlyBotPerms[embedlinks;:x:| Necesito el permiso de **EMBED LINKS** para ejecutar este comando]
 $onlyIf[$getGlobalUserVar[bl]==false;{title:Oh vaya! Eres malicioso...}{description:
 :x:| Tu acceso al bot Akeno a sido denegado, parece que haz hecho algo :/, si crees que esto es un error, contacta el soporte y te ayudaremos}{color:RED}]
@@ -15,7 +16,7 @@ $onlyIf[$getGlobalUserVar[bl]==false;{title:Oh vaya! Eres malicioso...}{descript
     \`\`\`
     Akeno's Console v1.0.0 | $username[$clientID] v1.7.1 Beta
 
-    C:/Akeno: $userTag[$ownerID]
+    $getGlobalUserVar[directory] $userTag[$ownerID]
     \`\`\`]
     
 
@@ -24,7 +25,7 @@ $editIn[1s;
 \`\`\`
 Akeno's Console v1.0.0 | $username[$clientID] v1.7.1 Beta
 
-C:/Akeno: $getGlobalUserVar[PREMIUMgeneral]
+$getGlobalUserVar[directory] $getGlobalUserVar[PREMIUMgeneral]
 \`\`\`]
 $endelseif
 
@@ -33,7 +34,7 @@ $editIn[1s;
 \`\`\`
 Akeno's Console v1.0.0 | $username[$clientID] v1.7.1 Beta
 
-C:/Akeno:
+$getGlobalUserVar[directory]
 $ akeno premium
 $ serverowner
 $ myid
@@ -66,7 +67,7 @@ $editIn[1s;
 \`\`\`
 Akeno's Console v1.0.0 | $username[$clientID] v1.7.1 Beta
 
-C:/Akeno: $authorID
+$getGlobalUserVar[directory] $authorID
 \`\`\`]
 $endelseif
 
@@ -75,7 +76,7 @@ $editIn[1s;
 \`\`\`
 Akeno's Console v1.0.0 | $username[$clientID] v1.7.1 Beta
 
-C:/Akeno: Access Denied
+$getGlobalUserVar[directory] Access Denied
 \`\`\`]
 $endelseif
 
@@ -84,7 +85,7 @@ $editIn[1s;
 \`\`\`
 Akeno's Console v1.0.0 | $username[$clientID] v1.7.1 Beta
 
-C:/Akeno: $ownerID
+$getGlobalUserVar[directory] $ownerID
 \`\`\`]
 $endelseif
 
@@ -93,7 +94,7 @@ $editIn[1s;
 \`\`\`
 Akeno's Console v1.0.0 | $username[$clientID] v1.7.1 Beta
 
-C:/Akeno: $guildID
+$getGlobalUserVar[directory] $guildID
 \`\`\`]
 $endelseif
 
@@ -102,7 +103,7 @@ $editIn[1s;
 \`\`\`
 Akeno's Console v1.0.0 | $username[$clientID] v1.7.1 Beta
 
-C:/Akeno: %$cpu/100% 
+$getGlobalUserVar[directory] %$cpu/100% 
 \`\`\`]
 $endelseif
 
@@ -111,7 +112,7 @@ $editIn[1s;
 \`\`\`
 Akeno's Console v1.0.0 | $username[$clientID] v1.7.1 Beta
 
-C:/Akeno: $djsEval[require ('os').cpus()[0].model;yes]
+$getGlobalUserVar[directory] $djsEval[require ('os').cpus()[0].model;yes]
 \`\`\`]
 $endelseif
 
@@ -120,7 +121,7 @@ $editIn[1s;
 \`\`\`
 Akeno's Console v1.0.0 | $username[$clientID] v1.7.1 Beta
 
-C:/Akeno: $serverCount
+$getGlobalUserVar[directory] $serverCount
 \`\`\`]
 $endelseif
 
@@ -129,7 +130,7 @@ $editIn[1s;
 \`\`\`
 Akeno's Console v1.0.0 | $username[$clientID] v1.7.1 Beta
 
-C:/Akeno: $client[readytimestamp]
+$getGlobalUserVar[directory] $client[readytimestamp]
 \`\`\`]
 $endelseif
 
@@ -138,7 +139,7 @@ $editIn[1s;
 \`\`\`
 Akeno's Console v1.0.0 | $username[$clientID] v1.7.1 Beta
 
-C:/Akeno: $clientID
+$getGlobalUserVar[directory] $clientID
 \`\`\`]
 $endelseif
 
@@ -147,7 +148,7 @@ $editIn[1s;
 \`\`\`
 Akeno's Console v1.0.0 | $username[$clientID] v1.7.1 Beta
 
-C:/Akeno: $sum[$ping;$botping;$dbping] ms
+$getGlobalUserVar[directory] $sum[$ping;$botping;$dbping] ms
 \`\`\`]
 $endelseif
 
@@ -156,7 +157,7 @@ $editIn[1s;
 \`\`\`
 Akeno's Console v1.0.0 | $username[$clientID] v1.7.1 Beta
  
-C:/Akeno: Access Denied
+$getGlobalUserVar[directory] Access Denied
 \`\`\`]
 $endelseIf
 
@@ -165,7 +166,7 @@ $editIn[1s;
 \`\`\`
 Akeno's Console v1.0.0 | $username[$clientID] v1.7.1 Beta
 
-C:/Akeno: $ram MB/$replaceText[$abbreviate[$maxRam];K; GB;-1]
+$getGlobalUserVar[directory] $ram MB/$replaceText[$abbreviate[$maxRam];K; GB;-1]
 \`\`\`]
 $endelseif
 
@@ -174,7 +175,7 @@ $editIn[1s;
 \`\`\`
 Akeno's Console v1.0.0 | $username[$clientID] v1.7.1 Beta
 
-C:/Akeno: $allMembersCount
+$getGlobalUserVar[directory] $allMembersCount
 \`\`\`]
 $endelseif
 
@@ -183,7 +184,7 @@ $editIn[1s;
 \`\`\`
 Akeno's Console v1.0.0 | $username[$clientID] v1.7.1 Beta
 
-C:/Akeno: $nodeVersion
+$getGlobalUserVar[directory] $nodeVersion
 \`\`\`]
 $endelseif
 
@@ -192,7 +193,7 @@ $editIn[1s;
 \`\`\`
 Akeno's Console v1.0.0 | $username[$clientID] v1.7.1 Beta
 
-C:/Akeno: Aoi.js | dbd.ts
+$getGlobalUserVar[directory] Aoi.js | dbd.ts
 \`\`\`]
 $endelseif
 
@@ -201,7 +202,7 @@ $editIn[1s;
 \`\`\`
 Akeno's Console v1.0.0 | $username[$clientID] v1.7.1 Beta
 
-C:/Akeno: Aoi.js v$packageVersion
+$getGlobalUserVar[directory] Aoi.js v$packageVersion
 \`\`\`]
 $endelseif
 
@@ -210,7 +211,7 @@ $editIn[1s;
 \`\`\`
 Akeno's Console v1.0.0 | $username[$clientID] v1.7.1 Beta
 
-C:/Akeno: Done
+$getGlobalUserVar[directory] Done
 \`\`\`]
 $setGlobalUserVar[console_port;$random[1;2;no]$random[2;3;no]$random[3;4;no]$random[4;5;no]]
 $endelseif
@@ -220,7 +221,7 @@ $editIn[1s;
 \`\`\`
 Akeno's Console v1.0.0 | $username[$clientID] v1.7.1 Beta
 
-C:/Akeno: $readFile[./data.txt]
+$getGlobalUserVar[directory] $readFile[./data.txt]
 \`\`\`]
 $endelseif
 
@@ -229,7 +230,7 @@ $editIn[1s;
 \`\`\`
 Akeno's Console v1.0.0 | $username[$clientID] v1.7.1 Beta
 
-C:/Akeno: Done
+$getGlobalUserVar[directory] Done
 \`\`\`]
 $setGlobalUserVar[console_port;1000;$authorID]
 $endelseif
@@ -239,10 +240,32 @@ $editIn[1s;
 \`\`\`diff
 Akeno's Console v1.0.0 | $username[$clientID] v1.7.1 Beta
 
-C:/Akeno: This is a testing command
+$getGlobalUserVar[directory] This is a testing command
 + test
 - test
 \`\`\`]
+$endelseif
+
+$elseIf[$message==$ cd D:/]
+$editIn[1s;
+\`\`\`
+Akeno's Console v1.0.0 | $username[$clientID] v1.7.1 Beta
+
+$getGlobalUserVar[directory] Done
+\`\`\`]
+$setGlobalUserVar[directory;D:/Akeno:;$authorID]
+$setGlobalUserVar[directory_disk;D:/]
+$endelseif
+
+$elseIf[$message==$ cd C:/]
+$editIn[1s;
+\`\`\`
+Akeno's Console v1.0.0 | $username[$clientID] v1.7.1 Beta
+
+$getGlobalUserVar[directory] Done
+\`\`\`]
+$setGlobalUSerVar[directory;C:/Akeno:;$authorID]
+$setGlobalUserVar[directory_disk;C:/;$authorID]
 $endelseif
 
 

@@ -260,6 +260,7 @@ update_available: "true",
 uptodate_version: "false",
 update_version: "1.0.0",
 directory: "C:/Akeno:",
+directory_disk: "C:/Akeno",
 
 };
 module.exports = variables;
