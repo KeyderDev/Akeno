@@ -3,7 +3,7 @@ module.exports = {
     code: `
     \`\`\`ini
     Akeno's Console v1.0.0 | $username[$clientID] v1.7.1 Beta        
-    Port: $getGlobalUserVar[console_port]                            Processes: $getVar[processes]
+    Port: $getGlobalUserVar[console_port]         Processes: $getVar[processes]
     Idiom: $getGlobalUserVar[console_lang]
     Disk: $getGlobalUserVar[directory_disk]
     
