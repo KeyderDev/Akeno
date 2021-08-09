@@ -42,3 +42,8 @@ Blacklist: User: ⚜Tobias⚜#2676 | ID: 651239115806998558
 
 Error 404: Command not found, 798250899041681428
 Error 404: Command not found, 798250899041681428
+Error 404: Command not found, 852896269612613632
+Error 404: Command not found, 798250899041681428
+Error 404: Command not found, 753769842506727504
+Error 404: Command not found, 798250899041681428
+Error 404: Command not found, 798250899041681428
