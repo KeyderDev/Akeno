@@ -406,6 +406,21 @@ $onlyIf[E:/Akeno:!=$getGlobalUserVar[directory];:x:| Este comando solo se puede 
 
 $endelseif
 
+$elseIf[$message==$ os info]
+$editIn[1s;
+\`\`\`
+Akeno's Console v1.0.0 | $username[$clientID] v1.7.1 Beta
+
+$getGlobalUserVar[directory] 
+Architecture: x64
+Cache:
+Disk: $getGlobalUserVar[directory]
+IP: $getVar[console_ip]
+Port: $getGlobalUserVar[console_port]
+Processes: $getGlobalUserVar[processes]
+Lang: $getGlobalUserVar[console_lang]
+\`\`\`]
+$endelseif
 
 
 $else
