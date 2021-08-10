@@ -2,7 +2,7 @@ module.exports = {
     name: "update",
     code: `
     \`\`\`
-    AkenoOS | 1.0.0
+    $getVar[akenoOS_version]
 
     C:/Akeno: Checking available updates... Please Wait
     \`\`\`

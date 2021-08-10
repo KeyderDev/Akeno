@@ -14,7 +14,7 @@ $onlyIf[$getGlobalUserVar[bl]==false;{title:Oh vaya! Eres malicioso...}{descript
     $if[$message==$ serverowner]
     $editIn[1s;
     \`\`\`
-    Akeno's Console v1.0.0 | $username[$clientID] v1.7.1 Beta
+    Akeno's Console v1.0.0 | $username[$clientID] $getVar[akeno_version]
 
     $getGlobalUserVar[directory] $userTag[$ownerID]
     \`\`\`]
@@ -26,7 +26,7 @@ $onlyIf[$getGlobalUserVar[bl]==false;{title:Oh vaya! Eres malicioso...}{descript
 $elseIf[$message==$ akeno premium]
 $editIn[1s;
 \`\`\`
-Akeno's Console v1.0.0 | $username[$clientID] v1.7.1 Beta
+Akeno's Console v1.0.0 | $username[$clientID] $getVar[akeno_version]
 
 $getGlobalUserVar[directory] $getGlobalUserVar[PREMIUMgeneral]
 \`\`\`]
@@ -39,12 +39,12 @@ $endelseif
 $elseIf[$message==$ commands]
 $editIn[1s;
 \`\`\`
-Akeno's Console v1.0.0 | $username[$clientID] v1.7.1 Beta
+Akeno's Console v1.0.0 | $username[$clientID] $getVar[akeno_version]
 
 $getGlobalUserVar[directory]
 $ akeno premium       $ akenoOS 
 $ serverowner         $ cache - Disco E:/
-$ myid
+$ myid                $ os info
 $ serverownerid
 $ client token
 $ guildid
@@ -73,7 +73,7 @@ $endelseif
 $elseIf[$message==$ myid]
 $editIn[1s;
 \`\`\`
-Akeno's Console v1.0.0 | $username[$clientID] v1.7.1 Beta
+Akeno's Console v1.0.0 | $username[$clientID] $getVar[akeno_version]
 
 $getGlobalUserVar[directory] $authorID
 \`\`\`]
@@ -86,7 +86,7 @@ $endelseif
 $elseIf[$message==$ client token]
 $editIn[1s;
 \`\`\`
-Akeno's Console v1.0.0 | $username[$clientID] v1.7.1 Beta
+Akeno's Console v1.0.0 | $username[$clientID] $getVar[akeno_version]
 
 $getGlobalUserVar[directory] Access Denied
 \`\`\`]
@@ -99,7 +99,7 @@ $endelseif
 $elseIf[$message==$ serverownerid]
 $editIn[1s;
 \`\`\`
-Akeno's Console v1.0.0 | $username[$clientID] v1.7.1 Beta
+Akeno's Console v1.0.0 | $username[$clientID] $getVar[akeno_version]
 
 $getGlobalUserVar[directory] $ownerID
 \`\`\`]
@@ -112,7 +112,7 @@ $endelseif
 $elseIf[$message==$ guildid]
 $editIn[1s;
 \`\`\`
-Akeno's Console v1.0.0 | $username[$clientID] v1.7.1 Beta
+Akeno's Console v1.0.0 | $username[$clientID] $getVar[akeno_version]
 
 $getGlobalUserVar[directory] $guildID
 \`\`\`]
@@ -125,7 +125,7 @@ $endelseif
 $elseIf[$message==$ cpu usage]
 $editIn[1s;
 \`\`\`
-Akeno's Console v1.0.0 | $username[$clientID] v1.7.1 Beta
+Akeno's Console v1.0.0 | $username[$clientID] $getVar[akeno_version]
 
 $getGlobalUserVar[directory] %$cpu/100% 
 \`\`\`]
@@ -138,7 +138,7 @@ $endelseif
 $elseIf[$message==$ cpu model]
 $editIn[1s;
 \`\`\`
-Akeno's Console v1.0.0 | $username[$clientID] v1.7.1 Beta
+Akeno's Console v1.0.0 | $username[$clientID] $getVar[akeno_version]
 
 $getGlobalUserVar[directory] $djsEval[require ('os').cpus()[0].model;yes]
 \`\`\`]
@@ -151,7 +151,7 @@ $endelseif
 $elseIf[$message==$ servers akeno]
 $editIn[1s;
 \`\`\`
-Akeno's Console v1.0.0 | $username[$clientID] v1.7.1 Beta
+Akeno's Console v1.0.0 | $username[$clientID] $getVar[akeno_version]
 
 $getGlobalUserVar[directory] $serverCount
 \`\`\`]
@@ -164,7 +164,7 @@ $endelseif
 $elseIf[$message==$ uptime]
 $editIn[1s;
 \`\`\`
-Akeno's Console v1.0.0 | $username[$clientID] v1.7.1 Beta
+Akeno's Console v1.0.0 | $username[$clientID] $getVar[akeno_version]
 
 $getGlobalUserVar[directory] $client[readytimestamp]
 \`\`\`]
@@ -177,7 +177,7 @@ $endelseif
 $elseif[$message==$ client id]
 $editIn[1s;
 \`\`\`
-Akeno's Console v1.0.0 | $username[$clientID] v1.7.1 Beta
+Akeno's Console v1.0.0 | $username[$clientID] $getVar[akeno_version]
 
 $getGlobalUserVar[directory] $clientID
 \`\`\`]
@@ -190,7 +190,7 @@ $endelseif
 $elseIf[$message==$ total ping]
 $editIn[1s;
 \`\`\`
-Akeno's Console v1.0.0 | $username[$clientID] v1.7.1 Beta
+Akeno's Console v1.0.0 | $username[$clientID] $getVar[akeno_version]
 
 $getGlobalUserVar[directory] $sum[$ping;$botping;$dbping] ms
 \`\`\`]
@@ -203,7 +203,7 @@ $endelseif
 $elseIf[$message==$ kill client]
 $editIn[1s;
 \`\`\`
-Akeno's Console v1.0.0 | $username[$clientID] v1.7.1 Beta
+Akeno's Console v1.0.0 | $username[$clientID] $getVar[akeno_version]
  
 $getGlobalUserVar[directory] Access Denied
 \`\`\`]
@@ -216,7 +216,7 @@ $endelseIf
 $elseIf[$message==$ ram usage]
 $editIn[1s;
 \`\`\`
-Akeno's Console v1.0.0 | $username[$clientID] v1.7.1 Beta
+Akeno's Console v1.0.0 | $username[$clientID] $getVar[akeno_version]
 
 $getGlobalUserVar[directory] $ram MB/$replaceText[$abbreviate[$maxRam];K; GB;-1]
 \`\`\`]
@@ -229,7 +229,7 @@ $endelseif
 $elseIf[$message==$ servers users]
 $editIn[1s;
 \`\`\`
-Akeno's Console v1.0.0 | $username[$clientID] v1.7.1 Beta
+Akeno's Console v1.0.0 | $username[$clientID] $getVar[akeno_version]
 
 $getGlobalUserVar[directory] $allMembersCount
 \`\`\`]
@@ -242,7 +242,7 @@ $endelseif
 $elseIf[$message==$ node version]
 $editIn[1s;
 \`\`\`
-Akeno's Console v1.0.0 | $username[$clientID] v1.7.1 Beta
+Akeno's Console v1.0.0 | $username[$clientID] $getVar[akeno_version]
 
 $getGlobalUserVar[directory] $nodeVersion
 \`\`\`]
@@ -255,7 +255,7 @@ $endelseif
 $elseIf[$message==$ libraries]
 $editIn[1s;
 \`\`\`
-Akeno's Console v1.0.0 | $username[$clientID] v1.7.1 Beta
+Akeno's Console v1.0.0 | $username[$clientID] $getVar[akeno_version]
 
 $getGlobalUserVar[directory] Aoi.js | dbd.ts
 \`\`\`]
@@ -268,7 +268,7 @@ $endelseif
 $elseIf[$message==$ package version]
 $editIn[1s;
 \`\`\`
-Akeno's Console v1.0.0 | $username[$clientID] v1.7.1 Beta
+Akeno's Console v1.0.0 | $username[$clientID] $getVar[akeno_version]
 
 $getGlobalUserVar[directory] Aoi.js v$packageVersion
 \`\`\`]
@@ -281,7 +281,7 @@ $endelseif
 $elseIf[$message==$ change port]
 $editIn[1s;
 \`\`\`
-Akeno's Console v1.0.0 | $username[$clientID] v1.7.1 Beta
+Akeno's Console v1.0.0 | $username[$clientID] $getVar[akeno_version]
 
 $getGlobalUserVar[directory] Done
 \`\`\`]
@@ -295,7 +295,7 @@ $endelseif
 $elseIf[$message==$ logs]
 $editIn[1s;
 \`\`\`
-Akeno's Console v1.0.0 | $username[$clientID] v1.7.1 Beta
+Akeno's Console v1.0.0 | $username[$clientID] $getVar[akeno_version]
 
 $getGlobalUserVar[directory] $readFile[./data.txt]
 \`\`\`]
@@ -308,7 +308,7 @@ $endelseif
 $elseIf[$message==$ reset port]
 $editIn[1s;
 \`\`\`
-Akeno's Console v1.0.0 | $username[$clientID] v1.7.1 Beta
+Akeno's Console v1.0.0 | $username[$clientID] $getVar[akeno_version]
 
 $getGlobalUserVar[directory] Done
 \`\`\`]
@@ -322,7 +322,7 @@ $endelseif
 $elseIf[$message==$ test]
 $editIn[1s;
 \`\`\`diff
-Akeno's Console v1.0.0 | $username[$clientID] v1.7.1 Beta
+Akeno's Console v1.0.0 | $username[$clientID] $getVar[akeno_version]
 
 $getGlobalUserVar[directory] This is a testing command
 + test
@@ -337,7 +337,7 @@ $endelseif
 $elseIf[$message==$ cd D:/]
 $editIn[1s;
 \`\`\`
-Akeno's Console v1.0.0 | $username[$clientID] v1.7.1 Beta
+Akeno's Console v1.0.0 | $username[$clientID] $getVar[akeno_version]
 
 $getGlobalUserVar[directory] Done
 \`\`\`]
@@ -348,7 +348,7 @@ $endelseif
 $elseIf[$message==$ cd C:/]
 $editIn[1s;
 \`\`\`
-Akeno's Console v1.0.0 | $username[$clientID] v1.7.1 Beta
+Akeno's Console v1.0.0 | $username[$clientID] $getVar[akeno_version]
 
 $getGlobalUserVar[directory] Done
 \`\`\`]
@@ -359,7 +359,7 @@ $endelseif
 $elseIf[$message==$ akenoOS]
 $editIn[1s;
 \`\`\`
-Akeno's Console v1.0.0 | $username[$clientID] v1.7.1 Beta
+Akeno's Console v1.0.0 | $username[$clientID] $getVar[akeno_version]
 
 $getGlobalUserVar[directory] $getVar[akenoOS_version]
 \`\`\`]
@@ -372,7 +372,7 @@ $endelseif
 $elseIf[$message==$ cd E:/]
 $editIn[1s;
 \`\`\`
-Akeno's Console v1.0.0 | $username[$clientID] v1.7.1 Beta
+Akeno's Console v1.0.0 | $username[$clientID] $getVar[akeno_version]
 
 $getGlobalUserVar[directory] Done
 \`\`\`]
@@ -383,7 +383,7 @@ $endelseif
 $elseIf[$message==$ cd cache]
 $editIn[1s;
 \`\`\`
-Akeno's Console v1.0.0 | $username[$clientID] v1.7.1 Beta
+Akeno's Console v1.0.0 | $username[$clientID] $getVar[akeno_version]
 
 $getGlobalUserVar[directory] Done
 \`\`\`]
@@ -395,7 +395,7 @@ $endelseif
 $elseIf[$message==$ cache]
 $editIn[1s;
 \`\`\`
-Akeno's Console v1.0.0 | $username[$clientID] v1.7.1 Beta
+Akeno's Console v1.0.0 | $username[$clientID] $getVar[akeno_version]
 
 $getGlobalUserVar[directory] $readFile[./AkenoOS/cacheL1.txt]
 \`\`\`]
@@ -409,7 +409,7 @@ $endelseif
 $elseIf[$message==$ os info]
 $editIn[1s;
 \`\`\`
-Akeno's Console v1.0.0 | $username[$clientID] v1.7.1 Beta
+Akeno's Console v1.0.0 | $username[$clientID] $getVar[akeno_version]
 
 $getGlobalUserVar[directory] 
 Architecture: x64

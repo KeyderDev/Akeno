@@ -2,7 +2,7 @@ module.exports = {
     name: "management",
     code: `
     \`\`\`
-    AkenoOS | 1.0.0
+    $getVar[akenoOS_version]
     MANEJO
 
     Discos:
