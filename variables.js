@@ -262,7 +262,8 @@ update_version: "1.0.0",
 directory: "C:/Akeno:",
 directory_disk: "C:/Akeno",
 akenoOS_version: "AkenoOS v1.0.0 InDev",
-processes: "22"
+processes: "22",
+console_ip: "23.457.12.578"
 
 };
 module.exports = variables;
