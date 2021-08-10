@@ -1,3 +1,11 @@
+const Discord = require('discord.js');
+const client = new Discord.Client();
+
+client.on("ready", () => {
+console.log(`Listo! ${client.user.tag}`)
+});
+
+client.login("ODMxMjgwNDc4MTkwNDM2NDIz.YHS8Rg.waR-4kN8lha2LCXKSzWjbu-uSko")
 const Aoijs = require("aoi.js");
 const bot = new Aoijs.Bot({
   sharding: true, 
