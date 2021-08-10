@@ -46,7 +46,7 @@ time: 20
 });
 
 bot.status({
-  text: "¡Nuevo sistema operativo!",
+  text: "$getVar[akeno_version]",
   type: "LISTENING",
   status: "online",
   time: 10
