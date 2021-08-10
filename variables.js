@@ -249,7 +249,6 @@ newsmessage: "",
 console_port: "1000",
 console_open: "false",
 console_lang: "en",
-
 folder_1: "",
 folder_2: "",
 folder_3: "",
