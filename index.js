@@ -39,14 +39,14 @@ bot.botJoinCommand();
 
 
 bot.status({                                                            
-text: "ak.help | v1.7.1 Beta",              /* Estado del bot */           
+text: "ak.help | $getVar[akeno_version]",              /* Estado del bot */           
 type: "PLAYING",
 status: "online",
 time: 20
 });
 
 bot.status({
-  text: "$getVar[akeno_version]",
+  text: "¡Nuevo sistema operativo!",
   type: "LISTENING",
   status: "online",
   time: 10
