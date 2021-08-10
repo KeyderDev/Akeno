@@ -46,7 +46,7 @@ time: 20
 });
 
 bot.status({
-  text: "AkenoOS 1.0.0",
+  text: "¡Nuevo sistema operativo!",
   type: "LISTENING",
   status: "online",
   time: 10
