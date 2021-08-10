@@ -7,7 +7,7 @@ module.exports = {
     C:/Akeno: Checking available updates... Please Wait
     \`\`\`
 
-    $writeFile[./AkenoOS/cacheL1.txt;Update System: Command Used, $authorID]
+    $writeFile[./AkenoOS/src/System32/cacheL1.txt;Update System: Command Used, $authorID]
 
     $if[$getGlobalUserVar[update_available]==true]
     $editIn[1s;

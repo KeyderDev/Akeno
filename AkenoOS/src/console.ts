@@ -4,8 +4,8 @@ module.exports = {
     \`\`\`ini
     Akeno's Console v1.0.0 | $username[$clientID] v1.7.1 Beta        
     Port: $getGlobalUserVar[console_port]         Processes: $getVar[processes]
-    Idiom: $getGlobalUserVar[console_lang]
-    Disk: $getGlobalUserVar[directory_disk]
+    Idiom: $getGlobalUserVar[console_lang]        Architecture: x64    
+    Disk: $getGlobalUserVar[directory_disk]       IP: 23.457.12.578
     
     $getGlobalUserVar[directory] [$message]\`\`\`
     $onlyBotPerms[embedlinks;:x:| Necesito el permiso de **EMBED LINKS** para ejecutar este comando]
