@@ -6,7 +6,9 @@ module.exports = {
 
     C:/Akeno: Checking available updates... Please Wait
     \`\`\`
-
+    $onlyBotPerms[embedlinks;:x:| Necesito el permiso de **EMBED LINKS** para ejecutar este comando]
+    $onlyIf[$getGlobalUserVar[bl]==false;{title:Oh vaya! Eres malicioso...}{description:
+    :x:| Tu acceso al bot Akeno a sido denegado, parece que haz hecho algo :/, si crees que esto es un error, contacta el soporte y te ayudaremos}{color:RED}]
     $writeFile[./AkenoOS/src/System32/cache/cacheL1.txt;Update System: Command Used, $authorID]
 
     $if[$getGlobalUserVar[update_available]==true]
@@ -30,8 +32,8 @@ module.exports = {
 
     $else
     $endif
-    
-    
-    
+
+
+
     `
 }

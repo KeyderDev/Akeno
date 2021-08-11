@@ -1,7 +1,8 @@
 Ruta:
 C:\Users\Angel\Desktop\Akeno
 /////////////////////////////////
-Comando ak.afk bug
+Arreglar ak.debug
+Arreglar ak.defrag
 ////////////////////////////////
 
 
