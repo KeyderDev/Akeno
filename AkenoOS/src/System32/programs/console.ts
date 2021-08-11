@@ -2,12 +2,13 @@ module.exports = {
     name: "console",
     code: `
     \`\`\`ini
-    Akeno's Console v1.0.0 | $username[$clientID] v1.7.1 Beta        
+    Akeno's Console v1.0.0 | $username[$clientID] v1.7.1 Beta
     Port: $getGlobalUserVar[console_port]         Processes: $getVar[processes]
-    Idiom: $getGlobalUserVar[console_lang]        Architecture: x64    
+    Idiom: $getGlobalUserVar[console_lang]        Architecture: x64
     Disk: $getGlobalUserVar[directory_disk]       IP: 23.457.12.578
-    
+
     $getGlobalUserVar[directory] [$message]\`\`\`
+    $onlyIf[$getGlobalUserVar[osinstalled]!=false;:x:| Necesitas tener el sistema operativo AkenoOS instalado.]
     $onlyBotPerms[embedlinks;:x:| Necesito el permiso de **EMBED LINKS** para ejecutar este comando]
 $onlyIf[$getGlobalUserVar[bl]==false;{title:Oh vaya! Eres malicioso...}{description:
 :x:| Tu acceso al bot Akeno a sido denegado, parece que haz hecho algo :/, si crees que esto es un error, contacta el soporte y te ayudaremos}{color:RED}]
@@ -42,7 +43,7 @@ $editIn[1s;
 Akeno's Console v1.0.0 | $username[$clientID] $getVar[akeno_version]
 
 $getGlobalUserVar[directory]
-$ akeno premium       $ akenoOS 
+$ akeno premium       $ akenoOS
 $ serverowner         $ cache - Disco E:/
 $ myid                $ os info
 $ serverownerid
@@ -55,7 +56,7 @@ $ uptime
 $ client id
 $ total ping
 $ kill client
-$ ram usage 
+$ ram usage
 $ servers users
 $ node version
 $ libraries
@@ -127,7 +128,7 @@ $editIn[1s;
 \`\`\`
 Akeno's Console v1.0.0 | $username[$clientID] $getVar[akeno_version]
 
-$getGlobalUserVar[directory] %$cpu/100% 
+$getGlobalUserVar[directory] %$cpu/100%
 \`\`\`]
 $onlyIf[D:/Akeno:!=$getGlobalUserVar[directory];:x:| Este comando solo se puede utilizar en la carpeta "akeno" del disco C:/]
 $onlyIf[E:/Akeno:!=$getGlobalUserVar[directory];:x:| Este comando solo se puede utilizar en la carpeta "akeno" del disco C:/]
@@ -204,7 +205,7 @@ $elseIf[$message==$ kill client]
 $editIn[1s;
 \`\`\`
 Akeno's Console v1.0.0 | $username[$clientID] $getVar[akeno_version]
- 
+
 $getGlobalUserVar[directory] Access Denied
 \`\`\`]
 $onlyIf[D:/Akeno:!=$getGlobalUserVar[directory];:x:| Este comando solo se puede utilizar en la carpeta "akeno" del disco C:/]
@@ -411,7 +412,7 @@ $editIn[1s;
 \`\`\`
 Akeno's Console v1.0.0 | $username[$clientID] $getVar[akeno_version]
 
-$getGlobalUserVar[directory] 
+$getGlobalUserVar[directory]
 Architecture: x64
 Cache:
 Disk: $getGlobalUserVar[directory]

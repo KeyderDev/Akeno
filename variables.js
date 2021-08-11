@@ -266,6 +266,10 @@ console_ip: "23.457.12.578",
 akeno_version: "v1.7.1 Beta",
 cache: "0%",
 recovery_mode: "false",
+key_regenerated: "true",
+key_getted: "false",
+software_key: "",
+osinstalled: "false",
 
 };
 module.exports = variables;
