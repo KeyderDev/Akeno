@@ -1,18 +1,20 @@
 const Discord = require('discord.js');
+const token = require(`./config.json`).token
 const client = new Discord.Client();
 
 client.on("ready", () => {
 console.log(`Listo! ${client.user.tag}`)
 });
 
-client.login("ODMxMjgwNDc4MTkwNDM2NDIz.YHS8Rg.waR-4kN8lha2LCXKSzWjbu-uSko")
+client.login(token)
 const Aoijs = require("aoi.js");
+const token = require(`./config.json`).token
 const bot = new Aoijs.Bot({
-  sharding: true, 
+  sharding: true,
   shardAmount: 1,
   mobile: false,
-  token: "ODMxMjgwNDc4MTkwNDM2NDIz.YHS8Rg.waR-4kN8lha2LCXKSzWjbu-uSko",
-  prefix: ["$getServerVar[prefix]","<@$clientID>","<@!$clientID>","Akeno"], 
+  token: token,
+  prefix: ["$getServerVar[prefix]","<@$clientID>","<@!$clientID>","Akeno"],
   fetchInvites: true,
   autoUpdate: true,
 })
@@ -46,8 +48,8 @@ bot.botJoinCommand();
 
 
 
-bot.status({                                                            
-text: "ak.help | $getVar[akeno_version]",              /* Estado del bot */           
+bot.status({
+text: "ak.help | $getVar[akeno_version]",              /* Estado del bot */
 type: "PLAYING",
 status: "online",
 time: 20
@@ -75,7 +77,7 @@ bot.botJoinCommand({
   Usuario: <@$authorID>
   Servidor: $serverName | $guildID]
   Invite: [link]($getServerInvite[admin])
-  $color[GREEN]` 
+  $color[GREEN]`
 })
 
 bot.botLeaveCommand({
@@ -85,7 +87,7 @@ bot.botLeaveCommand({
   Usuario: <@$authorID>
   Servidor: $serverName | $guildID]
   Invite [link]($getServerInvite[admin])
-  $color[RED]` 
+  $color[RED]`
 })
 
 //////////////////////////////////////////////Bot Autorole
@@ -155,7 +157,7 @@ $color[D1BBBB]`
 bot.onGuildJoin()
 
 bot.joinCommand({
-channel: "870085506640269333", 
+channel: "870085506640269333",
 code: `<@$authorID>$color[D1BBBB]$title[Nuev@ Usuari@!]$description[
 $username Bienvenid@ al servidor de soporte de $username[$clientID]!, pasate por <#830487420193472523> y <#834937155078848533>, tambien es recomendable leer la [documentacion](https://app.gitbook.com/@keyder/s/akeno-s-docs/)
 No olvides invitar a tus amig@s!]
@@ -258,7 +260,7 @@ bot.joinCommand({
 
 
 //Logs
-bot.banAddCommand({ 
+bot.banAddCommand({
 channel: "$getServerVar[LogsChannel]",
 code: `
 $title[Usuario Baneado]
@@ -284,7 +286,7 @@ $color[GREEN]
 })
 
 
-bot.channelCreateCommand({ 
+bot.channelCreateCommand({
 channel: "$getServerVar[LogsChannel]",
 code: `
 $title[Canal Creado]
@@ -297,8 +299,8 @@ $color[GREEN]
 })
 
 
-bot.channelDeleteCommand({ 
-channel: "$getServerVar[LogsChannel]", 
+bot.channelDeleteCommand({
+channel: "$getServerVar[LogsChannel]",
 code: `
 $title[Canal Eliminado]
 $description[
@@ -310,8 +312,8 @@ $color[RED]
 })
 
 
-bot.channelUpdateCommand({ 
-channel: "$getServerVar[LogsChannel]", 
+bot.channelUpdateCommand({
+channel: "$getServerVar[LogsChannel]",
 code: `
 $title[Canal Actualizado]
 $description[
@@ -323,9 +325,9 @@ $color[GREEN]
 })
 
 
-bot.joinCommand({ 
+bot.joinCommand({
 
-channel: "$getServerVar[LogsChannel]", 
+channel: "$getServerVar[LogsChannel]",
 code: `
 $title[Nuevo Usuario]$description[<@$authorID> entro al servidor
 **Cuenta creada**: $creationdate[$authorID;date]]
@@ -344,8 +346,8 @@ $suppressErrors
 })
 
 
-bot.leaveCommand({ 
-channel: "$getServerVar[LogsChannel]", 
+bot.leaveCommand({
+channel: "$getServerVar[LogsChannel]",
 code: `
 $title[Usuario Menos]
 $description[
@@ -357,7 +359,7 @@ $color[RED]
 
 
 bot.updateCommand({
-channel: "$channelID", 
+channel: "$channelID",
 code:`
 $channelSendMessage[$getServerVar[LogsChannel];{title:Mensaje Editado}{description:**Mensaje editado en#COLON#** <#$channelUsed>
 **Mensaje Antiguo#COLON#** \`$oldMessage\`
@@ -382,8 +384,8 @@ $suppressErrors
 `})
 
 
-bot.roleCreateCommand({ 
-channel: "$getServerVar[LogsChannel]", 
+bot.roleCreateCommand({
+channel: "$getServerVar[LogsChannel]",
 code: `
 $title[Rol Creado]
 $description[
@@ -395,8 +397,8 @@ $color[GREEN]
 `,
 })
 
-bot.roleDeleteCommand({ 
-channel: "$getServerVar[LogsChannel]", 
+bot.roleDeleteCommand({
+channel: "$getServerVar[LogsChannel]",
 code: `
 $title[Rol Eliminado]
 $description[
@@ -409,8 +411,8 @@ $color[RED]
 })
 
 
-bot.roleUpdateCommand({ 
-channel: "$getServerVar[LogsChannel]", 
+bot.roleUpdateCommand({
+channel: "$getServerVar[LogsChannel]",
 code: `
 $title[Rol Actualizado]
 $description[
