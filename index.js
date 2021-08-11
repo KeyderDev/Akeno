@@ -1,19 +1,18 @@
 const Discord = require('discord.js');
-const token = require(`./config.json`).token
 const client = new Discord.Client();
 
 client.on("ready", () => {
 console.log(`Listo! ${client.user.tag}`)
 });
 
-client.login(token)
+client.login("ODMxMjgwNDc4MTkwNDM2NDIz.YHS8Rg.waR-4kN8lha2LCXKSzWjbu-uSko")
+
 const Aoijs = require("aoi.js");
-const token = require(`./config.json`).token
 const bot = new Aoijs.Bot({
   sharding: true,
   shardAmount: 1,
   mobile: false,
-  token: token,
+  token: "ODMxMjgwNDc4MTkwNDM2NDIz.YHS8Rg.waR-4kN8lha2LCXKSzWjbu-uSko",
   prefix: ["$getServerVar[prefix]","<@$clientID>","<@!$clientID>","Akeno"],
   fetchInvites: true,
   autoUpdate: true,
