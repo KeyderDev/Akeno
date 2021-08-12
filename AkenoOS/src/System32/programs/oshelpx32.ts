@@ -3,7 +3,21 @@ module.exports = {
   code: `
   Executed: <:oshelpx32:874747290215133225>oshelpx32
 \`\`\`
-$getGlobalUserVar[directory] Error 404, No info has been founded.
+$getGlobalUserVar[directory] AkenoOS oshelpx32
+Que es?
+AkenoOS es el sistema operativo de Akeno, sirve para ejecutar tareas diarias en formato MS, tambien sirve
+para manejar el bot por dentro, manejar variables, valores, etc
+Comandos:
+$getServerVar[prefix]console
+$getServerVar[prefix]debug
+$getServerVar[prefix]defrag
+$getServerVar[prefix]regedit
+$getServerVar[prefix]management
+$getServerVar[prefix]regenerate-key
+$getServerVar[prefix]get-key
+$getServerVar[prefix]install-os
+
+
 \`\`\`
 $onlyBotPerms[embedlinks;:x:| Necesito el permiso de **EMBED LINKS** para ejecutar este comando]
 $onlyIf[$getGlobalUserVar[bl]==false;{title:Oh vaya! Eres malicioso...}{description:
