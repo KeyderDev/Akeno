@@ -19,7 +19,7 @@ Informacion de paquete-
 ▪︎ Aoi.js: v$packageVersion
 ▪︎ Node.js: $nodeVersion\`\`\`
 }
-{footer:Fue actualizado hace}{timestamp}{color:#5865F2};875089191095119933]
+{footer:Fue actualizado}{timestamp}{color:#5865F2};875089191095119933]
 `,
 channel: "875089191095119933",
 executeOnStartup: true,

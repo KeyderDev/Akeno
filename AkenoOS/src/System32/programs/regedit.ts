@@ -1,6 +1,7 @@
 module.exports = {
   name: "regedit",
   code: `
+  Executed: <:regedit:875183270743138304>Regedit
 \`\`\`
 AkenoOS | $getVar[akenoOS_version]
 

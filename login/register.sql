@@ -5,3 +5,4 @@ Usuario: Natsu._.Fullbuster | Contraseña: Natsu | Dueño: 740303179354341518 | 
 Usuario: Jeann | Contraseña: 291091 | Dueño: 777723252695891968
 Usuario: Pavez | Contraseña: 47467235 | Dueño: 788869971073040454
 Usuario: apolo | Contraseña: 2024 | Dueño: 852896269612613632
+Usuario: o | Contraseña: a | Dueño: 662369424573071392
