@@ -1,6 +1,7 @@
 module.exports = {
   name: "recovery",
   code: `
+  Executed: <:recovery:874745720542990396>Recovery
 \`\`\`
 AkenoOS | $getVar[akenoOS_version]
 

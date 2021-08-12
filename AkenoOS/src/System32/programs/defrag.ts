@@ -1,7 +1,7 @@
 module.exports = {
   name: "defrag",
   code: `
-  Executed: <:defrag:874743370482843698> Defraggment
+  Executed: <:defrag:874743370482843698>Defraggment
   \`\`\`
   AkenoOS | $getVar[akenoOS_version]
 

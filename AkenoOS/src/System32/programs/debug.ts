@@ -1,6 +1,7 @@
 module.exports = {
     name: "debug",
     code: `
+    Executed: <:debug:875189935022436483>Debug
     \`\`\`
     AkenoOS | $getVar[akenoOS_version]
 
