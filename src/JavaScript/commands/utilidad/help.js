@@ -10,14 +10,14 @@ Moderacion#COLON# 🛠
 Diversion#COLON# 🎮
 Configuracion#COLON# ⚙
 RPG#COLON# 💼
-Busqueda#COLON# 🔎 
+Busqueda#COLON# 🔎
 Utilidad#COLON# 🧩
 Seguridad#COLON# <:check:845428956491939850>
 Leveling#COLON# 🎲
 Reacciones#COLON# 🔗
 Extras#COLON# 🔵
 Para volver al menu#COLON# ↩️
-    
+
 **Links**
 [Documentacion](https://app.gitbook.com/@keyder/s/akeno-s-docs/) | [Soporte](https://discord.gg/tsrfmSgapV) | [Invite](https://discord.com/api/oauth2/authorize?client_id=831280478190436423&permissions=8&scope=bot) | [Paypal](https://paypal.me/akenobot1)}{footer:Reaccione a un emoji para acceder a una categoria | Msg#COLON# 3 min de uso | Prx#COLON# $getServerVar[prefix]}{color:5865F2};yes]; ]
 $onlyBotPerms[embedlinks;:x:| Necesito el permiso de **EMBED LINKS** para ejecutar este comando]
@@ -59,7 +59,7 @@ xp\`\`\`
 type:'awaitedCommand'
 },{//categoria de musica
 name: "music",
-code: `$editMessage[$message[1];{color:D1BBBB}{title:Comandos de musica}{description:
+code: `$editMessage[$message[1];{title:Comandos de musica}{description:
 \`\`\`
 play
 skip
@@ -67,7 +67,7 @@ stop
 queue
 resume
 skipto\`\`\`
-- :star: **Premium**
+:star: **Premium**
 \`\`\`
 lyrics\`\`\`
 }{color:D1BBBB}]`,
@@ -105,9 +105,9 @@ name: "rpg",
 code: `$editMessage[$message[1];{color:D1BBBB}{title:Comandos de RPG}{description:
 \`\`\`
 work         shop            buy-incubadora.p
-stream       mine            code              
-daily        use-cookie      crafteos          
-dep          buy-lppan       descargas      
+stream       mine            code
+daily        use-cookie      crafteos
+dep          buy-lppan       descargas
 pay          buy-legg        craft-pc
 inv          incubate-wolf   pc
 fish         wolf-search     buy-diamondbox
@@ -120,6 +120,10 @@ bank         buy-cascominero buy-elixiroscuro\`\`\`
 profile/prof
 set-pstatus
 set-profilepic\`\`\`
+:star: **Premium**
+\`\`\`
+supermarket
+\`\`\`
 }]`,
 type:'awaitedCommand'
 },{//categoria de busqueda
@@ -149,7 +153,7 @@ type:'awaitedCommand'
 },{
 name: "security",
 code: `$editMessage[$message[1];{title:Comandos de Seguridad}{description:
-\`\`\` 
+\`\`\`
 antiusers-on/off               captcha/verify
 antibots-on/off                desactivate-logs
 antilinks-on/off
@@ -172,10 +176,10 @@ delete-account\`\`\`
 `,
 type:'awaitedCommand'
 },{
-name:"bothelp", 
+name:"bothelp",
 code: `$editMessage[$message[1];{title:Comandos y cosas extra}{description:
 **- Comandos Premium (classic o pro)**
-              
+
 \`\`\`
 lyrics            set-p.embedcolor
 dm                 Premium pro:
@@ -208,14 +212,14 @@ Moderacion#COLON# 🛠
 Diversion#COLON# 🎮
 Configuracion#COLON# ⚙
 Roleo#COLON# 💼
-Busqueda#COLON# 🔎 
+Busqueda#COLON# 🔎
 Utilidad#COLON# 🧩
 Seguridad#COLON# <:check:845428956491939850>
 Leveling#COLON# 🎲
 Reacciones#COLON# 🔗
 Extras#COLON# 🔵
 Para volver al menu#COLON# ↩️
-    
+
 **Links**
 [Documentacion](https://app.gitbook.com/@keyder/s/akeno-s-docs/) | [Soporte](https://discord.gg/tsrfmSgapV) | [Invite](https://discord.com/api/oauth2/authorize?client_id=831280478190436423&permissions=8&scope=bot) | [Paypal](https://paypal.me/akenobot1)}{color:5865F2}]
 $onlyIf[$getGlobalUserVar[bl]==false;{title:Oh vaya! Eres malicioso...}{description:
