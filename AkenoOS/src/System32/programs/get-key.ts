@@ -1,6 +1,6 @@
 module.exports = {
   name: "get-key",
-  code: `
+  code: `Executed: :key:Get Key
 \`\`\`
 AkenoOS | $getVar[akenoOS_version]
 

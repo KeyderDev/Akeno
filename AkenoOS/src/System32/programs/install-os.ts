@@ -1,6 +1,6 @@
 module.exports = {
   name: "install-os",
-  code: `
+  code: `Executed: <:setup:875421405804625920>setupx32
   \`\`\`
   AkenoOS | $getVar[akenoOS_version]
 
@@ -11,8 +11,9 @@ module.exports = {
   - Debug
   - Data Files
   - ToastedData
-  \`\`\`
+  - oshelpx32\`\`\`
   $writeFile[./AkenoOS/src/System32/cache/oscache.txt;ID: $authorID - OS Installed]
+  $setGlobalUserVar[software_key;AkenoOS is installed;$authorID]
   $setGlobalUserVar[osinstalled;true]
   $onlyIf[$getGlobalUserVar[software_key]==$message;:x:| Esa clave no es igual a la tuya]
   $onlyIf[$message!=;:x:| Necesitas introducir tu clave de software, consiguela usando $getServerVar[prefix]get-key]

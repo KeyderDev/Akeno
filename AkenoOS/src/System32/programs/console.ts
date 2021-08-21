@@ -1,6 +1,6 @@
 module.exports = {
     name: "console",
-    code: `
+    code: `Executed: <:console:875400030717083691>OSconsole
     \`\`\`ini
     Akeno's Console v1.0.0 | $username[$clientID] v1.7.1 Beta
     Port: $getGlobalUserVar[console_port]         Processes: $getVar[processes]
