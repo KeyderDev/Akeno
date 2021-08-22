@@ -245,6 +245,8 @@ mail: "false",
 //
 newsimage: "",
 newsmessage: "",
+//Robot
+rbram: "0",
 //AkenoOS
 console_port: "1000",
 console_open: "false",
