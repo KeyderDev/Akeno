@@ -247,6 +247,7 @@ newsimage: "",
 newsmessage: "",
 //Robot
 rbram: "0",
+rbmb: "false",
 //AkenoOS
 console_port: "1000",
 console_open: "false",
