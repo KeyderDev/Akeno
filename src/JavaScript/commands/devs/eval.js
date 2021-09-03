@@ -7,7 +7,7 @@ module.exports = ({
         \`\`\`$eval[$message;yes]\`\`\`
     ]$color[GREEN]
     $onlyBotPerms[embedlinks;:x:| Necesito el permiso de **EMBED LINKS** para ejecutar este comando]
-    $onlyForIds[798250899041681428;788869971073040454;:x:| Solo los desarrolladores del bot puede usar este comando]`
-    
-    
+    $onlyForIds[798250899041681428;:x:| Solo los desarrolladores del bot puede usar este comando]`
+
+
     })
