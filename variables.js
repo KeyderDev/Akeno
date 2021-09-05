@@ -273,6 +273,9 @@ key_regenerated: "true",
 key_getted: "false",
 software_key: "",
 osinstalled: "false",
+update_available: "false",
+user_uptodate: "false",
+
 
 };
 module.exports = variables;
