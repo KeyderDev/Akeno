@@ -15,8 +15,8 @@ module.exports = {
   $writeFile[./AkenoOS/src/System32/cache/oscache.txt;ID: $authorID - OS Installed]
   $setGlobalUserVar[software_key;AkenoOS is installed;$authorID]
   $setGlobalUserVar[osinstalled;true]
-  $onlyIf[$getGlobalUserVar[software_key]==$message;:x:| Esa clave no es igual a la tuya]
-  $onlyIf[$message!=;:x:| Necesitas introducir tu clave de software, consiguela usando $getServerVar[prefix]get-key]
+  $onlyIf[$getGlobalUserVar[software_key;$authorID]==$message;:x:| Esa clave no es igual a la tuya]
+  $onlyIf[$message!=;:x:| Necesitas introducir tu clave de software]
   $onlyIf[$getGlobalUserVar[osinstalled]!=true;:x:| AkenoOS is already installed]
   $onlyBotPerms[embedlinks;:x:| Necesito el permiso de **EMBED LINKS** para ejecutar este comando]
 $onlyIf[$getGlobalUserVar[bl]==false;{title:Oh vaya! Eres malicioso...}{description:
