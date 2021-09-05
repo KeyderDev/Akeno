@@ -439,6 +439,5 @@ $color[GREEN]
 
 
 
-
 const variables = require("./variables")
 bot.variables(variables)

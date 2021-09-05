@@ -15,7 +15,9 @@
     "aoi.js": "^4.4.4",
     "dbd.ts": "^2.0.0",
     "discord-backup": "^2.4.1",
-    "ytdl-core": "^4.9.0"
+    "opusscript": "0.0.8",
+    "python": "0.0.4",
+    "ytdl-core": "^4.9.1"
   },
   "devDependencies": {
     "@types/node": "^16.4.6"
