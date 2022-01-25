@@ -5,14 +5,14 @@ client.on("ready", () => {
 console.log(`Listo! ${client.user.tag}`)
 });
 
-client.login("ODMxMjgwNDc4MTkwNDM2NDIz.YHS8Rg.waR-4kN8lha2LCXKSzWjbu-uSko")
+client.login("")
 
 const Aoijs = require("aoi.js");
 const bot = new Aoijs.Bot({
   sharding: true,
   shardAmount: 1,
   mobile: false,
-  token: "ODMxMjgwNDc4MTkwNDM2NDIz.YHS8Rg.waR-4kN8lha2LCXKSzWjbu-uSko",
+  token: "",
   prefix: ["$getServerVar[prefix]","<@$clientID>","<@!$clientID>","Akeno"],
   fetchInvites: true,
   autoUpdate: true,
